@@ -1,13 +1,13 @@
 import pandas as pd
 from prophet import Prophet
 
-# Load the temperature data
+
 df = pd.read_excel("E:\Agriculture project\Data\Semi-prepared data\Temperature_wide.xlsx")  # Change to your actual file path
 
 # Convert to long format
 df_melted = df.melt(id_vars=['DATE'], var_name='County', value_name='Temperature')
 
-# Convert date column to datetime
+
 df_melted['DATE'] = pd.to_datetime(df_melted['DATE'])
 
 # Create an empty dataframe to store predictions
@@ -28,7 +28,7 @@ for county in counties:
     model.fit(county_data)
 
     # Create future dates (24 months for 2023-2024)
-    future = model.make_future_dataframe(periods=24, freq='M')
+    future = model.make_future_dataframe(periods=24, freq='MS')
 
     # Predict
     forecast = model.predict(future)
