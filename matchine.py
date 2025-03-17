@@ -114,7 +114,6 @@ def forecast_climate_variables(data_path, target_counties, target_variables, for
                 X_train, 
                 y_train,
                 eval_set=[(X_train, y_train), (X_test, y_test)],
-                eval_metric='rmse',
                 verbose=False,
                 early_stopping_rounds=20
             )
@@ -283,7 +282,7 @@ def generate_future_forecast(data, model, feature_cols, target_col, periods=3):
 if __name__ == "__main__":
     # Replace with your data path
     data_path = "E:\Agriculture project\Data\Processed\Merged_data_features.csv"
-    output_dir = "./outputs"
+    output_dir = "E:\Agriculture project"
     
     # Create output directory if it doesn't exist
     import os
