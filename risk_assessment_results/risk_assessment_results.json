@@ -1,0 +1,1874 @@
+{
+    "metadata": {
+        "generation_date": "2025-04-03",
+        "data_period": "1984-01 to 2029-09",
+        "counties_analyzed": [
+            "Nyeri",
+            "Meru",
+            "Embu",
+            "Murang'a",
+            "Kericho",
+            "Bomet",
+            "Nandi",
+            "Nyandarua",
+            "Kisii",
+            "Uasin Gishu",
+            "Bungoma",
+            "Kakamega",
+            "Nakuru",
+            "Laikipia",
+            "Kitui",
+            "Machakos",
+            "Makueni",
+            "Tharaka-Nithi",
+            "West Pokot",
+            "Narok",
+            "Baringo"
+        ],
+        "risk_weights": {
+            "drought": 0.33,
+            "heat": 0.33,
+            "flood": 0.33
+        }
+    },
+    "county_risks": {
+        "Nyeri": {
+            "zone": 0,
+            "current": {
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.25185750691546976,
+                "drought_severity": 0.18983624473185345,
+                "heat_stress": 0.31448323076972506,
+                "rain_zscore": 0.11688678834813793,
+                "flood_index": 0.24001447063007264,
+                "soil_moisture": 8.602201730864047,
+                "overall_risk_score": 9.9,
+                "start_date": "2024-10",
+                "end_date": "2024-12"
+            },
+            "near_term": {
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "heat_risk_level": "Moderate",
+                "heat_risk_score": 60,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.4793146028818427,
+                "drought_severity": 0.27713550646162904,
+                "heat_stress": 1.3715229024806281,
+                "rain_zscore": 0.08752491858936765,
+                "flood_index": 0.29842929663734197,
+                "soil_moisture": 9.813948321038032,
+                "overall_risk_score": 26.400000000000002,
+                "start_date": "2025-01",
+                "end_date": "2025-12"
+            },
+            "mid_term": {
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "heat_risk_level": "Moderate",
+                "heat_risk_score": 60,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.467997686190786,
+                "drought_severity": 0.4078672580870726,
+                "heat_stress": 1.260506112003966,
+                "rain_zscore": 0.0386760609711887,
+                "flood_index": 0.10291828895434196,
+                "soil_moisture": 7.7892952089828595,
+                "overall_risk_score": 26.400000000000002,
+                "start_date": "2026-01",
+                "end_date": "2027-12"
+            },
+            "long_term": {
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "heat_risk_level": "Moderate",
+                "heat_risk_score": 60,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.4652674125929151,
+                "drought_severity": 0.36098388759093164,
+                "heat_stress": 1.2460457596540568,
+                "rain_zscore": 0.032577535423779745,
+                "flood_index": 0.14464590963122306,
+                "soil_moisture": 8.449529330382399,
+                "overall_risk_score": 26.400000000000002,
+                "start_date": "2028-01",
+                "end_date": "2029-09"
+            }
+        },
+        "Meru": {
+            "zone": 2,
+            "current": {
+                "drought_risk_level": "Mild",
+                "drought_risk_score": 30,
+                "heat_risk_level": "Mild",
+                "heat_risk_score": 30,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.688922925966921,
+                "drought_severity": 0.9153029102542115,
+                "heat_stress": 0.9522505541566385,
+                "rain_zscore": 0.006987557461401737,
+                "flood_index": 0.006987557461401737,
+                "soil_moisture": 7.799267674208373,
+                "overall_risk_score": 23.1,
+                "start_date": "2024-10",
+                "end_date": "2024-12"
+            },
+            "near_term": {
+                "drought_risk_level": "Mild",
+                "drought_risk_score": 30,
+                "heat_risk_level": "Moderate",
+                "heat_risk_score": 60,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.7372552442183019,
+                "drought_severity": 0.984281371259435,
+                "heat_stress": 1.782873015938073,
+                "rain_zscore": -0.13132306215203676,
+                "flood_index": -0.13132306215203676,
+                "soil_moisture": 7.724202258914296,
+                "overall_risk_score": 33.0,
+                "start_date": "2025-01",
+                "end_date": "2025-12"
+            },
+            "mid_term": {
+                "drought_risk_level": "Moderate",
+                "drought_risk_score": 60,
+                "heat_risk_level": "Moderate",
+                "heat_risk_score": 60,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.8130673189775995,
+                "drought_severity": 1.1156342726153803,
+                "heat_stress": 1.883779745924799,
+                "rain_zscore": -0.10738630940517166,
+                "flood_index": -0.10738630940517166,
+                "soil_moisture": 7.293600260112229,
+                "overall_risk_score": 42.9,
+                "start_date": "2026-01",
+                "end_date": "2027-12"
+            },
+            "long_term": {
+                "drought_risk_level": "Moderate",
+                "drought_risk_score": 60,
+                "heat_risk_level": "Moderate",
+                "heat_risk_score": 60,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.822864825714928,
+                "drought_severity": 1.0073250344982598,
+                "heat_stress": 1.8707522665893,
+                "rain_zscore": -0.12213065010508395,
+                "flood_index": -0.12213065010508395,
+                "soil_moisture": 9.012388940757265,
+                "overall_risk_score": 42.9,
+                "start_date": "2028-01",
+                "end_date": "2029-09"
+            }
+        },
+        "Embu": {
+            "zone": 2,
+            "current": {
+                "drought_risk_level": "Mild",
+                "drought_risk_score": 30,
+                "heat_risk_level": "Mild",
+                "heat_risk_score": 30,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.5475211684416477,
+                "drought_severity": 0.5576754250935108,
+                "heat_stress": 0.9316775798125411,
+                "rain_zscore": 0.2681024526764857,
+                "flood_index": 0.2681024526764857,
+                "soil_moisture": 17.919615617786178,
+                "overall_risk_score": 23.1,
+                "start_date": "2024-10",
+                "end_date": "2024-12"
+            },
+            "near_term": {
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "heat_risk_level": "Severe",
+                "heat_risk_score": 90,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.5253981304022199,
+                "drought_severity": 0.3699279397457402,
+                "heat_stress": 2.0039252485579215,
+                "rain_zscore": 0.1196269378072695,
+                "flood_index": 0.2675815855878575,
+                "soil_moisture": 23.661010486889236,
+                "overall_risk_score": 36.3,
+                "start_date": "2025-01",
+                "end_date": "2025-12"
+            },
+            "mid_term": {
+                "drought_risk_level": "Mild",
+                "drought_risk_score": 30,
+                "heat_risk_level": "Moderate",
+                "heat_risk_score": 60,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.5310319461686734,
+                "drought_severity": 0.5170705755871825,
+                "heat_stress": 1.9163941915123996,
+                "rain_zscore": 0.05567845321830063,
+                "flood_index": 0.06882396233712147,
+                "soil_moisture": 18.738257861330958,
+                "overall_risk_score": 33.0,
+                "start_date": "2026-01",
+                "end_date": "2027-12"
+            },
+            "long_term": {
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "heat_risk_level": "Moderate",
+                "heat_risk_score": 60,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.460822772388189,
+                "drought_severity": 0.4178280134896906,
+                "heat_stress": 1.7612730146710327,
+                "rain_zscore": 0.06274221336920051,
+                "flood_index": 0.10939220711373744,
+                "soil_moisture": 19.961723060326385,
+                "overall_risk_score": 26.400000000000002,
+                "start_date": "2028-01",
+                "end_date": "2029-09"
+            }
+        },
+        "Murang'a": {
+            "zone": 2,
+            "current": {
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "heat_risk_level": "Mild",
+                "heat_risk_score": 30,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.3446047675715433,
+                "drought_severity": 0.383394131845513,
+                "heat_stress": 0.917663909000599,
+                "rain_zscore": 0.026092370302645124,
+                "flood_index": 0.026092370302645124,
+                "soil_moisture": 2.506957157140259,
+                "overall_risk_score": 16.5,
+                "start_date": "2024-10",
+                "end_date": "2024-12"
+            },
+            "near_term": {
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "heat_risk_level": "Moderate",
+                "heat_risk_score": 60,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.48215774631475705,
+                "drought_severity": 0.35476445039905413,
+                "heat_stress": 1.7580476357539643,
+                "rain_zscore": 0.16363786427052351,
+                "flood_index": 0.2957453507616141,
+                "soil_moisture": 3.5713282339584445,
+                "overall_risk_score": 26.400000000000002,
+                "start_date": "2025-01",
+                "end_date": "2025-12"
+            },
+            "mid_term": {
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "heat_risk_level": "Moderate",
+                "heat_risk_score": 60,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.40101981851895896,
+                "drought_severity": 0.3606456082339543,
+                "heat_stress": 1.6969146930045074,
+                "rain_zscore": 0.15938132984370013,
+                "flood_index": 0.20972075001763835,
+                "soil_moisture": 3.109348886908346,
+                "overall_risk_score": 26.400000000000002,
+                "start_date": "2026-01",
+                "end_date": "2027-12"
+            },
+            "long_term": {
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "heat_risk_level": "Moderate",
+                "heat_risk_score": 60,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.3452406729658628,
+                "drought_severity": 0.2719843093162935,
+                "heat_stress": 1.6406000429058962,
+                "rain_zscore": 0.18809206893332797,
+                "flood_index": 0.2941866999920689,
+                "soil_moisture": 3.424358854482919,
+                "overall_risk_score": 26.400000000000002,
+                "start_date": "2028-01",
+                "end_date": "2029-09"
+            }
+        },
+        "Kericho": {
+            "zone": 3,
+            "current": {
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.1606628364858891,
+                "drought_severity": 0.09637960526392375,
+                "heat_stress": 0.07197211430438773,
+                "rain_zscore": 0.024523381452815008,
+                "flood_index": 0.22457970010125144,
+                "soil_moisture": 44.60717535125192,
+                "overall_risk_score": 9.9,
+                "start_date": "2024-10",
+                "end_date": "2024-12"
+            },
+            "near_term": {
+                "drought_risk_level": "Moderate",
+                "drought_risk_score": 60,
+                "heat_risk_level": "Moderate",
+                "heat_risk_score": 60,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 1.2089460945801853,
+                "drought_severity": 1.2700856727039187,
+                "heat_stress": 1.6578365850775305,
+                "rain_zscore": -0.03434977939024118,
+                "flood_index": -0.03434977939024118,
+                "soil_moisture": 30.24847590701981,
+                "overall_risk_score": 42.9,
+                "start_date": "2025-01",
+                "end_date": "2025-12"
+            },
+            "mid_term": {
+                "drought_risk_level": "Moderate",
+                "drought_risk_score": 60,
+                "heat_risk_level": "Moderate",
+                "heat_risk_score": 60,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 1.0851929551155832,
+                "drought_severity": 1.2134550343740476,
+                "heat_stress": 1.6213772325195084,
+                "rain_zscore": -0.08594052595380619,
+                "flood_index": -0.08594052595380619,
+                "soil_moisture": 28.094114602004467,
+                "overall_risk_score": 42.9,
+                "start_date": "2026-01",
+                "end_date": "2027-12"
+            },
+            "long_term": {
+                "drought_risk_level": "Moderate",
+                "drought_risk_score": 60,
+                "heat_risk_level": "Moderate",
+                "heat_risk_score": 60,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 1.0777593139326584,
+                "drought_severity": 1.2394968913613555,
+                "heat_stress": 1.7872266274055133,
+                "rain_zscore": -0.0597349843520294,
+                "flood_index": -0.0597349843520294,
+                "soil_moisture": 27.078571035703103,
+                "overall_risk_score": 42.9,
+                "start_date": "2028-01",
+                "end_date": "2029-09"
+            }
+        },
+        "Bomet": {
+            "zone": 3,
+            "current": {
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.3185131164741294,
+                "drought_severity": 0.29736954209781175,
+                "heat_stress": 0.10355783299108866,
+                "rain_zscore": -0.1562594971270878,
+                "flood_index": -0.12306843954934593,
+                "soil_moisture": 26.816095531056025,
+                "overall_risk_score": 9.9,
+                "start_date": "2024-10",
+                "end_date": "2024-12"
+            },
+            "near_term": {
+                "drought_risk_level": "Moderate",
+                "drought_risk_score": 60,
+                "heat_risk_level": "Moderate",
+                "heat_risk_score": 60,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.9580324781436645,
+                "drought_severity": 1.0052060893482446,
+                "heat_stress": 1.6755434108508618,
+                "rain_zscore": 0.005930258075933554,
+                "flood_index": 0.005930258075933554,
+                "soil_moisture": 23.90856715444224,
+                "overall_risk_score": 42.9,
+                "start_date": "2025-01",
+                "end_date": "2025-12"
+            },
+            "mid_term": {
+                "drought_risk_level": "Mild",
+                "drought_risk_score": 30,
+                "heat_risk_level": "Moderate",
+                "heat_risk_score": 60,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.8894782646074127,
+                "drought_severity": 0.9956210405085949,
+                "heat_stress": 1.566963127506448,
+                "rain_zscore": -0.04113840861987108,
+                "flood_index": -0.04113840861987108,
+                "soil_moisture": 22.14599277356453,
+                "overall_risk_score": 33.0,
+                "start_date": "2026-01",
+                "end_date": "2027-12"
+            },
+            "long_term": {
+                "drought_risk_level": "Moderate",
+                "drought_risk_score": 60,
+                "heat_risk_level": "Moderate",
+                "heat_risk_score": 60,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.8874570016000322,
+                "drought_severity": 1.00507395739128,
+                "heat_stress": 1.5158633019708787,
+                "rain_zscore": -0.0276883216710237,
+                "flood_index": -0.0276883216710237,
+                "soil_moisture": 21.814028184193024,
+                "overall_risk_score": 42.9,
+                "start_date": "2028-01",
+                "end_date": "2029-09"
+            }
+        },
+        "Nandi": {
+            "zone": 3,
+            "current": {
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.34014905928311584,
+                "drought_severity": 0.23366466157065058,
+                "heat_stress": 0,
+                "rain_zscore": -0.08655853156287623,
+                "flood_index": 0.06996754841054394,
+                "soil_moisture": 68.01940412688919,
+                "overall_risk_score": 9.9,
+                "start_date": "2024-10",
+                "end_date": "2024-12"
+            },
+            "near_term": {
+                "drought_risk_level": "Moderate",
+                "drought_risk_score": 60,
+                "heat_risk_level": "Moderate",
+                "heat_risk_score": 60,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 1.1610153314421652,
+                "drought_severity": 1.1173971191151315,
+                "heat_stress": 1.784832551703578,
+                "rain_zscore": 0.03383821450041778,
+                "flood_index": 0.05262272627463048,
+                "soil_moisture": 53.74868483909993,
+                "overall_risk_score": 42.9,
+                "start_date": "2025-01",
+                "end_date": "2025-12"
+            },
+            "mid_term": {
+                "drought_risk_level": "Moderate",
+                "drought_risk_score": 60,
+                "heat_risk_level": "Moderate",
+                "heat_risk_score": 60,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 1.1088160970792222,
+                "drought_severity": 1.0998407743325624,
+                "heat_stress": 1.7033717372550905,
+                "rain_zscore": 0.020546368285541346,
+                "flood_index": 0.024593623177629472,
+                "soil_moisture": 52.22183089960739,
+                "overall_risk_score": 42.9,
+                "start_date": "2026-01",
+                "end_date": "2027-12"
+            },
+            "long_term": {
+                "drought_risk_level": "Moderate",
+                "drought_risk_score": 60,
+                "heat_risk_level": "Moderate",
+                "heat_risk_score": 60,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 1.1013720819037494,
+                "drought_severity": 1.1374871674659333,
+                "heat_stress": 1.70604581320122,
+                "rain_zscore": 0.05758420380732748,
+                "flood_index": 0.05758420380732748,
+                "soil_moisture": 50.10385896823198,
+                "overall_risk_score": 42.9,
+                "start_date": "2028-01",
+                "end_date": "2029-09"
+            }
+        },
+        "Nyandarua": {
+            "zone": 0,
+            "current": {
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.03292784406948426,
+                "drought_severity": 0.01646392203474213,
+                "heat_stress": 0,
+                "rain_zscore": 0.04409908305654942,
+                "flood_index": 0.3724229195250406,
+                "soil_moisture": 34.12607320862633,
+                "overall_risk_score": 9.9,
+                "start_date": "2024-10",
+                "end_date": "2024-12"
+            },
+            "near_term": {
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "heat_risk_level": "Moderate",
+                "heat_risk_score": 60,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.5587840819426577,
+                "drought_severity": 0.3318208413329549,
+                "heat_stress": 1.3186843012913037,
+                "rain_zscore": 0.118209853476531,
+                "flood_index": 0.3212965625866464,
+                "soil_moisture": 28.966434926464487,
+                "overall_risk_score": 26.400000000000002,
+                "start_date": "2025-01",
+                "end_date": "2025-12"
+            },
+            "mid_term": {
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "heat_risk_level": "Moderate",
+                "heat_risk_score": 60,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.5050633272845928,
+                "drought_severity": 0.3849073364543742,
+                "heat_stress": 1.0403430291651592,
+                "rain_zscore": 0.019965358221982248,
+                "flood_index": 0.1389167692026821,
+                "soil_moisture": 25.50014889558645,
+                "overall_risk_score": 26.400000000000002,
+                "start_date": "2026-01",
+                "end_date": "2027-12"
+            },
+            "long_term": {
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "heat_risk_level": "Mild",
+                "heat_risk_score": 30,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.5722749923233146,
+                "drought_severity": 0.4407962797362299,
+                "heat_stress": 0.9542053850209974,
+                "rain_zscore": 0.006154069207897656,
+                "flood_index": 0.12102778756951008,
+                "soil_moisture": 25.33215223689492,
+                "overall_risk_score": 16.5,
+                "start_date": "2028-01",
+                "end_date": "2029-09"
+            }
+        },
+        "Kisii": {
+            "zone": 1,
+            "current": {
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.17056515435832334,
+                "drought_severity": 0.15999346514737015,
+                "heat_stress": 0.14386230049584686,
+                "rain_zscore": -0.0744430216940586,
+                "flood_index": -0.043452843041436054,
+                "soil_moisture": 53.134658130371385,
+                "overall_risk_score": 9.9,
+                "start_date": "2024-10",
+                "end_date": "2024-12"
+            },
+            "near_term": {
+                "drought_risk_level": "Moderate",
+                "drought_risk_score": 60,
+                "heat_risk_level": "Moderate",
+                "heat_risk_score": 60,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 1.1225693728764785,
+                "drought_severity": 1.083680296408685,
+                "heat_stress": 1.3683682152189716,
+                "rain_zscore": 0.015381612621877058,
+                "flood_index": 0.0327030706125507,
+                "soil_moisture": 51.76686861438612,
+                "overall_risk_score": 42.9,
+                "start_date": "2025-01",
+                "end_date": "2025-12"
+            },
+            "mid_term": {
+                "drought_risk_level": "Moderate",
+                "drought_risk_score": 60,
+                "heat_risk_level": "Moderate",
+                "heat_risk_score": 60,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 1.2035683411984608,
+                "drought_severity": 1.2931366735214929,
+                "heat_stress": 1.5369161487060687,
+                "rain_zscore": -0.0795337093931373,
+                "flood_index": -0.0795337093931373,
+                "soil_moisture": 46.31011351037586,
+                "overall_risk_score": 42.9,
+                "start_date": "2026-01",
+                "end_date": "2027-12"
+            },
+            "long_term": {
+                "drought_risk_level": "Moderate",
+                "drought_risk_score": 60,
+                "heat_risk_level": "Moderate",
+                "heat_risk_score": 60,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 1.1423538593385443,
+                "drought_severity": 1.320062969537642,
+                "heat_stress": 1.4901374176848012,
+                "rain_zscore": -0.1280783443477951,
+                "flood_index": -0.1280783443477951,
+                "soil_moisture": 42.25014055477633,
+                "overall_risk_score": 42.9,
+                "start_date": "2028-01",
+                "end_date": "2029-09"
+            }
+        },
+        "Uasin Gishu": {
+            "zone": 0,
+            "current": {
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.04839511564476296,
+                "drought_severity": 0.02419755782238148,
+                "heat_stress": 0.269160919124013,
+                "rain_zscore": 0.06372784758543397,
+                "flood_index": 0.3886494184011851,
+                "soil_moisture": 43.08808165407117,
+                "overall_risk_score": 9.9,
+                "start_date": "2024-10",
+                "end_date": "2024-12"
+            },
+            "near_term": {
+                "drought_risk_level": "Moderate",
+                "drought_risk_score": 60,
+                "heat_risk_level": "Severe",
+                "heat_risk_score": 90,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 1.123896939074023,
+                "drought_severity": 1.0492859752330435,
+                "heat_stress": 2.341402473229258,
+                "rain_zscore": 0.11491354967404993,
+                "flood_index": 0.1481065237124219,
+                "soil_moisture": 27.85023839299481,
+                "overall_risk_score": 52.8,
+                "start_date": "2025-01",
+                "end_date": "2025-12"
+            },
+            "mid_term": {
+                "drought_risk_level": "Mild",
+                "drought_risk_score": 30,
+                "heat_risk_level": "Severe",
+                "heat_risk_score": 90,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 1.0339777246606938,
+                "drought_severity": 0.9696816047533412,
+                "heat_stress": 2.259325802105115,
+                "rain_zscore": 0.1363073207116751,
+                "flood_index": 0.16739895758830695,
+                "soil_moisture": 27.74047936812381,
+                "overall_risk_score": 42.9,
+                "start_date": "2026-01",
+                "end_date": "2027-12"
+            },
+            "long_term": {
+                "drought_risk_level": "Moderate",
+                "drought_risk_score": 60,
+                "heat_risk_level": "Severe",
+                "heat_risk_score": 90,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 1.0332736297951532,
+                "drought_severity": 1.0164537187335831,
+                "heat_stress": 2.0685802269656297,
+                "rain_zscore": 0.11748298626106778,
+                "flood_index": 0.12562212316370247,
+                "soil_moisture": 26.541602737868317,
+                "overall_risk_score": 52.8,
+                "start_date": "2028-01",
+                "end_date": "2029-09"
+            }
+        },
+        "Bungoma": {
+            "zone": 3,
+            "current": {
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.5305900882319498,
+                "drought_severity": 0.2915732075425529,
+                "heat_stress": 0,
+                "rain_zscore": -0.07678412966153282,
+                "flood_index": 0.14845272077215788,
+                "soil_moisture": 51.381951098243235,
+                "overall_risk_score": 9.9,
+                "start_date": "2024-10",
+                "end_date": "2024-12"
+            },
+            "near_term": {
+                "drought_risk_level": "Moderate",
+                "drought_risk_score": 60,
+                "heat_risk_level": "Moderate",
+                "heat_risk_score": 60,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 1.4567114137017885,
+                "drought_severity": 1.7045108713110675,
+                "heat_stress": 1.997111354060276,
+                "rain_zscore": -0.09650421553381132,
+                "flood_index": -0.09650421553381132,
+                "soil_moisture": 29.39827731771111,
+                "overall_risk_score": 42.9,
+                "start_date": "2025-01",
+                "end_date": "2025-12"
+            },
+            "mid_term": {
+                "drought_risk_level": "Moderate",
+                "drought_risk_score": 60,
+                "heat_risk_level": "Moderate",
+                "heat_risk_score": 60,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 1.3904681587773406,
+                "drought_severity": 1.6949980370644615,
+                "heat_stress": 1.9425600568157224,
+                "rain_zscore": -0.09905450252898243,
+                "flood_index": -0.09905450252898243,
+                "soil_moisture": 27.665901555771654,
+                "overall_risk_score": 42.9,
+                "start_date": "2026-01",
+                "end_date": "2027-12"
+            },
+            "long_term": {
+                "drought_risk_level": "Moderate",
+                "drought_risk_score": 60,
+                "heat_risk_level": "Moderate",
+                "heat_risk_score": 60,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 1.407393232683127,
+                "drought_severity": 1.7844251691768376,
+                "heat_stress": 1.9189338047912814,
+                "rain_zscore": -0.05688906176475467,
+                "flood_index": -0.05688906176475467,
+                "soil_moisture": 25.934316758857687,
+                "overall_risk_score": 42.9,
+                "start_date": "2028-01",
+                "end_date": "2029-09"
+            }
+        },
+        "Kakamega": {
+            "zone": 1,
+            "current": {
+                "drought_risk_level": "Mild",
+                "drought_risk_score": 30,
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.6211162398228762,
+                "drought_severity": 0.5121831656218819,
+                "heat_stress": 0,
+                "rain_zscore": -0.16273741137463488,
+                "flood_index": -0.07504603638171986,
+                "soil_moisture": 87.97679067958961,
+                "overall_risk_score": 16.5,
+                "start_date": "2024-10",
+                "end_date": "2024-12"
+            },
+            "near_term": {
+                "drought_risk_level": "Moderate",
+                "drought_risk_score": 60,
+                "heat_risk_level": "Moderate",
+                "heat_risk_score": 60,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 1.4306019909335117,
+                "drought_severity": 1.427235342578822,
+                "heat_stress": 1.738576891304526,
+                "rain_zscore": 0.06794458348117069,
+                "flood_index": 0.06912123791616584,
+                "soil_moisture": 75.02562653953555,
+                "overall_risk_score": 42.9,
+                "start_date": "2025-01",
+                "end_date": "2025-12"
+            },
+            "mid_term": {
+                "drought_risk_level": "Moderate",
+                "drought_risk_score": 60,
+                "heat_risk_level": "Moderate",
+                "heat_risk_score": 60,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 1.4633764011691976,
+                "drought_severity": 1.4544025098823532,
+                "heat_stress": 1.7508789278504304,
+                "rain_zscore": 0.05766780595222003,
+                "flood_index": 0.0607339655813061,
+                "soil_moisture": 75.30848351178656,
+                "overall_risk_score": 42.9,
+                "start_date": "2026-01",
+                "end_date": "2027-12"
+            },
+            "long_term": {
+                "drought_risk_level": "Moderate",
+                "drought_risk_score": 60,
+                "heat_risk_level": "Moderate",
+                "heat_risk_score": 60,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 1.4609292960570919,
+                "drought_severity": 1.4930963818687735,
+                "heat_stress": 1.701029985712577,
+                "rain_zscore": 0.10055487590423742,
+                "flood_index": 0.10055487590423742,
+                "soil_moisture": 73.20142902680838,
+                "overall_risk_score": 42.9,
+                "start_date": "2028-01",
+                "end_date": "2029-09"
+            }
+        },
+        "Nakuru": {
+            "zone": 0,
+            "current": {
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0,
+                "drought_severity": 0,
+                "heat_stress": 0.3858261805737502,
+                "rain_zscore": 0.30765646399967383,
+                "flood_index": 0.7847452396448839,
+                "soil_moisture": 47.96223014835979,
+                "overall_risk_score": 9.9,
+                "start_date": "2024-10",
+                "end_date": "2024-12"
+            },
+            "near_term": {
+                "drought_risk_level": "Mild",
+                "drought_risk_score": 30,
+                "heat_risk_level": "Moderate",
+                "heat_risk_score": 60,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.8590481185081713,
+                "drought_severity": 0.6200394142817638,
+                "heat_stress": 1.5669276319002734,
+                "rain_zscore": 0.15310950355486339,
+                "flood_index": 0.2922220276830063,
+                "soil_moisture": 31.37203367492538,
+                "overall_risk_score": 33.0,
+                "start_date": "2025-01",
+                "end_date": "2025-12"
+            },
+            "mid_term": {
+                "drought_risk_level": "Mild",
+                "drought_risk_score": 30,
+                "heat_risk_level": "Moderate",
+                "heat_risk_score": 60,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.7288274711125565,
+                "drought_severity": 0.625895853533479,
+                "heat_stress": 1.3577731390274987,
+                "rain_zscore": 0.09883081039751025,
+                "flood_index": 0.1694453396646029,
+                "soil_moisture": 28.009681475088232,
+                "overall_risk_score": 33.0,
+                "start_date": "2026-01",
+                "end_date": "2027-12"
+            },
+            "long_term": {
+                "drought_risk_level": "Mild",
+                "drought_risk_score": 30,
+                "heat_risk_level": "Moderate",
+                "heat_risk_score": 60,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.6314126813737687,
+                "drought_severity": 0.5708323886039756,
+                "heat_stress": 1.2732262797467413,
+                "rain_zscore": 0.09657372640185766,
+                "flood_index": 0.14454575369626374,
+                "soil_moisture": 26.89823191408845,
+                "overall_risk_score": 33.0,
+                "start_date": "2028-01",
+                "end_date": "2029-09"
+            }
+        },
+        "Laikipia": {
+            "zone": 2,
+            "current": {
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "heat_risk_level": "Mild",
+                "heat_risk_score": 30,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.11510379046220956,
+                "drought_severity": 0.05755189523110478,
+                "heat_stress": 0.9031742478896235,
+                "rain_zscore": 0.3194453971326674,
+                "flood_index": 0.6467297137915375,
+                "soil_moisture": 25.15451930384701,
+                "overall_risk_score": 16.5,
+                "start_date": "2024-10",
+                "end_date": "2024-12"
+            },
+            "near_term": {
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "heat_risk_level": "Moderate",
+                "heat_risk_score": 60,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.399273752903439,
+                "drought_severity": 0.29277700311357513,
+                "heat_stress": 1.7349470712351833,
+                "rain_zscore": 0.07057727224018824,
+                "flood_index": 0.20394034583999382,
+                "soil_moisture": 19.258123646721696,
+                "overall_risk_score": 26.400000000000002,
+                "start_date": "2025-01",
+                "end_date": "2025-12"
+            },
+            "mid_term": {
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "heat_risk_level": "Moderate",
+                "heat_risk_score": 60,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.39330697720173285,
+                "drought_severity": 0.29933160034541445,
+                "heat_stress": 1.6342979872923356,
+                "rain_zscore": 0.08510568099900388,
+                "flood_index": 0.2045739110376958,
+                "soil_moisture": 18.835635146040868,
+                "overall_risk_score": 26.400000000000002,
+                "start_date": "2026-01",
+                "end_date": "2027-12"
+            },
+            "long_term": {
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "heat_risk_level": "Moderate",
+                "heat_risk_score": 60,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.3356163126497187,
+                "drought_severity": 0.24987271162568753,
+                "heat_stress": 1.4231030174832384,
+                "rain_zscore": 0.05684817041774124,
+                "flood_index": 0.184588685095169,
+                "soil_moisture": 19.08716335640558,
+                "overall_risk_score": 26.400000000000002,
+                "start_date": "2028-01",
+                "end_date": "2029-09"
+            }
+        },
+        "Kitui": {
+            "zone": 2,
+            "current": {
+                "drought_risk_level": "Mild",
+                "drought_risk_score": 30,
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.6720812191743264,
+                "drought_severity": 0.941622493654592,
+                "heat_stress": 0.45104565643339734,
+                "rain_zscore": -0.14997033882181626,
+                "flood_index": -0.14997033882181626,
+                "soil_moisture": 14.383801154227482,
+                "overall_risk_score": 16.5,
+                "start_date": "2024-10",
+                "end_date": "2024-12"
+            },
+            "near_term": {
+                "drought_risk_level": "Mild",
+                "drought_risk_score": 30,
+                "heat_risk_level": "Severe",
+                "heat_risk_score": 90,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.7585126977143997,
+                "drought_severity": 0.7141444467877778,
+                "heat_stress": 2.1300575315889683,
+                "rain_zscore": -0.001022612587738228,
+                "flood_index": 0.02822426163092367,
+                "soil_moisture": 25.419953099412027,
+                "overall_risk_score": 42.9,
+                "start_date": "2025-01",
+                "end_date": "2025-12"
+            },
+            "mid_term": {
+                "drought_risk_level": "Mild",
+                "drought_risk_score": 30,
+                "heat_risk_level": "Severe",
+                "heat_risk_score": 90,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.8214568821638469,
+                "drought_severity": 0.7709949480299566,
+                "heat_stress": 2.3659873285341484,
+                "rain_zscore": 0.021878771865083274,
+                "flood_index": 0.05259367317613298,
+                "soil_moisture": 25.490463066792103,
+                "overall_risk_score": 42.9,
+                "start_date": "2026-01",
+                "end_date": "2027-12"
+            },
+            "long_term": {
+                "drought_risk_level": "Mild",
+                "drought_risk_score": 30,
+                "heat_risk_level": "Severe",
+                "heat_risk_score": 90,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.8234438350202721,
+                "drought_severity": 0.6806127820235378,
+                "heat_stress": 2.4592696623438206,
+                "rain_zscore": 0.06100776853808664,
+                "flood_index": 0.14773563443632243,
+                "soil_moisture": 28.18078964617408,
+                "overall_risk_score": 42.9,
+                "start_date": "2028-01",
+                "end_date": "2029-09"
+            }
+        },
+        "Machakos": {
+            "zone": 2,
+            "current": {
+                "drought_risk_level": "Mild",
+                "drought_risk_score": 30,
+                "heat_risk_level": "Moderate",
+                "heat_risk_score": 60,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.6499637215706995,
+                "drought_severity": 0.7955600660814773,
+                "heat_stress": 1.2359854905116354,
+                "rain_zscore": 0.1865695096283483,
+                "flood_index": 0.1865695096283483,
+                "soil_moisture": 13.095099531025063,
+                "overall_risk_score": 33.0,
+                "start_date": "2024-10",
+                "end_date": "2024-12"
+            },
+            "near_term": {
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "heat_risk_level": "Moderate",
+                "heat_risk_score": 60,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.596397684747054,
+                "drought_severity": 0.46556018578272046,
+                "heat_stress": 1.876064341850912,
+                "rain_zscore": 0.09234068640020891,
+                "flood_index": 0.2020304976708754,
+                "soil_moisture": 20.577369932986837,
+                "overall_risk_score": 26.400000000000002,
+                "start_date": "2025-01",
+                "end_date": "2025-12"
+            },
+            "mid_term": {
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "heat_risk_level": "Moderate",
+                "heat_risk_score": 60,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.48065893284700634,
+                "drought_severity": 0.4740091698084167,
+                "heat_stress": 1.6920470653061996,
+                "rain_zscore": 0.08419692748758677,
+                "flood_index": 0.09111426802175958,
+                "soil_moisture": 17.108741935309748,
+                "overall_risk_score": 26.400000000000002,
+                "start_date": "2026-01",
+                "end_date": "2027-12"
+            },
+            "long_term": {
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "heat_risk_level": "Moderate",
+                "heat_risk_score": 60,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.4246999250595006,
+                "drought_severity": 0.3910652638064474,
+                "heat_stress": 1.4425411485833608,
+                "rain_zscore": 0.0868789548762588,
+                "flood_index": 0.12647710320221034,
+                "soil_moisture": 18.211737358898556,
+                "overall_risk_score": 26.400000000000002,
+                "start_date": "2028-01",
+                "end_date": "2029-09"
+            }
+        },
+        "Makueni": {
+            "zone": 2,
+            "current": {
+                "drought_risk_level": "Mild",
+                "drought_risk_score": 30,
+                "heat_risk_level": "Mild",
+                "heat_risk_score": 30,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.5727730216692763,
+                "drought_severity": 0.7197381051010253,
+                "heat_stress": 0.59533626254287,
+                "rain_zscore": 0.11849645279854097,
+                "flood_index": 0.11849645279854097,
+                "soil_moisture": 14.3522758635447,
+                "overall_risk_score": 23.1,
+                "start_date": "2024-10",
+                "end_date": "2024-12"
+            },
+            "near_term": {
+                "drought_risk_level": "Mild",
+                "drought_risk_score": 30,
+                "heat_risk_level": "Moderate",
+                "heat_risk_score": 60,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.7527091280906512,
+                "drought_severity": 0.6822078125614305,
+                "heat_stress": 1.5570840257357317,
+                "rain_zscore": 0.08103224673368284,
+                "flood_index": 0.1278639596079885,
+                "soil_moisture": 21.114133459457605,
+                "overall_risk_score": 33.0,
+                "start_date": "2025-01",
+                "end_date": "2025-12"
+            },
+            "mid_term": {
+                "drought_risk_level": "Mild",
+                "drought_risk_score": 30,
+                "heat_risk_level": "Moderate",
+                "heat_risk_score": 60,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.6654864387677786,
+                "drought_severity": 0.5496571984907453,
+                "heat_stress": 1.5190531918951002,
+                "rain_zscore": 0.11191234329474176,
+                "flood_index": 0.19893833926507576,
+                "soil_moisture": 22.666105368943107,
+                "overall_risk_score": 33.0,
+                "start_date": "2026-01",
+                "end_date": "2027-12"
+            },
+            "long_term": {
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "heat_risk_level": "Moderate",
+                "heat_risk_score": 60,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.6405739422654105,
+                "drought_severity": 0.4994593233910443,
+                "heat_stress": 1.3420151337164439,
+                "rain_zscore": 0.06468630651922361,
+                "flood_index": 0.17483332434460522,
+                "soil_moisture": 23.55884865663667,
+                "overall_risk_score": 26.400000000000002,
+                "start_date": "2028-01",
+                "end_date": "2029-09"
+            }
+        },
+        "Tharaka-Nithi": {
+            "zone": 2,
+            "current": {
+                "drought_risk_level": "Mild",
+                "drought_risk_score": 30,
+                "heat_risk_level": "Mild",
+                "heat_risk_score": 30,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.7102504716917746,
+                "drought_severity": 0.9427981985414315,
+                "heat_stress": 0.6904244327141754,
+                "rain_zscore": -0.05066895711603611,
+                "flood_index": -0.05066895711603611,
+                "soil_moisture": 10.938266952070924,
+                "overall_risk_score": 23.1,
+                "start_date": "2024-10",
+                "end_date": "2024-12"
+            },
+            "near_term": {
+                "drought_risk_level": "Mild",
+                "drought_risk_score": 30,
+                "heat_risk_level": "Moderate",
+                "heat_risk_score": 60,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.7879293777850124,
+                "drought_severity": 0.7860023935658116,
+                "heat_stress": 1.7280628350917038,
+                "rain_zscore": -0.027322022599178375,
+                "flood_index": -0.026099207285058545,
+                "soil_moisture": 16.302835243729866,
+                "overall_risk_score": 33.0,
+                "start_date": "2025-01",
+                "end_date": "2025-12"
+            },
+            "mid_term": {
+                "drought_risk_level": "Mild",
+                "drought_risk_score": 30,
+                "heat_risk_level": "Moderate",
+                "heat_risk_score": 60,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.8532493858821019,
+                "drought_severity": 0.8646511631689334,
+                "heat_stress": 1.9041489411615034,
+                "rain_zscore": -0.00613720457060645,
+                "flood_index": -0.00613720457060645,
+                "soil_moisture": 16.045742209385065,
+                "overall_risk_score": 33.0,
+                "start_date": "2026-01",
+                "end_date": "2027-12"
+            },
+            "long_term": {
+                "drought_risk_level": "Mild",
+                "drought_risk_score": 30,
+                "heat_risk_level": "Severe",
+                "heat_risk_score": 90,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.907767650051681,
+                "drought_severity": 0.7400547264175966,
+                "heat_stress": 2.128526637920102,
+                "rain_zscore": 0.02253915309337885,
+                "flood_index": 0.11491572303643428,
+                "soil_moisture": 19.267713533700743,
+                "overall_risk_score": 42.9,
+                "start_date": "2028-01",
+                "end_date": "2029-09"
+            }
+        },
+        "West Pokot": {
+            "zone": 2,
+            "current": {
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "heat_risk_level": "Mild",
+                "heat_risk_score": 30,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.0239372816483455,
+                "drought_severity": 0.01196864082417275,
+                "heat_stress": 0.51104006760901,
+                "rain_zscore": 0.23803159620503028,
+                "flood_index": 0.5372645993660565,
+                "soil_moisture": 58.823034292587444,
+                "overall_risk_score": 16.5,
+                "start_date": "2024-10",
+                "end_date": "2024-12"
+            },
+            "near_term": {
+                "drought_risk_level": "Moderate",
+                "drought_risk_score": 60,
+                "heat_risk_level": "Severe",
+                "heat_risk_score": 90,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 1.3152746233769137,
+                "drought_severity": 1.3100342572507926,
+                "heat_stress": 2.285493176333847,
+                "rain_zscore": -0.017221835632418823,
+                "flood_index": -0.015229717015902554,
+                "soil_moisture": 36.94629662588975,
+                "overall_risk_score": 52.8,
+                "start_date": "2025-01",
+                "end_date": "2025-12"
+            },
+            "mid_term": {
+                "drought_risk_level": "Moderate",
+                "drought_risk_score": 60,
+                "heat_risk_level": "Severe",
+                "heat_risk_score": 90,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 1.294142066871784,
+                "drought_severity": 1.3205616321350004,
+                "heat_stress": 2.158640632017244,
+                "rain_zscore": -0.025359443077588747,
+                "flood_index": -0.025359443077588747,
+                "soil_moisture": 36.048422363971284,
+                "overall_risk_score": 52.8,
+                "start_date": "2026-01",
+                "end_date": "2027-12"
+            },
+            "long_term": {
+                "drought_risk_level": "Moderate",
+                "drought_risk_score": 60,
+                "heat_risk_level": "Severe",
+                "heat_risk_score": 90,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 1.3054374627875247,
+                "drought_severity": 1.348979090291185,
+                "heat_stress": 2.2062433710430196,
+                "rain_zscore": 0.0023915469869866773,
+                "flood_index": 0.0023915469869866773,
+                "soil_moisture": 35.57225964848576,
+                "overall_risk_score": 52.8,
+                "start_date": "2028-01",
+                "end_date": "2029-09"
+            }
+        },
+        "Narok": {
+            "zone": 0,
+            "current": {
+                "drought_risk_level": "Mild",
+                "drought_risk_score": 30,
+                "heat_risk_level": "Mild",
+                "heat_risk_score": 30,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.38995324275717774,
+                "drought_severity": 0.5212998160146146,
+                "heat_stress": 0.6692711291498284,
+                "rain_zscore": -0.20036608749680482,
+                "flood_index": -0.20036608749680482,
+                "soil_moisture": 14.730438192218754,
+                "overall_risk_score": 23.1,
+                "start_date": "2024-10",
+                "end_date": "2024-12"
+            },
+            "near_term": {
+                "drought_risk_level": "Mild",
+                "drought_risk_score": 30,
+                "heat_risk_level": "Moderate",
+                "heat_risk_score": 60,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.5673688141433642,
+                "drought_severity": 0.5138593522463404,
+                "heat_stress": 1.6850012979656586,
+                "rain_zscore": 0.10030232636835051,
+                "flood_index": 0.14745812746557369,
+                "soil_moisture": 24.30689499770865,
+                "overall_risk_score": 33.0,
+                "start_date": "2025-01",
+                "end_date": "2025-12"
+            },
+            "mid_term": {
+                "drought_risk_level": "Mild",
+                "drought_risk_score": 30,
+                "heat_risk_level": "Moderate",
+                "heat_risk_score": 60,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.5727977417929282,
+                "drought_severity": 0.5558493606218693,
+                "heat_stress": 1.706070247626661,
+                "rain_zscore": 0.06287980248368058,
+                "flood_index": 0.07767418794861652,
+                "soil_moisture": 22.869268767348274,
+                "overall_risk_score": 33.0,
+                "start_date": "2026-01",
+                "end_date": "2027-12"
+            },
+            "long_term": {
+                "drought_risk_level": "Mild",
+                "drought_risk_score": 30,
+                "heat_risk_level": "Moderate",
+                "heat_risk_score": 60,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.5693121607148744,
+                "drought_severity": 0.5044092785133442,
+                "heat_stress": 1.6486613388011016,
+                "rain_zscore": 0.09124231496062868,
+                "flood_index": 0.1482434530708993,
+                "soil_moisture": 24.74426507130251,
+                "overall_risk_score": 33.0,
+                "start_date": "2028-01",
+                "end_date": "2029-09"
+            }
+        },
+        "Baringo": {
+            "zone": 2,
+            "current": {
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "heat_risk_level": "Mild",
+                "heat_risk_score": 30,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0,
+                "drought_severity": 0,
+                "heat_stress": 0.6801263506459738,
+                "rain_zscore": 0.21441344120604824,
+                "flood_index": 0.6980958622251288,
+                "soil_moisture": 36.94424320005525,
+                "overall_risk_score": 16.5,
+                "start_date": "2024-10",
+                "end_date": "2024-12"
+            },
+            "near_term": {
+                "drought_risk_level": "Moderate",
+                "drought_risk_score": 60,
+                "heat_risk_level": "Severe",
+                "heat_risk_score": 90,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 1.1441996521143731,
+                "drought_severity": 1.0120969848509502,
+                "heat_stress": 2.1452245405962342,
+                "rain_zscore": 0.08191109978987811,
+                "flood_index": 0.13963820494119916,
+                "soil_moisture": 20.946603671769306,
+                "overall_risk_score": 52.8,
+                "start_date": "2025-01",
+                "end_date": "2025-12"
+            },
+            "mid_term": {
+                "drought_risk_level": "Mild",
+                "drought_risk_score": 30,
+                "heat_risk_level": "Moderate",
+                "heat_risk_score": 60,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.7687384493567693,
+                "drought_severity": 0.7131803702549419,
+                "heat_stress": 1.9786827417263495,
+                "rain_zscore": 0.08016674722805796,
+                "flood_index": 0.11630262617902944,
+                "soil_moisture": 20.135700178234526,
+                "overall_risk_score": 33.0,
+                "start_date": "2026-01",
+                "end_date": "2027-12"
+            },
+            "long_term": {
+                "drought_risk_level": "Mild",
+                "drought_risk_score": 30,
+                "heat_risk_level": "Moderate",
+                "heat_risk_score": 60,
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "drought_index": 0.779176068263198,
+                "drought_severity": 0.7549437120821033,
+                "heat_stress": 1.6939731258682529,
+                "rain_zscore": 0.07643933240362562,
+                "flood_index": 0.09198931986352617,
+                "soil_moisture": 19.36255412470622,
+                "overall_risk_score": 33.0,
+                "start_date": "2028-01",
+                "end_date": "2029-09"
+            }
+        }
+    },
+    "zone_risks": {
+        "0": {
+            "counties": [
+                "Nyeri",
+                "Nyandarua",
+                "Uasin Gishu",
+                "Nakuru",
+                "Narok"
+            ],
+            "current": {
+                "drought_risk": 14.0,
+                "heat_risk": 14.0,
+                "flood_risk": 10.0,
+                "overall_risk": 12.540000000000001,
+                "start_date": "2024-10",
+                "end_date": "2024-12"
+            },
+            "near_term": {
+                "drought_risk": 28.0,
+                "heat_risk": 66.0,
+                "flood_risk": 10.0,
+                "overall_risk": 34.32,
+                "start_date": "2025-01",
+                "end_date": "2025-12"
+            },
+            "mid_term": {
+                "drought_risk": 22.0,
+                "heat_risk": 66.0,
+                "flood_risk": 10.0,
+                "overall_risk": 32.339999999999996,
+                "start_date": "2026-01",
+                "end_date": "2027-12"
+            },
+            "long_term": {
+                "drought_risk": 28.0,
+                "heat_risk": 60.0,
+                "flood_risk": 10.0,
+                "overall_risk": 32.339999999999996,
+                "start_date": "2028-01",
+                "end_date": "2029-09"
+            }
+        },
+        "1": {
+            "counties": [
+                "Kisii",
+                "Kakamega"
+            ],
+            "current": {
+                "drought_risk": 20.0,
+                "heat_risk": 10.0,
+                "flood_risk": 10.0,
+                "overall_risk": 13.2,
+                "start_date": "2024-10",
+                "end_date": "2024-12"
+            },
+            "near_term": {
+                "drought_risk": 60.0,
+                "heat_risk": 60.0,
+                "flood_risk": 10.0,
+                "overall_risk": 42.9,
+                "start_date": "2025-01",
+                "end_date": "2025-12"
+            },
+            "mid_term": {
+                "drought_risk": 60.0,
+                "heat_risk": 60.0,
+                "flood_risk": 10.0,
+                "overall_risk": 42.9,
+                "start_date": "2026-01",
+                "end_date": "2027-12"
+            },
+            "long_term": {
+                "drought_risk": 60.0,
+                "heat_risk": 60.0,
+                "flood_risk": 10.0,
+                "overall_risk": 42.9,
+                "start_date": "2028-01",
+                "end_date": "2029-09"
+            }
+        },
+        "2": {
+            "counties": [
+                "Meru",
+                "Embu",
+                "Murang'a",
+                "Laikipia",
+                "Kitui",
+                "Machakos",
+                "Makueni",
+                "Tharaka-Nithi",
+                "West Pokot",
+                "Baringo"
+            ],
+            "current": {
+                "drought_risk": 22.0,
+                "heat_risk": 31.0,
+                "flood_risk": 10.0,
+                "overall_risk": 20.79,
+                "start_date": "2024-10",
+                "end_date": "2024-12"
+            },
+            "near_term": {
+                "drought_risk": 28.0,
+                "heat_risk": 72.0,
+                "flood_risk": 10.0,
+                "overall_risk": 36.3,
+                "start_date": "2025-01",
+                "end_date": "2025-12"
+            },
+            "mid_term": {
+                "drought_risk": 30.0,
+                "heat_risk": 66.0,
+                "flood_risk": 10.0,
+                "overall_risk": 34.980000000000004,
+                "start_date": "2026-01",
+                "end_date": "2027-12"
+            },
+            "long_term": {
+                "drought_risk": 26.0,
+                "heat_risk": 69.0,
+                "flood_risk": 10.0,
+                "overall_risk": 34.65,
+                "start_date": "2028-01",
+                "end_date": "2029-09"
+            }
+        },
+        "3": {
+            "counties": [
+                "Kericho",
+                "Bomet",
+                "Nandi",
+                "Bungoma"
+            ],
+            "current": {
+                "drought_risk": 10.0,
+                "heat_risk": 10.0,
+                "flood_risk": 10.0,
+                "overall_risk": 9.9,
+                "start_date": "2024-10",
+                "end_date": "2024-12"
+            },
+            "near_term": {
+                "drought_risk": 60.0,
+                "heat_risk": 60.0,
+                "flood_risk": 10.0,
+                "overall_risk": 42.9,
+                "start_date": "2025-01",
+                "end_date": "2025-12"
+            },
+            "mid_term": {
+                "drought_risk": 52.5,
+                "heat_risk": 60.0,
+                "flood_risk": 10.0,
+                "overall_risk": 40.425000000000004,
+                "start_date": "2026-01",
+                "end_date": "2027-12"
+            },
+            "long_term": {
+                "drought_risk": 60.0,
+                "heat_risk": 60.0,
+                "flood_risk": 10.0,
+                "overall_risk": 42.9,
+                "start_date": "2028-01",
+                "end_date": "2029-09"
+            }
+        }
+    },
+    "recommendations": {
+        "Nyeri": [
+            "Monitor crops for heat stress"
+        ],
+        "Meru": [
+            "Monitor crops for heat stress"
+        ],
+        "Embu": [
+            "URGENT: Protect crops from heat",
+            "Increase irrigation"
+        ],
+        "Murang'a": [
+            "Monitor crops for heat stress"
+        ],
+        "Kericho": [
+            "Monitor water resources",
+            "Prepare irrigation",
+            "Monitor crops for heat stress"
+        ],
+        "Bomet": [
+            "Monitor water resources",
+            "Prepare irrigation",
+            "Monitor crops for heat stress"
+        ],
+        "Nandi": [
+            "Monitor water resources",
+            "Prepare irrigation",
+            "Monitor crops for heat stress"
+        ],
+        "Nyandarua": [
+            "Monitor crops for heat stress"
+        ],
+        "Kisii": [
+            "Monitor water resources",
+            "Prepare irrigation",
+            "Monitor crops for heat stress"
+        ],
+        "Uasin Gishu": [
+            "Monitor water resources",
+            "Prepare irrigation",
+            "URGENT: Protect crops from heat",
+            "Increase irrigation"
+        ],
+        "Bungoma": [
+            "Monitor water resources",
+            "Prepare irrigation",
+            "Monitor crops for heat stress"
+        ],
+        "Kakamega": [
+            "Monitor water resources",
+            "Prepare irrigation",
+            "Monitor crops for heat stress"
+        ],
+        "Nakuru": [
+            "Monitor crops for heat stress"
+        ],
+        "Laikipia": [
+            "Monitor crops for heat stress"
+        ],
+        "Kitui": [
+            "URGENT: Protect crops from heat",
+            "Increase irrigation"
+        ],
+        "Machakos": [
+            "Monitor crops for heat stress"
+        ],
+        "Makueni": [
+            "Monitor crops for heat stress"
+        ],
+        "Tharaka-Nithi": [
+            "Monitor crops for heat stress"
+        ],
+        "West Pokot": [
+            "Monitor water resources",
+            "Prepare irrigation",
+            "URGENT: Protect crops from heat",
+            "Increase irrigation"
+        ],
+        "Narok": [
+            "Monitor crops for heat stress"
+        ],
+        "Baringo": [
+            "Monitor water resources",
+            "Prepare irrigation",
+            "URGENT: Protect crops from heat",
+            "Increase irrigation"
+        ]
+    },
+    "crop_advisories": {
+        "Nyeri": {
+            "coffee": [
+                "Shade coffee plants"
+            ],
+            "tea": [
+                "Shade tea plants"
+            ]
+        },
+        "Meru": {},
+        "Embu": {},
+        "Murang'a": {},
+        "Kericho": {},
+        "Bomet": {},
+        "Nandi": {},
+        "Nyandarua": {
+            "coffee": [
+                "Shade coffee plants"
+            ],
+            "tea": [
+                "Shade tea plants"
+            ]
+        },
+        "Kisii": {
+            "maize": [
+                "Use drought-resistant maize"
+            ],
+            "beans": [
+                "Use drought-resistant beans"
+            ]
+        },
+        "Uasin Gishu": {
+            "maize": [
+                "Use drought-resistant maize"
+            ],
+            "beans": [
+                "Use drought-resistant beans"
+            ],
+            "coffee": [
+                "Shade coffee plants"
+            ],
+            "tea": [
+                "Shade tea plants"
+            ]
+        },
+        "Bungoma": {},
+        "Kakamega": {
+            "maize": [
+                "Use drought-resistant maize"
+            ],
+            "beans": [
+                "Use drought-resistant beans"
+            ]
+        },
+        "Nakuru": {
+            "coffee": [
+                "Shade coffee plants"
+            ],
+            "tea": [
+                "Shade tea plants"
+            ]
+        },
+        "Laikipia": {},
+        "Kitui": {},
+        "Machakos": {},
+        "Makueni": {},
+        "Tharaka-Nithi": {},
+        "West Pokot": {
+            "maize": [
+                "Use drought-resistant maize"
+            ],
+            "beans": [
+                "Use drought-resistant beans"
+            ]
+        },
+        "Narok": {
+            "coffee": [
+                "Shade coffee plants"
+            ],
+            "tea": [
+                "Shade tea plants"
+            ]
+        },
+        "Baringo": {
+            "maize": [
+                "Use drought-resistant maize"
+            ],
+            "beans": [
+                "Use drought-resistant beans"
+            ]
+        }
+    }
+}

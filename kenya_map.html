@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenya Climate Risk Map</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem 0;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .map-container {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .map-wrapper {
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            border-radius: 4px;
+        }
+
+        .map-wrapper svg {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .info-panel {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 2rem;
+        }
+
+        .info-panel h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .info-panel p {
+            margin-bottom: 1rem;
+        }
+
+        .legend {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: #666;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Kenya Climate Risk Map</h1>
+            <p class="subtitle">Supporting Kenyan Farmers with Climate Risk Information</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="map-container">
+            <div class="map-wrapper">
+                <svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Kenya Map SVG Paths -->
+                    <path d="M 500 500 L 600 600 L 700 500 Z" fill="#4CAF50" stroke="#2E7D32" stroke-width="2"/>
+                    <!-- Add more paths as needed -->
+                </svg>
+            </div>
+        </div>
+
+        <div class="info-panel">
+            <h2>About This Map</h2>
+            <p>This interactive map provides climate risk information for different regions of Kenya, helping farmers make informed decisions about their agricultural practices.</p>
+            
+            <h3>Legend</h3>
+            <div class="legend">
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #4CAF50;"></div>
+                    <span>Low Risk</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #FFC107;"></div>
+                    <span>Medium Risk</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #F44336;"></div>
+                    <span>High Risk</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Kenya Climate Risk Support System. All rights reserved.</p>
+    </footer>
+</body>
+</html> 

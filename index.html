@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate-Based Risk Support for Kenyan Farmers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        :root {
+            --primary-color: #1B4332;
+            --text-color: #333;
+            --background-color: #fff;
+        }
+
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        nav {
+            background-color: var(--primary-color);
+            padding: 1rem 2rem;
+            color: white;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: var(--text-color);
+            margin-bottom: 2rem;
+            line-height: 1.2;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #2d5a46;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            color: white;
+            margin-bottom: 1rem;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem auto;
+            border-radius: 50%;
+            background-color: var(--primary-color);
+        }
+
+        .feature-card h3 {
+            margin-bottom: 1rem;
+            color: var(--text-color);
+        }
+
+        .feature-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .kenya-map {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .kenya-map svg {
+            width: 100%;
+            height: auto;
+        }
+
+        .kenya-map path {
+            fill: var(--primary-color);
+            stroke: #fff;
+            stroke-width: 1px;
+            transition: fill 0.3s;
+        }
+
+        .kenya-map path:hover {
+            fill: #2d5a46;
+            cursor: pointer;
+        }
+
+        .map-container {
+            padding: 2rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 2rem;
+        }
+
+        .map-container h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: var(--text-color);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Forecast</a></li>
+            <li><a href="#">Risk & Recommeendation</a></li>
+            <li><a href="#">Climate Zone Map</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <h1>Climate-Based Risk Support for Kenyan Farmers</h1>
+            <a href="#" class="cta-button">View Forecast</a>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Climate Forecast</h3>
+                <p>Providing climate projections using LSTM models.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Risk Assessment</h3>
+                <p>Evaluating farming risks with a random forest model.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <h3>Recommendations</h3>
+                <p>Offering farming advice based on assessed risks</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="kenya-map">
+                    <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M395.7,156.6l-1.2-4.8l-1-0.9l-0.8,0.4l-1.6-2.4l0.8-1.5l-1-1.1l-0.5-1.7l-1.9-2.2v-2.5l1.2-1.3 l1.9-0.5l0.8-1.7l-0.4-3.4l0.6-1.9l0.2-2.3l-1-1.4l-1.8-0.5l-0.8-1.9l-2.6-3.1l-0.4-2.4l-1.9-2.2l-1-0.1l-1.4,0.9l-2.4-0.2 l-1.5-1.7l-1.3-0.3l-1.8,1.2l-1.2-0.3l-1.1-1.2l-1.3-0.2l-1.1,0.6l-0.9-0.1l-2.5-1.9l-1.5-0.5l-0.9,0.3l-1.5-0.3l-1.1,0.4l-1.1-0.5 l-1.7,0.4l-1.9-0.8l-1.1,0.2l-1.4-0.4l-1.1,0.3l-1.5-0.4l-2.2,1.2l-0.9-0.1l-0.7-1.2l-1.4-0.3l-2.3,1.2l-1.5-0.5l-2.1,0.7l-1.5-0.6 l-1.8,0.5l-1.9-0.8l-1.1,0.4l-1.6-0.5l-1.9,0.8l-1.4-0.3l-1.1,0.4l-1.5-0.5l-2.2,1.2l-0.9-0.1l-0.7-1.2l-1.4-0.3l-2.3,1.2l-1.5-0.5 l-2.1,0.7l-1.5-0.6l-1.8,0.5l-1.9-0.8l-1.1,0.4l-1.6-0.5l-1.9,0.8l-1.4-0.3l-1.1,0.4l-1.5-0.5l-2.2,1.2l-0.9-0.1 l-0.7-1.2l-1.4-0.3l-2.3,1.2l-1.5-0.5l-2.1,0.7l-1.5-0.6l-1.8,0.5l-1.9-0.8l-1.1,0.4l-1.6-0.5l-1.9,0.8"/>
+                    </svg>
+                </div>
+                <h3>Climate Zone Map</h3>
+                <p>Classifying regions into climate zones with k-NN</p>
+            </div>
+        </section>
+    </main>
+
+    <section class="map-container">
+        <h2>Kenya Climate Zones</h2>
+        <div class="kenya-map">
+            <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+                <path d="M395.7,156.6l-1.2-4.8l-1-0.9l-0.8,0.4l-1.6-2.4l0.8-1.5l-1-1.1l-0.5-1.7l-1.9-2.2v-2.5l1.2-1.3 l1.9-0.5l0.8-1.7l-0.4-3.4l0.6-1.9l0.2-2.3l-1-1.4l-1.8-0.5l-0.8-1.9l-2.6-3.1l-0.4-2.4l-1.9-2.2l-1-0.1l-1.4,0.9l-2.4-0.2 l-1.5-1.7l-1.3-0.3l-1.8,1.2l-1.2-0.3l-1.1-1.2l-1.3-0.2l-1.1,0.6l-0.9-0.1l-2.5-1.9l-1.5-0.5l-0.9,0.3l-1.5-0.3l-1.1,0.4l-1.1-0.5 l-1.7,0.4l-1.9-0.8l-1.1,0.2l-1.4-0.4l-1.1,0.3l-1.5-0.4l-2.2,1.2l-0.9-0.1l-0.7-1.2l-1.4-0.3l-2.3,1.2l-1.5-0.5l-2.1,0.7l-1.5-0.6 l-1.8,0.5l-1.9-0.8l-1.1,0.4l-1.6-0.5l-1.9,0.8l-1.4-0.3l-1.1,0.4l-1.5-0.5l-2.2,1.2l-0.9-0.1l-0.7-1.2l-1.4-0.3l-2.3,1.2l-1.5-0.5 l-2.1,0.7l-1.5-0.6l-1.8,0.5l-1.9-0.8l-1.1,0.4l-1.6-0.5l-1.9,0.8l-1.4-0.3l-1.1,0.4l-1.5-0.5l-2.2,1.2l-0.9-0.1 l-0.7-1.2l-1.4-0.3l-2.3,1.2l-1.5-0.5l-2.1,0.7l-1.5-0.6l-1.8,0.5l-1.9-0.8l-1.1,0.4l-1.6-0.5l-1.9,0.8"/>
+            </svg>
+        </div>
+    </section>
+</body>
+</html> 

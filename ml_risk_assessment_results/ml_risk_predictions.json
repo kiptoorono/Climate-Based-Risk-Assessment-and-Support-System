@@ -1,0 +1,3013 @@
+{
+    "metadata": {
+        "generation_date": "2025-04-03",
+        "data_period": "1984-01 to 2029-09",
+        "counties_analyzed": [
+            "Nyeri",
+            "Meru",
+            "Embu",
+            "Murang'a",
+            "Kericho",
+            "Bomet",
+            "Nandi",
+            "Nyandarua",
+            "Kisii",
+            "Uasin Gishu",
+            "Bungoma",
+            "Kakamega",
+            "Nakuru",
+            "Laikipia",
+            "Kitui",
+            "Machakos",
+            "Makueni",
+            "Tharaka-Nithi",
+            "West Pokot",
+            "Narok",
+            "Baringo"
+        ]
+    },
+    "county_risks": {
+        "Nyeri": {
+            "current": {
+                "rainfall_amount": 90.00625832040896,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2024-10",
+                "end_date": "2024-12"
+            },
+            "near_term": {
+                "rainfall_amount": 87.354832422497,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 0.98,
+                    "Mild": 0.02,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2025-01",
+                "end_date": "2025-12"
+            },
+            "mid_term": {
+                "rainfall_amount": 82.94369896143508,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 0.98,
+                    "Mild": 0.02,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2026-01",
+                "end_date": "2027-12"
+            },
+            "long_term": {
+                "rainfall_amount": 82.39299191490416,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 0.99,
+                    "Mild": 0.01,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2028-01",
+                "end_date": "2029-09"
+            }
+        },
+        "Meru": {
+            "current": {
+                "rainfall_amount": 72.94363186411965,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2024-10",
+                "end_date": "2024-12"
+            },
+            "near_term": {
+                "rainfall_amount": 58.5506503176839,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.01,
+                    "High": 0.99
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 0.99,
+                    "Mild": 0.0,
+                    "Moderate": 0.01,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2025-01",
+                "end_date": "2025-12"
+            },
+            "mid_term": {
+                "rainfall_amount": 61.041574308409416,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 0.98,
+                    "Mild": 0.02,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 0.98,
+                    "Mild": 0.01,
+                    "Moderate": 0.0,
+                    "Severe": 0.01
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2026-01",
+                "end_date": "2027-12"
+            },
+            "long_term": {
+                "rainfall_amount": 59.50723786915902,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2028-01",
+                "end_date": "2029-09"
+            }
+        },
+        "Embu": {
+            "current": {
+                "rainfall_amount": 99.15051144287737,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 0.99,
+                    "Mild": 0.01,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2024-10",
+                "end_date": "2024-12"
+            },
+            "near_term": {
+                "rainfall_amount": 83.4961747316587,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 0.95,
+                    "Mild": 0.03,
+                    "Moderate": 0.0,
+                    "Severe": 0.02
+                },
+                "start_date": "2025-01",
+                "end_date": "2025-12"
+            },
+            "mid_term": {
+                "rainfall_amount": 76.7538434401344,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 0.98,
+                    "Mild": 0.0,
+                    "Moderate": 0.02,
+                    "Severe": 0.0
+                },
+                "start_date": "2026-01",
+                "end_date": "2027-12"
+            },
+            "long_term": {
+                "rainfall_amount": 77.498602466206,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.01,
+                    "Moderate": 0.0,
+                    "High": 0.99
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 0.99,
+                    "Mild": 0.01,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2028-01",
+                "end_date": "2029-09"
+            }
+        },
+        "Murang'a": {
+            "current": {
+                "rainfall_amount": 74.9386105409,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.01,
+                    "Moderate": 0.0,
+                    "High": 0.99
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 0.98,
+                    "Mild": 0.02,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Mild",
+                "heat_risk_score": 30,
+                "heat_probabilities": {
+                    "Low": 0.01,
+                    "Mild": 0.98,
+                    "Moderate": 0.01,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 0.98,
+                    "Mild": 0.0,
+                    "Moderate": 0.01,
+                    "Severe": 0.01
+                },
+                "start_date": "2024-10",
+                "end_date": "2024-12"
+            },
+            "near_term": {
+                "rainfall_amount": 88.63706072048335,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2025-01",
+                "end_date": "2025-12"
+            },
+            "mid_term": {
+                "rainfall_amount": 88.21314334521013,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2026-01",
+                "end_date": "2027-12"
+            },
+            "long_term": {
+                "rainfall_amount": 91.07250731048936,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 0.99,
+                    "Mild": 0.01,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2028-01",
+                "end_date": "2029-09"
+            }
+        },
+        "Kericho": {
+            "current": {
+                "rainfall_amount": 129.94947169054205,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 0.99,
+                    "Mild": 0.01,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2024-10",
+                "end_date": "2024-12"
+            },
+            "near_term": {
+                "rainfall_amount": 126.07210709140452,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2025-01",
+                "end_date": "2025-12"
+            },
+            "mid_term": {
+                "rainfall_amount": 122.67435960334457,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.02,
+                    "Moderate": 0.0,
+                    "High": 0.98
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2026-01",
+                "end_date": "2027-12"
+            },
+            "long_term": {
+                "rainfall_amount": 124.40024688123037,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2028-01",
+                "end_date": "2029-09"
+            }
+        },
+        "Bomet": {
+            "current": {
+                "rainfall_amount": 120.50769802058751,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 0.99,
+                    "Mild": 0.01,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2024-10",
+                "end_date": "2024-12"
+            },
+            "near_term": {
+                "rainfall_amount": 131.52173663619507,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2025-01",
+                "end_date": "2025-12"
+            },
+            "mid_term": {
+                "rainfall_amount": 128.32538115786153,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 0.99,
+                    "Mild": 0.0,
+                    "Moderate": 0.01,
+                    "Severe": 0.0
+                },
+                "start_date": "2026-01",
+                "end_date": "2027-12"
+            },
+            "long_term": {
+                "rainfall_amount": 129.2387543660056,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.01,
+                    "Moderate": 0.0,
+                    "High": 0.99
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 0.99,
+                    "Mild": 0.01,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 0.97,
+                    "Mild": 0.02,
+                    "Moderate": 0.01,
+                    "Severe": 0.0
+                },
+                "start_date": "2028-01",
+                "end_date": "2029-09"
+            }
+        },
+        "Nandi": {
+            "current": {
+                "rainfall_amount": 119.69984348856572,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2024-10",
+                "end_date": "2024-12"
+            },
+            "near_term": {
+                "rainfall_amount": 127.61277775388892,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 0.99,
+                    "Mild": 0.01,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2025-01",
+                "end_date": "2025-12"
+            },
+            "mid_term": {
+                "rainfall_amount": 126.73918682388314,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 0.98,
+                    "Mild": 0.01,
+                    "Moderate": 0.01,
+                    "Severe": 0.0
+                },
+                "start_date": "2026-01",
+                "end_date": "2027-12"
+            },
+            "long_term": {
+                "rainfall_amount": 129.17345491996335,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.01,
+                    "Moderate": 0.0,
+                    "High": 0.99
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2028-01",
+                "end_date": "2029-09"
+            }
+        },
+        "Nyandarua": {
+            "current": {
+                "rainfall_amount": 93.12485200242538,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 0.93,
+                    "Mild": 0.06,
+                    "Moderate": 0.01,
+                    "Severe": 0.0
+                },
+                "start_date": "2024-10",
+                "end_date": "2024-12"
+            },
+            "near_term": {
+                "rainfall_amount": 98.88436517712256,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2025-01",
+                "end_date": "2025-12"
+            },
+            "mid_term": {
+                "rainfall_amount": 91.24930131861102,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2026-01",
+                "end_date": "2027-12"
+            },
+            "long_term": {
+                "rainfall_amount": 90.17595798962677,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 0.99,
+                    "Mild": 0.01,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2028-01",
+                "end_date": "2029-09"
+            }
+        },
+        "Kisii": {
+            "current": {
+                "rainfall_amount": 148.57911682582838,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2024-10",
+                "end_date": "2024-12"
+            },
+            "near_term": {
+                "rainfall_amount": 154.82896795493852,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.01,
+                    "High": 0.99
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2025-01",
+                "end_date": "2025-12"
+            },
+            "mid_term": {
+                "rainfall_amount": 148.2249151025892,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2026-01",
+                "end_date": "2027-12"
+            },
+            "long_term": {
+                "rainfall_amount": 144.84725880714038,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.01,
+                    "Moderate": 0.0,
+                    "High": 0.99
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2028-01",
+                "end_date": "2029-09"
+            }
+        },
+        "Uasin Gishu": {
+            "current": {
+                "rainfall_amount": 104.74614736442766,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 0.94,
+                    "Mild": 0.06,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2024-10",
+                "end_date": "2024-12"
+            },
+            "near_term": {
+                "rainfall_amount": 108.09496239497584,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2025-01",
+                "end_date": "2025-12"
+            },
+            "mid_term": {
+                "rainfall_amount": 109.49464588250271,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2026-01",
+                "end_date": "2027-12"
+            },
+            "long_term": {
+                "rainfall_amount": 108.26306730536173,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 0.99,
+                    "Mild": 0.01,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2028-01",
+                "end_date": "2029-09"
+            }
+        },
+        "Bungoma": {
+            "current": {
+                "rainfall_amount": 116.935320877746,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 0.96,
+                    "Mild": 0.04,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2024-10",
+                "end_date": "2024-12"
+            },
+            "near_term": {
+                "rainfall_amount": 115.6842443295382,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2025-01",
+                "end_date": "2025-12"
+            },
+            "mid_term": {
+                "rainfall_amount": 115.52244968667901,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2026-01",
+                "end_date": "2027-12"
+            },
+            "long_term": {
+                "rainfall_amount": 118.19749858994604,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2028-01",
+                "end_date": "2029-09"
+            }
+        },
+        "Kakamega": {
+            "current": {
+                "rainfall_amount": 141.19463474231117,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2024-10",
+                "end_date": "2024-12"
+            },
+            "near_term": {
+                "rainfall_amount": 157.86571325520805,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2025-01",
+                "end_date": "2025-12"
+            },
+            "mid_term": {
+                "rainfall_amount": 157.1230243203746,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 0.99,
+                    "Mild": 0.01,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2026-01",
+                "end_date": "2027-12"
+            },
+            "long_term": {
+                "rainfall_amount": 160.22241537083391,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 0.99,
+                    "Mild": 0.01,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2028-01",
+                "end_date": "2029-09"
+            }
+        },
+        "Nakuru": {
+            "current": {
+                "rainfall_amount": 106.5390549957895,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Mild",
+                "flood_risk_score": 30,
+                "flood_probabilities": {
+                    "Low": 0.05,
+                    "Mild": 0.91,
+                    "Moderate": 0.04,
+                    "Severe": 0.0
+                },
+                "start_date": "2024-10",
+                "end_date": "2024-12"
+            },
+            "near_term": {
+                "rainfall_amount": 96.76750908397203,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.01,
+                    "Moderate": 0.0,
+                    "High": 0.99
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2025-01",
+                "end_date": "2025-12"
+            },
+            "mid_term": {
+                "rainfall_amount": 93.33562831003773,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 0.99,
+                    "Mild": 0.0,
+                    "Moderate": 0.01,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 0.98,
+                    "Mild": 0.02,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2026-01",
+                "end_date": "2027-12"
+            },
+            "long_term": {
+                "rainfall_amount": 93.19291958366182,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 0.99,
+                    "Mild": 0.01,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2028-01",
+                "end_date": "2029-09"
+            }
+        },
+        "Laikipia": {
+            "current": {
+                "rainfall_amount": 84.58896430875878,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.01,
+                    "Moderate": 0.0,
+                    "High": 0.99
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Mild",
+                "flood_risk_score": 30,
+                "flood_probabilities": {
+                    "Low": 0.08,
+                    "Mild": 0.89,
+                    "Moderate": 0.03,
+                    "Severe": 0.0
+                },
+                "start_date": "2024-10",
+                "end_date": "2024-12"
+            },
+            "near_term": {
+                "rainfall_amount": 69.16399858911102,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 0.95,
+                    "Mild": 0.01,
+                    "Moderate": 0.03,
+                    "Severe": 0.01
+                },
+                "start_date": "2025-01",
+                "end_date": "2025-12"
+            },
+            "mid_term": {
+                "rainfall_amount": 70.06447633073655,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 0.94,
+                    "Mild": 0.02,
+                    "Moderate": 0.03,
+                    "Severe": 0.01
+                },
+                "start_date": "2026-01",
+                "end_date": "2027-12"
+            },
+            "long_term": {
+                "rainfall_amount": 68.31306227469031,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 0.98,
+                    "Mild": 0.02,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 0.99,
+                    "Mild": 0.01,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2028-01",
+                "end_date": "2029-09"
+            }
+        },
+        "Kitui": {
+            "current": {
+                "rainfall_amount": 40.592334665894974,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 0.99,
+                    "Mild": 0.01,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 0.98,
+                    "Mild": 0.01,
+                    "Moderate": 0.01,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2024-10",
+                "end_date": "2024-12"
+            },
+            "near_term": {
+                "rainfall_amount": 51.64972522588861,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 0.99,
+                    "Mild": 0.01,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 0.99,
+                    "Mild": 0.01,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2025-01",
+                "end_date": "2025-12"
+            },
+            "mid_term": {
+                "rainfall_amount": 53.34984887773578,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2026-01",
+                "end_date": "2027-12"
+            },
+            "long_term": {
+                "rainfall_amount": 56.2546572247537,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.03,
+                    "High": 0.97
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 0.99,
+                    "Mild": 0.0,
+                    "Moderate": 0.01,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2028-01",
+                "end_date": "2029-09"
+            }
+        },
+        "Machakos": {
+            "current": {
+                "rainfall_amount": 73.56967606343744,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 0.99,
+                    "Mild": 0.01,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Mild",
+                "heat_risk_score": 30,
+                "heat_probabilities": {
+                    "Low": 0.0,
+                    "Mild": 0.96,
+                    "Moderate": 0.04,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 0.99,
+                    "Mild": 0.01,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2024-10",
+                "end_date": "2024-12"
+            },
+            "near_term": {
+                "rainfall_amount": 65.60506046976082,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.01,
+                    "Moderate": 0.0,
+                    "High": 0.99
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 0.99,
+                    "Mild": 0.0,
+                    "Moderate": 0.01,
+                    "Severe": 0.0
+                },
+                "start_date": "2025-01",
+                "end_date": "2025-12"
+            },
+            "mid_term": {
+                "rainfall_amount": 64.91671578917858,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 0.99,
+                    "Mild": 0.01,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2026-01",
+                "end_date": "2027-12"
+            },
+            "long_term": {
+                "rainfall_amount": 65.14341199985678,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.01,
+                    "Moderate": 0.0,
+                    "High": 0.99
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2028-01",
+                "end_date": "2029-09"
+            }
+        },
+        "Makueni": {
+            "current": {
+                "rainfall_amount": 60.81330592889458,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2024-10",
+                "end_date": "2024-12"
+            },
+            "near_term": {
+                "rainfall_amount": 58.04825347843212,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 0.99,
+                    "Mild": 0.01,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2025-01",
+                "end_date": "2025-12"
+            },
+            "mid_term": {
+                "rainfall_amount": 60.32736454564263,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.01,
+                    "High": 0.99
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2026-01",
+                "end_date": "2027-12"
+            },
+            "long_term": {
+                "rainfall_amount": 56.84183842810762,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 0.99,
+                    "Mild": 0.01,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2028-01",
+                "end_date": "2029-09"
+            }
+        },
+        "Tharaka-Nithi": {
+            "current": {
+                "rainfall_amount": 67.26639809962883,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2024-10",
+                "end_date": "2024-12"
+            },
+            "near_term": {
+                "rainfall_amount": 69.84445643743528,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 0.99,
+                    "Mild": 0.0,
+                    "Moderate": 0.01,
+                    "Severe": 0.0
+                },
+                "start_date": "2025-01",
+                "end_date": "2025-12"
+            },
+            "mid_term": {
+                "rainfall_amount": 72.1837655537579,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 0.99,
+                    "Mild": 0.01,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 0.99,
+                    "Mild": 0.0,
+                    "Moderate": 0.01,
+                    "Severe": 0.0
+                },
+                "start_date": "2026-01",
+                "end_date": "2027-12"
+            },
+            "long_term": {
+                "rainfall_amount": 75.35031930068241,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 0.98,
+                    "Mild": 0.02,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2028-01",
+                "end_date": "2029-09"
+            }
+        },
+        "West Pokot": {
+            "current": {
+                "rainfall_amount": 79.39759848632093,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Mild",
+                "flood_risk_score": 30,
+                "flood_probabilities": {
+                    "Low": 0.24,
+                    "Mild": 0.76,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2024-10",
+                "end_date": "2024-12"
+            },
+            "near_term": {
+                "rainfall_amount": 65.91332483470751,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 0.99,
+                    "Mild": 0.0,
+                    "Moderate": 0.01,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 0.99,
+                    "Mild": 0.01,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2025-01",
+                "end_date": "2025-12"
+            },
+            "mid_term": {
+                "rainfall_amount": 65.4834394268202,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2026-01",
+                "end_date": "2027-12"
+            },
+            "long_term": {
+                "rainfall_amount": 66.94944104505599,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2028-01",
+                "end_date": "2029-09"
+            }
+        },
+        "Narok": {
+            "current": {
+                "rainfall_amount": 71.5510529170387,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 0.99,
+                    "Mild": 0.0,
+                    "Moderate": 0.01,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 0.99,
+                    "Mild": 0.01,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2024-10",
+                "end_date": "2024-12"
+            },
+            "near_term": {
+                "rainfall_amount": 89.36600653083808,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.01,
+                    "Moderate": 0.0,
+                    "High": 0.99
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 0.99,
+                    "Mild": 0.01,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2025-01",
+                "end_date": "2025-12"
+            },
+            "mid_term": {
+                "rainfall_amount": 87.14867841663288,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2026-01",
+                "end_date": "2027-12"
+            },
+            "long_term": {
+                "rainfall_amount": 88.82919030563444,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "start_date": "2028-01",
+                "end_date": "2029-09"
+            }
+        },
+        "Baringo": {
+            "current": {
+                "rainfall_amount": 89.88780866138586,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.01,
+                    "Moderate": 0.0,
+                    "High": 0.99
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Mild",
+                "flood_risk_score": 30,
+                "flood_probabilities": {
+                    "Low": 0.13,
+                    "Mild": 0.72,
+                    "Moderate": 0.15,
+                    "Severe": 0.0
+                },
+                "start_date": "2024-10",
+                "end_date": "2024-12"
+            },
+            "near_term": {
+                "rainfall_amount": 81.78044567439672,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 0.98,
+                    "Mild": 0.0,
+                    "Moderate": 0.02,
+                    "Severe": 0.0
+                },
+                "start_date": "2025-01",
+                "end_date": "2025-12"
+            },
+            "mid_term": {
+                "rainfall_amount": 81.67371473481624,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 0.96,
+                    "Mild": 0.0,
+                    "Moderate": 0.04,
+                    "Severe": 0.0
+                },
+                "start_date": "2026-01",
+                "end_date": "2027-12"
+            },
+            "long_term": {
+                "rainfall_amount": 81.44564702928157,
+                "rainfall_level": "Moderate",
+                "rainfall_probabilities": {
+                    "Low": 0.0,
+                    "Moderate": 0.0,
+                    "High": 1.0
+                },
+                "drought_risk_level": "Low",
+                "drought_risk_score": 10,
+                "drought_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "heat_risk_level": "Low",
+                "heat_risk_score": 10,
+                "heat_probabilities": {
+                    "Low": 1.0,
+                    "Mild": 0.0,
+                    "Moderate": 0.0,
+                    "Severe": 0.0
+                },
+                "flood_risk_level": "Low",
+                "flood_risk_score": 10,
+                "flood_probabilities": {
+                    "Low": 0.96,
+                    "Mild": 0.0,
+                    "Moderate": 0.04,
+                    "Severe": 0.0
+                },
+                "start_date": "2028-01",
+                "end_date": "2029-09"
+            }
+        }
+    }
+}
