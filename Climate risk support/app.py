@@ -1,7 +1,14 @@
+import os
+import sys
 from flask import Flask, render_template, send_from_directory, jsonify
 import pandas as pd
-import os
 from datetime import datetime
+import json
+
+# Add the parent directory to Python path to import risk assessment modules
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from risk_assesment import generate_climate_risk_assessment
+from riskassesmentmodel import ClimateRiskModel
 
 app = Flask(__name__, static_folder='static')
 
@@ -21,16 +28,20 @@ def climate_zones():
 def climate_zones_map():
     return send_from_directory(app.static_folder, 'climate_zones_map.html')
 
+@app.route('/risk_assessment.html')
+def risk_assessment():
+    return send_from_directory(app.static_folder, 'risk_assessment.html')
+
 @app.route('/api/forecast/<location>')
 def get_forecast_data(location):
     try:
         # Convert location name to match file naming
-        location = location.lower()  # Convert to lowercase for file name
-        location_cap = location.capitalize()  # Capitalized for column names
+        location = location.lower()  # Keep lowercase for internal use
+        location_cap = location.capitalize()  # For file name
         
         # Define path for forecast file
         base_path = r'E:\Agriculture project\LSTM\forecasts'
-        forecast_file = os.path.join(base_path, f'{location}_forecast.csv')
+        forecast_file = os.path.join(base_path, f'{location_cap}_forecast.csv')
         
         print(f"Looking for forecast file at: {forecast_file}")
         
@@ -129,6 +140,68 @@ def get_forecast_data(location):
             'success': False,
             'error': str(e)
         })
+
+@app.route('/api/risk_assessment/<location>')
+def get_risk_assessment(location):
+    try:
+        # Convert location name to match file naming
+        location = location.lower()
+        location_cap = location.capitalize()
+        
+        # Path to pre-computed risk assessment file
+        risk_file = os.path.join(r'E:\Agriculture project', 'risk_assessment_results', 'combined_risk_assessment.json')
+        
+        try:
+            # Try to read the pre-computed risk assessments
+            with open(risk_file, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                print(f"Successfully loaded risk assessment data")
+                
+                if 'county_risks' not in data:
+                    return jsonify({
+                        'error': 'Invalid data structure: missing county_risks'
+                    }), 500
+                
+                risk_data = data['county_risks']
+                print(f"Available locations: {list(risk_data.keys())}")  # Debug log
+                print(f"Requested location: {location_cap}")  # Debug log
+                
+        except (FileNotFoundError, json.JSONDecodeError) as e:
+            print(f"Error reading risk assessment file: {str(e)}")
+            return jsonify({
+                'error': f'Could not read risk assessment data: {str(e)}'
+            }), 500
+            
+        # Check if we have data for this location
+        if location_cap not in risk_data:
+            # Try to find a case-insensitive match
+            location_found = None
+            for key in risk_data.keys():
+                if key.lower() == location.lower():
+                    location_found = key
+                    break
+            
+            if location_found:
+                print(f"Found matching location with different case: {location_found}")
+                return jsonify({
+                    'location': location_found,
+                    'risk_assessment': risk_data[location_found]
+                })
+            else:
+                print(f"Location not found. Available locations: {list(risk_data.keys())}")
+                return jsonify({
+                    'error': f'No risk assessment data available for {location_cap}. Available locations: {", ".join(risk_data.keys())}'
+                }), 404
+            
+        # Return the assessment
+        return jsonify({
+            'location': location_cap,
+            'risk_assessment': risk_data[location_cap]
+        })
+        
+    except Exception as e:
+        print(f"Error loading risk assessment data: {str(e)}")
+        return jsonify({'error': str(e)}), 500
 
 @app.route('/<path:path>')
 def serve_static(path):

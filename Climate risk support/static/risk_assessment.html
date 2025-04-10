@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Risk Assessment - Climate-Based Risk Support</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        :root {
+            --primary-color: #1B4332;
+            --secondary-color: #2D6A4F;
+            --text-color: #333;
+            --background-color: #f8f9fa;
+            --light-bg: #fff;
+            --accent-color: #40916C;
+        }
+
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: var(--primary-color);
+            padding: 1.2rem 2rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: all 0.3s;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            background-color: rgba(255,255,255,0.1);
+            transform: translateY(-1px);
+        }
+
+        .header {
+            padding: 8rem 2rem 4rem;
+            background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(27, 67, 50, 0.85)), url('/images/hero-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            opacity: 0.95;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .location-selector {
+            margin: 20px 0;
+            padding: 15px;
+            background: #f5f5f5;
+            border-radius: 8px;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .location-selector select {
+            padding: 8px 12px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            min-width: 200px;
+            font-size: 1rem;
+        }
+
+        .location-selector button {
+            padding: 8px 16px;
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+
+        .location-selector button:hover {
+            background: var(--secondary-color);
+            transform: translateY(-1px);
+        }
+
+        .risk-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .risk-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        .risk-card h3 {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .risk-info-icon {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: help;
+            color: var(--primary-color);
+            opacity: 0.7;
+        }
+
+        .tooltip {
+            position: absolute;
+            top: 50px;
+            right: 20px;
+            background: white;
+            padding: 10px;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            width: 200px;
+            font-size: 0.9rem;
+            display: none;
+            z-index: 100;
+        }
+
+        .risk-info-icon:hover + .tooltip {
+            display: block;
+        }
+
+        .metric-explanation {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 5px;
+            font-style: italic;
+        }
+
+        .risk-legend {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+            font-size: 0.85rem;
+        }
+
+        .risk-legend-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .risk-legend-color {
+            width: 12px;
+            height: 12px;
+            border-radius: 3px;
+        }
+
+        .risk-level {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 15px 0;
+            padding: 10px 15px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .risk-level.low { 
+            background: linear-gradient(135deg, #E8F5E9, #C8E6C9);
+            color: #2E7D32;
+            border: 1px solid #A5D6A7;
+        }
+        .risk-level.mild { 
+            background: linear-gradient(135deg, #FFF3E0, #FFE0B2);
+            color: #F57C00;
+            border: 1px solid #FFCC80;
+        }
+        .risk-level.moderate { 
+            background: linear-gradient(135deg, #FFF8E1, #FFE082);
+            color: #FFA000;
+            border: 1px solid #FFD54F;
+        }
+        .risk-level.severe { 
+            background: linear-gradient(135deg, #FFEBEE, #FFCDD2);
+            color: #C62828;
+            border: 1px solid #EF9A9A;
+        }
+        .risk-level.unknown {
+            background: linear-gradient(135deg, #F5F5F5, #EEEEEE);
+            color: #757575;
+            border: 1px solid #E0E0E0;
+        }
+
+        .recommendations-section,
+        .crop-advisories-section {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin: 20px 0;
+        }
+
+        .recommendations-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+        }
+
+        .recommendation-item {
+            background: #f5f5f5;
+            padding: 15px 20px;
+            border-radius: 8px;
+            border-left: 4px solid #2E7D32;
+            margin-bottom: 10px;
+            transition: transform 0.2s;
+        }
+
+        .recommendation-item.urgent {
+            border-left-color: #C62828;
+            background: #FFF5F5;
+        }
+
+        .recommendation-item:hover {
+            transform: translateX(5px);
+        }
+
+        .crop-advisories-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .crop-advisory-item {
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 4px;
+        }
+
+        .crop-advisory-item h4 {
+            margin: 0 0 10px 0;
+            color: #2E7D32;
+        }
+
+        .crop-advisory-item ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .crop-advisory-item li {
+            margin: 5px 0;
+        }
+
+        .charts-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .chart-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .chart-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+            flex-shrink: 0;
+        }
+
+        .chart-container {
+            flex: 1;
+            position: relative;
+            min-height: 0;
+        }
+
+        .no-data-message {
+            text-align: center;
+            padding: 30px;
+            color: #666;
+            font-style: italic;
+            background: #f5f5f5;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        .error-message {
+            background-color: #FFEBEE;
+            color: #C62828;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.5rem;
+            }
+            
+            .container {
+                padding: 1rem;
+            }
+
+            .charts-container {
+                grid-template-columns: 1fr;
+            }
+
+            .location-selector select {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/forecast.html">Forecast</a></li>
+            <li><a href="/risk_assessment.html" class="active">Risk Assessment</a></li>
+            <li><a href="/climate_zones.html">Climate Zones</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="header">
+        <h1>Climate Risk Assessment</h1>
+        <p>Get detailed risk analysis and recommendations for your region based on AI-driven insights and historical data.</p>
+    </header>
+
+    <div class="container">
+        <h1>Climate Risk Assessment</h1>
+        <div class="location-selector">
+            <div>
+                <label for="location">Select Location:</label>
+                <select id="location">
+                    <option value="">Select a location</option>
+                </select>
+            </div>
+            <div>
+                <label for="period">Select Period:</label>
+                <select id="period">
+                    <option value="current">Current</option>
+                    <option value="near_term">Short-Term (3 months)</option>
+                    <option value="mid_term">Mid-Term (6 months)</option>
+                    <option value="long_term">Long-Term (12 months)</option>
+                </select>
+            </div>
+            <button onclick="updateRiskAssessment()">Get Assessment</button>
+        </div>
+
+        <div id="loading" class="loading" style="display: none;">
+            Loading risk assessment data...
+        </div>
+
+        <div id="error" class="error-message" style="display: none;"></div>
+
+        <div id="riskAssessment" style="display: none;">
+            <div class="risk-cards">
+                <div class="risk-card">
+                    <h3>Drought Risk</h3>
+                    <i class="material-icons risk-info-icon">info</i>
+                    <div class="tooltip">
+                        <strong>Drought Risk Levels:</strong><br>
+                        Low: 0-0.3 (Minimal water stress)<br>
+                        Mild: 0.3-0.5 (Moderate water stress)<br>
+                        Moderate: 0.5-0.7 (Significant water stress)<br>
+                        Severe: >0.7 (Critical water stress)
+                    </div>
+                    <div id="droughtRisk" class="risk-level"></div>
+                    <p id="droughtDescription"></p>
+                    <div id="droughtExplanation" class="metric-explanation"></div>
+                    <div class="risk-legend">
+                        <div class="risk-legend-item">
+                            <div class="risk-legend-color" style="background: #E8F5E9"></div>
+                            <span>Low</span>
+                        </div>
+                        <div class="risk-legend-item">
+                            <div class="risk-legend-color" style="background: #FFF3E0"></div>
+                            <span>Mild</span>
+                        </div>
+                        <div class="risk-legend-item">
+                            <div class="risk-legend-color" style="background: #FFF8E1"></div>
+                            <span>Moderate</span>
+                        </div>
+                        <div class="risk-legend-item">
+                            <div class="risk-legend-color" style="background: #FFEBEE"></div>
+                            <span>Severe</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="risk-card">
+                    <h3>Heat Risk</h3>
+                    <i class="material-icons risk-info-icon">info</i>
+                    <div class="tooltip">
+                        <strong>Heat Risk Levels:</strong><br>
+                        Low: 0-0.3 (Normal temperature range)<br>
+                        Mild: 0.3-0.5 (Above average temperatures)<br>
+                        Moderate: 0.5-0.7 (Heat stress likely)<br>
+                        Severe: >0.7 (Extreme heat conditions)
+                    </div>
+                    <div id="heatRisk" class="risk-level"></div>
+                    <p id="heatDescription"></p>
+                    <div id="heatExplanation" class="metric-explanation"></div>
+                    <div class="risk-legend">
+                        <div class="risk-legend-item">
+                            <div class="risk-legend-color" style="background: #E8F5E9"></div>
+                            <span>Low</span>
+                        </div>
+                        <div class="risk-legend-item">
+                            <div class="risk-legend-color" style="background: #FFF3E0"></div>
+                            <span>Mild</span>
+                        </div>
+                        <div class="risk-legend-item">
+                            <div class="risk-legend-color" style="background: #FFF8E1"></div>
+                            <span>Moderate</span>
+                        </div>
+                        <div class="risk-legend-item">
+                            <div class="risk-legend-color" style="background: #FFEBEE"></div>
+                            <span>Severe</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="risk-card">
+                    <h3>Flood Risk</h3>
+                    <i class="material-icons risk-info-icon">info</i>
+                    <div class="tooltip">
+                        <strong>Flood Risk Levels:</strong><br>
+                        Low: 0-0.3 (Normal soil saturation)<br>
+                        Mild: 0.3-0.5 (High soil moisture)<br>
+                        Moderate: 0.5-0.7 (Risk of localized flooding)<br>
+                        Severe: >0.7 (High flood risk)
+                    </div>
+                    <div id="floodRisk" class="risk-level"></div>
+                    <p id="floodDescription"></p>
+                    <div id="floodExplanation" class="metric-explanation"></div>
+                    <div class="risk-legend">
+                        <div class="risk-legend-item">
+                            <div class="risk-legend-color" style="background: #E8F5E9"></div>
+                            <span>Low</span>
+                        </div>
+                        <div class="risk-legend-item">
+                            <div class="risk-legend-color" style="background: #FFF3E0"></div>
+                            <span>Mild</span>
+                        </div>
+                        <div class="risk-legend-item">
+                            <div class="risk-legend-color" style="background: #FFF8E1"></div>
+                            <span>Moderate</span>
+                        </div>
+                        <div class="risk-legend-item">
+                            <div class="risk-legend-color" style="background: #FFEBEE"></div>
+                            <span>Severe</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="charts-container">
+                <div class="chart-card">
+                    <h3>Risk Level Probabilities</h3>
+                    <div class="chart-container">
+                        <canvas id="riskChart"></canvas>
+                    </div>
+                </div>
+                <div class="chart-card">
+                    <h3>Risk Trends</h3>
+                    <div class="chart-container">
+                        <canvas id="trendChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recommendations-section">
+                <h3>Recommendations</h3>
+                <div id="recommendationsList" class="recommendations-list"></div>
+            </div>
+
+            <div class="crop-advisories-section">
+                <h3>Crop-Specific Advisories</h3>
+                <div id="cropAdvisoriesList" class="crop-advisories-list"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Climate-Based Risk Support. All rights reserved.</p>
+    </footer>
+
+    <script>
+        let riskChart = null;
+        let trendChart = null;
+
+        // Add locations array
+        const locations = [
+            'Baringo',
+            'Bomet',
+            'Bungoma',
+            'Embu',
+            'Kakamega',
+            'Kericho',
+            'Kisii',
+            'Kitui',
+            'Laikipia',
+            'Machakos',
+            'Makueni',
+            'Meru',
+            'Muranga',
+            'Nakuru',
+            'Nandi',
+            'Narok',
+            'Nyandarua',
+            'Nyeri'
+        ];
+
+        // Add initialization function
+        function initializeLocationSelector() {
+            const locationSelect = document.getElementById('location');
+            locations.forEach(location => {
+                const option = document.createElement('option');
+                option.value = location.toLowerCase();
+                option.textContent = location;
+                locationSelect.appendChild(option);
+            });
+        }
+
+        // Call initialization when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeLocationSelector();
+        });
+
+        function updateRiskAssessment() {
+            const location = document.getElementById('location').value;
+            const period = document.getElementById('period').value;
+            
+            if (!location) {
+                showError('Please select a location');
+                return;
+            }
+
+            showLoading();
+            hideError();
+            document.getElementById('riskAssessment').style.display = 'none';
+
+            fetch(`/api/risk_assessment/${location}`)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    hideLoading();
+                    if (data.error) {
+                        showError(data.error);
+                        return;
+                    }
+                    displayRiskAssessment(data, period);
+                })
+                .catch(error => {
+                    hideLoading();
+                    showError('Failed to fetch risk assessment data: ' + error.message);
+                    console.error('Error:', error);
+                });
+        }
+
+        function displayRiskAssessment(data, period) {
+            console.log('Received data:', data); // Debug log
+            
+            if (!data || !data.risk_assessment) {
+                showError('Invalid risk assessment data received');
+                return;
+            }
+
+            const { risk_assessment } = data;
+            const { traditional, ml_predictions, recommendations, crop_advisories } = risk_assessment;
+
+            if (!traditional || !traditional[period]) {
+                showError('Missing risk assessment data for selected period');
+                return;
+            }
+
+            const periodData = traditional[period];
+
+            try {
+                // Helper function to safely format numbers and provide explanations
+                const safeFormat = (value, type) => {
+                    if (value === null || value === undefined) {
+                        switch(type) {
+                            case 'soil':
+                                return 'Not available due to lack of recent soil moisture measurements';
+                            case 'temp':
+                                return 'Not available due to missing temperature data';
+                            default:
+                                return 'Not available due to insufficient data';
+                        }
+                    }
+                    const num = parseFloat(value);
+                    return isNaN(num) ? 'Invalid measurement' : num.toFixed(2);
+                };
+
+                // Update risk levels
+                updateRiskLevel('droughtRisk', periodData.drought_risk_level || 'Unknown');
+                updateRiskLevel('heatRisk', periodData.heat_risk_level || 'Unknown');
+                updateRiskLevel('floodRisk', periodData.flood_risk_level || 'Unknown');
+
+                // Update descriptions with safe number formatting and explanations
+                document.getElementById('droughtDescription').textContent = 
+                    `Drought Index: ${safeFormat(periodData.drought_index)}, ` +
+                    `Rainfall Deviation: ${safeFormat(periodData.rain_zscore)} σ`;
+                
+                document.getElementById('droughtExplanation').textContent = 
+                    `Negative rainfall deviation (σ) indicates below-normal rainfall. ` +
+                    `A drought index above 0.5 indicates significant risk of agricultural drought conditions.`;
+                
+                document.getElementById('heatDescription').textContent = 
+                    `Heat Stress: ${safeFormat(periodData.heat_stress)}, ` +
+                    `Temperature Deviation: ${safeFormat(periodData.temp_zscore)} σ`;
+                
+                document.getElementById('heatExplanation').textContent = 
+                    `Temperature deviation (σ) shows how far current temperatures are from historical average. ` +
+                    `Positive values indicate warmer than normal conditions.`;
+                
+                document.getElementById('floodDescription').textContent = 
+                    `Flood Index: ${safeFormat(periodData.flood_index)}, ` +
+                    `Soil Saturation: ${safeFormat(periodData.soil_moisture && periodData.soil_mean ? 
+                        (periodData.soil_moisture / periodData.soil_mean * 100) : null, 'soil')}%`;
+                
+                document.getElementById('floodExplanation').textContent = 
+                    `Soil saturation above 80% indicates increased risk of waterlogging. ` +
+                    `A positive flood index suggests higher flood risk.`;
+
+                // Update recommendations with urgency styling
+                const recommendationsList = document.getElementById('recommendationsList');
+                if (recommendations && Array.isArray(recommendations) && recommendations.length > 0) {
+                    recommendationsList.innerHTML = recommendations
+                        .map(rec => `<div class="recommendation-item${
+                            rec.toLowerCase().includes('urgent') ? ' urgent' : ''
+                        }">${rec}</div>`)
+                        .join('');
+                } else {
+                    recommendationsList.innerHTML = '<div class="recommendation-item">No recommendations available</div>';
+                }
+
+                // Update crop advisories
+                const cropAdvisoriesList = document.getElementById('cropAdvisoriesList');
+                if (crop_advisories && typeof crop_advisories === 'object') {
+                    cropAdvisoriesList.innerHTML = Object.entries(crop_advisories)
+                        .map(([crop, advice]) => `
+                            <div class="crop-advisory-item">
+                                <h4>${crop}</h4>
+                                <ul>
+                                    ${Array.isArray(advice) ? 
+                                        advice.map(a => `<li>${a}</li>`).join('') : 
+                                        '<li>No specific advice available</li>'}
+                                </ul>
+                            </div>
+                        `).join('');
+                } else {
+                    cropAdvisoriesList.innerHTML = '<div class="crop-advisory-item"><h4>No crop advisories available</h4></div>';
+                }
+
+                // Update charts
+                if (ml_predictions && typeof ml_predictions === 'object') {
+                    console.log('ML predictions data:', ml_predictions); // Debug log
+                    updateRiskChart(ml_predictions);
+                } else {
+                    console.warn('No ML predictions available:', ml_predictions);
+                    const ctx = document.getElementById('riskChart').getContext('2d');
+                    displayNoDataMessage(ctx, 'No probability data available');
+                }
+                
+                // Update trend chart with the traditional assessment data
+                if (traditional && typeof traditional === 'object') {
+                    console.log('Traditional assessment data:', traditional); // Debug log
+                    updateTrendChart(traditional);
+                } else {
+                    console.warn('No traditional assessment data available');
+                    const ctx = document.getElementById('trendChart').getContext('2d');
+                    displayNoDataMessage(ctx, 'No trend data available');
+                }
+
+                document.getElementById('riskAssessment').style.display = 'block';
+            } catch (error) {
+                console.error('Error displaying risk assessment:', error);
+                showError('Error displaying risk assessment data: ' + error.message);
+            }
+        }
+
+        function updateRiskLevel(elementId, riskLevel) {
+            const element = document.getElementById(elementId);
+            if (!element || !riskLevel) {
+                console.warn(`Unable to update risk level for ${elementId}`);
+                return;
+            }
+            
+            element.textContent = riskLevel;
+            element.className = `risk-level ${riskLevel.toLowerCase()}`;
+        }
+
+        function updateRiskChart(predictions) {
+            const ctx = document.getElementById('riskChart').getContext('2d');
+            
+            // Clear any existing chart
+            if (riskChart) {
+                riskChart.destroy();
+            }
+
+            console.log('ML Predictions data:', predictions); // Debug log
+
+            // Check if we have valid predictions data
+            if (!predictions || typeof predictions !== 'object') {
+                console.warn('No valid predictions data received');
+                displayNoDataMessage(ctx, 'No probability data available');
+                return;
+            }
+
+            // Get the current period
+            const period = document.getElementById('period').value;
+            const periodData = predictions[period];
+
+            console.log('Period data:', periodData); // Debug log
+
+            if (!periodData || typeof periodData !== 'object') {
+                console.warn('No data available for selected period');
+                displayNoDataMessage(ctx, 'No probability data available for selected period');
+                return;
+            }
+
+            // Extract probabilities from the period data
+            const probData = {
+                drought: periodData.drought_probabilities,
+                heat: periodData.heat_probabilities,
+                rain: periodData.rain_probabilities
+            };
+
+            console.log('Probability data:', probData); // Debug log
+
+            // Check if we have any valid probability arrays
+            if (!Object.values(probData).some(arr => Array.isArray(arr) && arr.length > 0)) {
+                console.warn('No valid probability arrays found');
+                displayNoDataMessage(ctx, 'No probability data available');
+                return;
+            }
+
+            // Remove any existing no-data message
+            const container = ctx.canvas.parentElement;
+            const message = container.querySelector('.no-data-message');
+            if (message) {
+                message.remove();
+            }
+            ctx.canvas.style.display = 'block';
+
+            const labels = ['Low', 'Mild', 'Moderate', 'Severe'];
+            const datasets = [];
+
+            // Add datasets for each risk type if data is available
+            if (Array.isArray(probData.rain)) {
+                datasets.push({
+                    label: 'Rain Risk',
+                    data: probData.rain,
+                    backgroundColor: 'rgba(54, 162, 235, 0.5)',
+                    borderColor: 'rgb(54, 162, 235)',
+                    borderWidth: 1
+                });
+            }
+
+            if (Array.isArray(probData.drought)) {
+                datasets.push({
+                    label: 'Drought Risk',
+                    data: probData.drought,
+                    backgroundColor: 'rgba(255, 99, 132, 0.5)',
+                    borderColor: 'rgb(255, 99, 132)',
+                    borderWidth: 1
+                });
+            }
+
+            if (Array.isArray(probData.heat)) {
+                datasets.push({
+                    label: 'Heat Risk',
+                    data: probData.heat,
+                    backgroundColor: 'rgba(255, 159, 64, 0.5)',
+                    borderColor: 'rgb(255, 159, 64)',
+                    borderWidth: 1
+                });
+            }
+
+            // Create the chart
+            riskChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: datasets
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: 1,
+                            title: {
+                                display: true,
+                                text: 'Probability'
+                            },
+                            ticks: {
+                                callback: function(value) {
+                                    return (value * 100) + '%';
+                                }
+                            }
+                        }
+                    },
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: 'Risk Level Probabilities',
+                            font: {
+                                size: 16,
+                                weight: 'bold'
+                            }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return `${context.dataset.label}: ${(context.parsed.y * 100).toFixed(1)}%`;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        function displayNoDataMessage(ctx, message) {
+            ctx.canvas.style.display = 'none';
+            const container = ctx.canvas.parentElement;
+            let messageEl = container.querySelector('.no-data-message');
+            if (!messageEl) {
+                messageEl = document.createElement('div');
+                messageEl.className = 'no-data-message';
+                container.appendChild(messageEl);
+            }
+            messageEl.textContent = message;
+        }
+
+        function updateTrendChart(data) {
+            const ctx = document.getElementById('trendChart').getContext('2d');
+            const period = document.getElementById('period').value;
+            
+            // Clear any existing chart
+            if (trendChart) {
+                trendChart.destroy();
+            }
+
+            // Get time series data for the selected period
+            if (!data || !data[period] || !data[period].time_series) {
+                // Display no data message
+                ctx.canvas.style.display = 'none';
+                const container = ctx.canvas.parentElement;
+                let message = container.querySelector('.no-data-message');
+                if (!message) {
+                    message = document.createElement('div');
+                    message.className = 'no-data-message';
+                    message.textContent = 'No trend data available for this period';
+                    container.appendChild(message);
+                }
+                return;
+            }
+
+            const timeSeriesData = data[period].time_series;
+
+            // Remove no data message if it exists
+            const container = ctx.canvas.parentElement;
+            const message = container.querySelector('.no-data-message');
+            if (message) {
+                message.remove();
+            }
+            ctx.canvas.style.display = 'block';
+
+            // Format dates - Ensure we're starting from April 2025
+            const dates = timeSeriesData.dates.map(date => {
+                let d = new Date(date);
+                // If date is before April 2025, adjust it to 2025
+                if (d < new Date('2025-04-01')) {
+                    d.setFullYear(2025);
+                }
+                return d.toLocaleDateString('en-US', { 
+                    month: 'short', 
+                    day: 'numeric',
+                    year: 'numeric'
+                });
+            });
+
+            // Prepare data arrays, ensuring values are between 0 and 100
+            const droughtRisk = timeSeriesData.drought_risk.map(v => Math.min(Math.max(v * 100, 0), 100));
+            const heatRisk = timeSeriesData.heat_risk.map(v => Math.min(Math.max(v * 100, 0), 100));
+            const floodRisk = timeSeriesData.flood_risk.map(v => Math.min(Math.max(v * 100, 0), 100));
+
+            // Create the chart
+            trendChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: dates,
+                    datasets: [
+                        {
+                            label: 'Drought Risk',
+                            data: droughtRisk,
+                            borderColor: 'rgba(255, 99, 132, 0.8)',
+                            backgroundColor: 'rgba(255, 99, 132, 0.1)',
+                            fill: true,
+                            tension: 0.4
+                        },
+                        {
+                            label: 'Heat Risk',
+                            data: heatRisk,
+                            borderColor: 'rgba(255, 159, 64, 0.8)',
+                            backgroundColor: 'rgba(255, 159, 64, 0.1)',
+                            fill: true,
+                            tension: 0.4
+                        },
+                        {
+                            label: 'Flood Risk',
+                            data: floodRisk,
+                            borderColor: 'rgba(54, 162, 235, 0.8)',
+                            backgroundColor: 'rgba(54, 162, 235, 0.1)',
+                            fill: true,
+                            tension: 0.4
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: `Risk Trends Over Time`,
+                            font: {
+                                size: 16,
+                                weight: 'bold'
+                            }
+                        },
+                        tooltip: {
+                            mode: 'index',
+                            intersect: false,
+                            callbacks: {
+                                label: function(context) {
+                                    return `${context.dataset.label}: ${context.parsed.y.toFixed(1)}%`;
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            grid: {
+                                display: false
+                            },
+                            title: {
+                                display: true,
+                                text: 'Date'
+                            },
+                            ticks: {
+                                maxRotation: 45,
+                                minRotation: 45
+                            }
+                        },
+                        y: {
+                            beginAtZero: true,
+                            max: 100,
+                            grid: {
+                                color: 'rgba(0, 0, 0, 0.1)'
+                            },
+                            title: {
+                                display: true,
+                                text: 'Risk Level (%)'
+                            },
+                            ticks: {
+                                callback: function(value) {
+                                    return value + '%';
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        function showLoading() {
+            document.getElementById('loading').style.display = 'block';
+        }
+
+        function hideLoading() {
+            document.getElementById('loading').style.display = 'none';
+        }
+
+        function showError(message) {
+            const errorElement = document.getElementById('error');
+            errorElement.textContent = message;
+            errorElement.style.display = 'block';
+        }
+
+        function hideError() {
+            document.getElementById('error').style.display = 'none';
+        }
+    </script>
+</body>
+</html> 
