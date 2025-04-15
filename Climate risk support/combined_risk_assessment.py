@@ -299,39 +299,429 @@ class ClimateRiskAssessment:
             
             risk_results['county_risks'][county] = county_risks
             
-            # Generate recommendations
+            # Generate dynamic recommendations based on risk assessment and seasonal patterns
             recommendations = []
             risk_period = county_risks.get('near_term', county_risks.get('current', {}))
+            
             if risk_period:
-                if risk_period.get('drought_risk_level') == "Severe":
-                    recommendations.extend(["URGENT: Implement water conservation", "Use drought-resistant crops"])
-                elif risk_period.get('drought_risk_level') == "Moderate":
-                    recommendations.extend(["Monitor water resources", "Prepare irrigation"])
-                if risk_period.get('heat_risk_level') == "Severe":
-                    recommendations.extend(["URGENT: Protect crops from heat", "Increase irrigation"])
-                elif risk_period.get('heat_risk_level') == "Moderate":
-                    recommendations.append("Monitor crops for heat stress")
-                if risk_period.get('flood_risk_level') == "Severe":
-                    recommendations.extend(["URGENT: Clear drainage", "Elevate planting beds"])
-                elif risk_period.get('flood_risk_level') == "Moderate":
-                    recommendations.append("Maintain drainage")
-                risk_results['recommendations'][county] = recommendations
+                # Get current month and next 3 months' data
+                current_month = datetime.now().month
+                next_months = [(current_month + i - 1) % 12 + 1 for i in range(4)]
                 
-                suitable_crops = self.crop_zone_mapping.get(int(zone), [])
-                crop_advisories = {}
-                for crop in suitable_crops:
-                    crop_recs = []
-                    if risk_period.get('drought_risk_level') in ["Moderate", "Severe"] and crop in ['maize', 'beans']:
-                        crop_recs.append(f"Use drought-resistant {crop}")
-                    if risk_period.get('heat_risk_level') in ["Moderate", "Severe"] and crop in ['coffee', 'tea']:
-                        crop_recs.append(f"Shade {crop} plants")
-                    if risk_period.get('flood_risk_level') in ["Moderate", "Severe"] and crop in ['beans', 'potatoes']:
-                        crop_recs.append(f"Raise {crop} beds")
-                    if crop_recs:
-                        crop_advisories[crop] = crop_recs
-                risk_results['crop_advisories'][county] = crop_advisories
+                # Analyze rainfall patterns for the next 3 months
+                rainfall_trend = self.analyze_rainfall_trend(period_data, rain_col, stats)
+                temperature_trend = self.analyze_temperature_trend(period_data, temp_col, stats)
+                
+                # Generate seasonal recommendations
+                if current_month in [2, 3, 4]:  # Long rains season
+                    recommendations.extend(self.generate_long_rains_recommendations(
+                        risk_period, rainfall_trend, temperature_trend, stats
+                    ))
+                elif current_month in [9, 10, 11]:  # Short rains season
+                    recommendations.extend(self.generate_short_rains_recommendations(
+                        risk_period, rainfall_trend, temperature_trend, stats
+                    ))
+                else:  # Dry season
+                    recommendations.extend(self.generate_dry_season_recommendations(
+                        risk_period, rainfall_trend, temperature_trend, stats
+                    ))
+                
+                # Add risk-specific recommendations
+                if risk_period.get('drought_risk_level') in ["Moderate", "Severe"]:
+                    recommendations.extend([
+                        "Implement water conservation measures",
+                        "Use drought-resistant crop varieties",
+                        "Consider early planting to avoid peak drought",
+                        "Install water harvesting systems"
+                    ])
+                
+                if risk_period.get('heat_risk_level') in ["Moderate", "Severe"]:
+                    recommendations.extend([
+                        "Use shade nets for sensitive crops",
+                        "Increase irrigation frequency",
+                        "Apply reflective mulch",
+                        "Plant heat-tolerant varieties"
+                    ])
+                
+                if risk_period.get('flood_risk_level') in ["Moderate", "Severe"]:
+                    recommendations.extend([
+                        "Clear and maintain drainage channels",
+                        "Prepare flood barriers for low-lying areas",
+                        "Elevate planting beds",
+                        "Use flood-tolerant varieties"
+                    ])
+                
+                risk_results['recommendations'][county] = recommendations
         
         return risk_results
+
+    def analyze_rainfall_trend(self, period_data, rain_col, stats):
+        """Analyze rainfall trend for the next 3 months."""
+        if period_data.empty:
+            return "stable"
+        
+        # Calculate rainfall deviation from mean
+        rain_mean = period_data[rain_col].mean()
+        rain_zscore = (rain_mean - stats['rain_mean']) / stats['rain_std']
+        
+        if rain_zscore > 1.0:
+            return "increasing"
+        elif rain_zscore < -1.0:
+            return "decreasing"
+        else:
+            return "stable"
+
+    def analyze_temperature_trend(self, period_data, temp_col, stats):
+        """Analyze temperature trend for the next 3 months."""
+        if period_data.empty:
+            return "stable"
+        
+        # Calculate temperature deviation from mean
+        temp_mean = period_data[temp_col].mean()
+        temp_zscore = (temp_mean - stats['temp_mean']) / stats['temp_std']
+        
+        if temp_zscore > 1.0:
+            return "increasing"
+        elif temp_zscore < -1.0:
+            return "decreasing"
+        else:
+            return "stable"
+
+    def generate_long_rains_recommendations(self, risk_period, rainfall_trend, temperature_trend, stats):
+        """Generate recommendations for the long rains season."""
+        recommendations = []
+        
+        # Pre-season preparation (1 month before)
+        recommendations.append({
+            'title': 'Pre-Season Land Preparation',
+            'timing': '1 month before long rains',
+            'actions': [
+                'Clear fields of crop residue and weeds',
+                'Perform soil testing and apply recommended amendments',
+                'Prepare water harvesting structures',
+                'Repair and maintain farm infrastructure',
+                'Apply organic manure (5-10 tons/ha)',
+                'Deep tillage (30-45cm) for better water infiltration',
+                'Construct contour bunds for soil conservation',
+                'Install soil moisture monitoring devices'
+            ],
+            'climate_indicator': f'Expected rainfall: {stats["rain_mean"]:.1f}mm ± {stats["rain_std"]:.1f}mm'
+        })
+        
+        # Soil management
+        recommendations.append({
+            'title': 'Soil Management',
+            'timing': 'Throughout season',
+            'actions': [
+                'Maintain soil cover with organic mulch (5-10cm)',
+                'Practice minimum tillage to preserve soil structure',
+                'Apply compost tea for soil microbial activity',
+                'Monitor soil pH and adjust if needed',
+                'Use cover crops to prevent erosion',
+                'Implement crop rotation for soil health'
+            ],
+            'climate_indicator': f'Target soil moisture: {stats["soil_mean"]:.1f}%'
+        })
+        
+        # Water conservation
+        recommendations.append({
+            'title': 'Water Conservation',
+            'timing': 'Throughout season',
+            'actions': [
+                'Implement drip irrigation for water efficiency',
+                'Use rainwater harvesting systems',
+                'Construct check dams for water retention',
+                'Practice furrow irrigation with proper spacing',
+                'Install soil moisture sensors for precise irrigation',
+                'Use water-saving techniques like basin irrigation'
+            ],
+            'climate_indicator': 'Focus on efficient water use'
+        })
+        
+        # Planting recommendations
+        if rainfall_trend == "increasing":
+            recommendations.append({
+                'title': 'Planting Schedule',
+                'timing': 'Start of long rains',
+                'actions': [
+                    'Begin planting as soon as soil moisture is adequate',
+                    'Use early-maturing varieties',
+                    'Implement proper spacing for better water use',
+                    'Apply organic matter to improve soil structure',
+                    'Use seed treatment for better germination',
+                    'Implement intercropping for better land use'
+                ],
+                'climate_indicator': 'Rainfall trend: Increasing'
+            })
+        
+        # In-season management
+        if temperature_trend == "increasing":
+            recommendations.append({
+                'title': 'Heat Management',
+                'timing': 'During growing season',
+                'actions': [
+                    'Monitor soil moisture daily',
+                    'Apply mulch to conserve moisture',
+                    'Use shade nets for sensitive crops',
+                    'Increase irrigation frequency during heat waves',
+                    'Use reflective mulch to reduce soil temperature',
+                    'Implement misting systems for cooling'
+                ],
+                'alert': True,
+                'climate_indicator': 'Temperature trend: Increasing'
+            })
+        
+        return recommendations
+
+    def generate_short_rains_recommendations(self, risk_period, rainfall_trend, temperature_trend, stats):
+        """Generate recommendations for the short rains season."""
+        recommendations = []
+        
+        # Get region-specific rainfall patterns
+        region_rainfall_patterns = {
+            'meru': {
+                'start_month': 10,  # October
+                'end_month': 12,    # December
+                'peak_month': 11,   # November
+                'expected_amount': '400-600mm',
+                'planting_window': 'October',
+                'suitable_crops': ['Maize', 'Beans', 'Green grams', 'Cowpeas']
+            },
+            'kitui': {
+                'start_month': 11,  # November
+                'end_month': 12,    # December
+                'peak_month': 11,   # November
+                'expected_amount': '200-400mm',
+                'planting_window': 'November',
+                'suitable_crops': ['Sorghum', 'Millet', 'Green grams', 'Cowpeas']
+            },
+            'nyeri': {
+                'start_month': 10,  # October
+                'end_month': 12,    # December
+                'peak_month': 11,   # November
+                'expected_amount': '300-500mm',
+                'planting_window': 'October',
+                'suitable_crops': ['Maize', 'Beans', 'Irish Potatoes']
+            },
+            'default': {
+                'start_month': 10,  # October
+                'end_month': 12,    # December
+                'peak_month': 11,   # November
+                'expected_amount': '300-500mm',
+                'planting_window': 'October-November',
+                'suitable_crops': ['Maize', 'Beans']
+            }
+        }
+        
+        # Get region-specific pattern
+        region = risk_period.get('location', '').lower()
+        pattern = region_rainfall_patterns.get(region, region_rainfall_patterns['default'])
+        
+        # Find peak risk timing from time series data
+        peak_risks = {
+            'drought': self.find_peak_risk(risk_period.get('time_series', {}).get('drought_risk', [])),
+            'heat': self.find_peak_risk(risk_period.get('time_series', {}).get('heat_risk', [])),
+            'flood': self.find_peak_risk(risk_period.get('time_series', {}).get('flood_risk', []))
+        }
+        
+        # Pre-season preparation
+        recommendations.append({
+            'title': 'Pre-Season Land Preparation',
+            'timing': f'Before {self.get_month_name(pattern["start_month"])} (Short Rains)',
+            'actions': [
+                'Clear fields and remove weeds',
+                'Perform soil testing and apply recommended amendments',
+                'Prepare water storage systems',
+                'Check and repair farm equipment',
+                'Apply compost (3-5 tons/ha)',
+                'Construct water retention structures',
+                'Install soil moisture monitoring systems',
+                'Prepare seedbeds with proper drainage'
+            ],
+            'rainfall_pattern': f"Expected to start in {self.get_month_name(pattern['start_month'])} "
+                              f"with peak rainfall in {self.get_month_name(pattern['peak_month'])}. "
+                              f"Expected amount: {pattern['expected_amount']}",
+            'climate_indicator': f'Target soil moisture: {stats["soil_mean"]:.1f}%'
+        })
+        
+        # Generate planting guidelines based on region and risks
+        planting_actions = [
+            f'Begin planting in {pattern["planting_window"]} when soil moisture is adequate',
+            'Use early-maturing drought-tolerant varieties',
+            'Follow recommended spacing guidelines',
+            'Apply appropriate fertilizers based on soil test results',
+            'Consider intercropping with legumes for soil health'
+        ]
+
+        # Add region-specific crop recommendations if available
+        if pattern['suitable_crops']:
+            planting_actions.append(f'Recommended crops for this season: {", ".join(pattern["suitable_crops"])}')
+
+        planting_rec = {
+            'title': 'Planting Guidelines',
+            'timing': f'Start of {self.get_month_name(pattern["start_month"])}',
+            'actions': planting_actions,
+            'rainfall_pattern': f"Plant at the onset of rains in {pattern['planting_window']}. "
+                              f"Season typically ends in {self.get_month_name(pattern['end_month'])}. "
+                              f"Expected rainfall: {pattern['expected_amount']}"
+        }
+        
+        # Add peak risk warning if exists
+        highest_risk = max(peak_risks.items(), key=lambda x: x[1]['risk'] if x[1] else 0)
+        if highest_risk[1] and highest_risk[1]['risk'] > 0.5:
+            planting_rec['peak_risk'] = highest_risk[1]
+            planting_rec['alert'] = True
+
+        # Add April heat risk warning for Kitui
+        if region == 'kitui':
+            april_warning = {
+                'risk': 90,
+                'month': 'April',
+                'year': 2025
+            }
+            planting_rec['additional_warning'] = f"Caution: Severe heat risk expected in April {april_warning['year']}"
+        
+        recommendations.append(planting_rec)
+        
+        # Water conservation with peak risk timing
+        water_rec = {
+            'title': 'Water Conservation',
+            'timing': 'Throughout season',
+            'actions': [
+                'Implement drip irrigation systems',
+                'Use rainwater harvesting techniques',
+                'Construct small dams for water storage',
+                'Practice deficit irrigation',
+                'Use moisture retention polymers',
+                'Implement proper drainage systems'
+            ],
+            'climate_indicator': f'Focus on water efficiency - Expected rainfall: {pattern["expected_amount"]}'
+        }
+        
+        if peak_risks['drought'] and peak_risks['drought']['risk'] > 0.5:
+            water_rec['peak_risk'] = peak_risks['drought']
+            water_rec['alert'] = True
+        
+        recommendations.append(water_rec)
+        
+        # Heat management with peak risk timing
+        if temperature_trend == "increasing" or (peak_risks['heat'] and peak_risks['heat']['risk'] > 0.5):
+            heat_rec = {
+                'title': 'Heat Management',
+                'timing': 'During growing season',
+                'actions': [
+                    'Monitor soil moisture regularly',
+                    'Apply mulch to conserve moisture',
+                    'Use shade structures where needed',
+                    'Adjust irrigation schedule for heat waves',
+                    'Use evaporative cooling techniques',
+                    'Implement proper ventilation'
+                ],
+                'alert': True
+            }
+            
+            if peak_risks['heat']:
+                heat_rec['peak_risk'] = peak_risks['heat']
+            
+            # Add specific April warning for Kitui
+            if region == 'kitui':
+                heat_rec['additional_warning'] = 'Critical: Prepare for severe heat stress in April 2025'
+            
+            recommendations.append(heat_rec)
+        
+        return recommendations
+
+    def find_peak_risk(self, risk_values):
+        """Find the peak risk value and its timing."""
+        if not risk_values:
+            return None
+            
+        max_risk = max(risk_values)
+        max_index = risk_values.index(max_risk)
+        
+        # Assuming we have corresponding dates in the time series
+        if hasattr(self, 'df') and 'Date' in self.df.columns:
+            date = self.df['Date'].iloc[max_index]
+            return {
+                'risk': max_risk * 100,  # Convert to percentage
+                'month': date.strftime('%B'),
+                'year': date.year
+            }
+        return None
+
+    def get_month_name(self, month_number):
+        """Convert month number to month name."""
+        from calendar import month_name
+        return month_name[month_number]
+
+    def generate_dry_season_recommendations(self, risk_period, rainfall_trend, temperature_trend, stats):
+        """Generate recommendations for the dry season."""
+        recommendations = []
+        
+        # Water conservation
+        recommendations.append({
+            'title': 'Water Conservation',
+            'timing': 'Throughout dry season',
+            'actions': [
+                'Implement water-saving irrigation techniques',
+                'Use mulch to reduce evaporation',
+                'Maintain water storage systems',
+                'Monitor water usage carefully',
+                'Use drip irrigation with timers',
+                'Implement rainwater harvesting',
+                'Use moisture retention polymers',
+                'Practice deficit irrigation'
+            ],
+            'climate_indicator': f'Expected rainfall: {stats["rain_mean"]:.1f}mm ± {stats["rain_std"]:.1f}mm'
+        })
+        
+        # Soil management
+        recommendations.append({
+            'title': 'Soil Management',
+            'timing': 'During dry period',
+            'actions': [
+                'Apply organic mulch (8-10cm)',
+                'Use cover crops for soil protection',
+                'Implement minimum tillage',
+                'Apply compost for soil health',
+                'Use biochar for moisture retention',
+                'Practice crop residue management'
+            ],
+            'climate_indicator': 'Focus on moisture retention'
+        })
+        
+        # Heat management
+        if temperature_trend == "increasing":
+            recommendations.append({
+                'title': 'Heat Stress Management',
+                'timing': 'During heat waves',
+                'actions': [
+                    'Increase irrigation frequency',
+                    'Use shade structures',
+                    'Apply reflective mulch',
+                    'Monitor for heat stress symptoms',
+                    'Use evaporative cooling systems',
+                    'Implement proper ventilation'
+                ],
+                'alert': True,
+                'climate_indicator': 'Temperature trend: Increasing'
+            })
+        
+        # Infrastructure maintenance
+        recommendations.append({
+            'title': 'Infrastructure Maintenance',
+            'timing': 'During dry period',
+            'actions': [
+                'Repair and maintain irrigation systems',
+                'Clean water storage facilities',
+                'Maintain soil conservation structures',
+                'Service farm machinery',
+                'Check and repair water pumps',
+                'Maintain drainage systems'
+            ]
+        })
+        
+        return recommendations
     
     def predict_ml_risks(self):
         """Predict risks using ML models."""
