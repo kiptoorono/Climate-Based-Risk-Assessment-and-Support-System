@@ -13,7 +13,7 @@ A comprehensive system for assessing and managing climate-related risks in agric
 
 This system combines historical climate data analysis with machine learning-based forecasting to assess various climate risks including drought, heat stress, and flooding. It provides detailed risk assessments at both county and agro-ecological zone levels, along with actionable recommendations for farmers.
 
-![Map of the project focus region](map_Screenshot .png)
+![Map of the project focus region](map_Screenshot.png)
 
 The system primarily focuses on assessing climate risks within specific counties and agro-ecological zones in Kenya, as visually represented in the map above, providing detailed analysis and recommendations tailored to these regions.
 
