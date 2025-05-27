@@ -46,7 +46,7 @@ The system primarily focuses on assessing climate risks within specific counties
 
 ```
 ├── Analysis/                    # Analysis scripts and notebooks
-├── Climate risk support/        # Support system components
+├── Climate risk support/        # Flask web application components
 ├── Data/                       # Processed and raw data
 ├── Data Downloading Scripts/    # Scripts for data collection
 ├── Data Processing/            # Data preprocessing and cleaning
@@ -71,6 +71,10 @@ The TAMSAT Soil Moisture Dataset, version v2.3.1 released in January 2025, offer
 ### Data Access
 
 Both the TAMSAT Rainfall Dataset ([https://research.reading.ac.uk/tamsat/rainfall/](https://research.reading.ac.uk/tamsat/rainfall/)) and the TAMSAT Soil Moisture Dataset ([https://research.reading.ac.uk/tamsat/soil-moisture/](https://research.reading.ac.uk/tamsat/soil-moisture/)) are freely available for operational, research, and commercial use under the terms of the Creative Commons Attribution 4.0 International license (CC BY 4.0).
+
+## Live Demo
+
+The application is currently deployed and available live at the following URL: [https://climate-risk-assessment.up.railway.app/](https://climate-risk-assessment.up.railway.app/)
 
 ## Installation
 
