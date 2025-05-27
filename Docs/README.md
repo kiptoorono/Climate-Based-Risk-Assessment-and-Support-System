@@ -86,6 +86,8 @@ Both the TAMSAT Rainfall Dataset ([https://research.reading.ac.uk/tamsat/rainfal
 
 ## Live Demo
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Online-brightgreen?style=flat)](https://climate-risk-assessment.up.railway.app/)
+
 The application is currently deployed and available live at the following URL: [https://climate-risk-assessment.up.railway.app/](https://climate-risk-assessment.up.railway.app/)
 
 ## Installation
@@ -119,11 +121,24 @@ pip install -r requirements.txt
 
 ## Key Dependencies
 
-- **Data Processing**: pandas, numpy, xarray
-- **Machine Learning**: tensorflow, scikit-learn, xgboost
-- **Visualization**: matplotlib, seaborn, folium
-- **Geospatial**: geopandas, rasterio, rioxarray
-- **Web Framework**: Flask
+- **Data Processing**:
+  [![pandas](https://img.shields.io/badge/pandas-blue?style=flat&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
+  [![numpy](https://img.shields.io/badge/numpy-blue?style=flat&logo=numpy&logoColor=white)](https://numpy.org/)
+  [![xarray](https://img.shields.io/badge/xarray-F26B00?style=flat&logo=xarray&logoColor=white)](http://xarray.pydata.org/)
+- **Machine Learning**:
+  [![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=flat&logo=TensorFlow&logoColor=white)](https://www.tensorflow.org/)
+  [![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
+  [![XGBoost](https://img.shields.io/badge/XGBoost-0865A5?style=flat&logo=xgboost&logoColor=white)](https://xgboost.ai/)
+- **Visualization**:
+  [![Matplotlib](https://img.shields.io/badge/Matplotlib-white?style=flat&logo=matplotlib&logoColor=black)](https://matplotlib.org/)
+  [![Seaborn](https://img.shields.io/badge/Seaborn-377EB9?style=flat&logo=seaborn&logoColor=white)](https://seaborn.pydata.org/)
+  [![Folium](https://img.shields.io/badge/Folium-0078A8?style=flat&logo=leaflet&logoColor=white)](https://python-visualization.github.io/folium/)
+- **Geospatial**:
+  [![GeoPandas](https://img.shields.io/badge/GeoPandas-006064?style=flat&logo=conda-forge&logoColor=white)](https://geopandas.org/)
+  [![Rasterio](https://img.shields.io/badge/Rasterio-00796B?style=flat&logo=conda-forge&logoColor=white)](https://rasterio.readthedocs.io/en/latest/)
+  [![Rioxarray](https://img.shields.io/badge/Rioxarray-004D40?style=flat&logo=conda-forge&logoColor=white)](https://corteva.github.io/rioxarray/stable/)
+- **Web Framework**:
+  [![Flask](https://img.shields.io/badge/Flask-000000?style=flat&logo=flask&logoColor=white)](https://flask.palletsprojects.com/)
 
 ## Usage
 
