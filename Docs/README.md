@@ -1,11 +1,11 @@
 # Climate-Based Risk Assessment and Support System
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat)](https://opensource.org/licenses/MIT)
-[![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg?style=flat)](https://www.python.org/)
-[![GitHub stars](https://img.shields.io/github/stars/kiptoorono/Climate-Based-Risk-Assessment-and-Support-System?style=flat)](https://github.com/kiptoorono/Climate-Based-Risk-Assessment-and-Support-System/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/kiptoorono/Climate-Based-Risk-Assessment-and-Support-System?style=flat)](https://github.com/kiptoorono/Climate-Based-Risk-Assessment-and-Support-System/network/members)
-[![GitHub issues](https://img.shields.io/github/issues/kiptoorono/Climate-Based-Risk-Assessment-and-Support-System.svg?style=flat)](https://github.com/kiptoorono/Climate-Based-Risk-Assessment-and-Support-System/issues)
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/kiptoorono/Climate-Based-Risk-Assessment-and-Support-System.svg?style=flat)](https://github.com/kiptoorono/Climate-Based-Risk-Assessment-and-Support-System/pulls)
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg?style=flat&logo=python&logoColor=white)](https://www.python.org/)
+[![GitHub stars](https://img.shields.io/github/stars/kiptoorono/Climate-Based-Risk-Assessment-and-Support-System?style=flat&logo=github&logoColor=white)](https://github.com/kiptoorono/Climate-Based-Risk-Assessment-and-Support-System/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/kiptoorono/Climate-Based-Risk-Assessment-and-Support-System?style=flat&logo=github&logoColor=white)](https://github.com/kiptoorono/Climate-Based-Risk-Assessment-and-Support-System/network/members)
+[![GitHub issues](https://img.shields.io/github/issues/kiptoorono/Climate-Based-Risk-Assessment-and-Support-System.svg?style=flat&logo=github&logoColor=white)](https://github.com/kiptoorono/Climate-Based-Risk-Assessment-and-Support-System/issues)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/kiptoorono/Climate-Based-Risk-Assessment-and-Support-System.svg?style=flat&logo=github&logoColor=white)](https://github.com/kiptoorono/Climate-Based-Risk-Assessment-and-Support-System/pulls)
 
 A comprehensive system for assessing and managing climate-related risks in agricultural regions, providing data-driven insights and recommendations for farmers and agricultural stakeholders.
 
