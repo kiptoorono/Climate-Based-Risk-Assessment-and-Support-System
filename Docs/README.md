@@ -45,18 +45,29 @@ The system primarily focuses on assessing climate risks within specific counties
 ## Project Structure
 
 ```
-├── Analysis/                    # Analysis scripts and notebooks
-├── Climate risk support/        # Flask web application components
-├── Data/                       # Processed and raw data
-├── Data Downloading Scripts/    # Scripts for data collection
-├── Data Processing/            # Data preprocessing and cleaning
-├── LSTM/                       # LSTM-based forecasting models
-├── Visualisation/              # Visualization tools and scripts
-├── risk_assesment.py          # Core risk assessment module
-├── riskassesmentmodel.py      # Risk assessment model implementation
-├── Merge Forcasts.py          # Forecast merging and processing
-└── requirements.txt           # Project dependencies
+📂 Analysis/                    # Analysis scripts and notebooks
+📂 Climate risk support/        # Flask web application components (standalone)
+📂 Data/                       # Processed and raw data
+📂 Data Downloading Scripts/    # Scripts for data collection
+📂 Data Processing/            # Data preprocessing and cleaning
+📂 LSTM/                       # LSTM-based forecasting models
+📂 Visualisation/              # Visualization tools and scripts
+📄 risk_assesment.py          # Core risk assessment module
+📄 riskassesmentmodel.py      # Risk assessment model implementation
+📄 Merge Forcasts.py          # Forecast merging and processing
+📄 requirements.txt           # Project dependencies
 ```
+
+## Execution Workflow
+
+To run the core climate risk assessment process, follow these steps in order:
+
+1.  **Data Downloading:** Execute the scripts in the `Data Downloading Scripts/` directory to collect raw climate data.
+2.  **Data Processing:** Run the scripts in the `Data Processing/` directory to clean and preprocess the raw data. This step also includes feature engineering.
+3.  **LSTM Forecasting:** Utilize the scripts/models in the `LSTM/` folder to generate climate forecasts based on the processed data.
+4.  **Risk Assessment:** Run the `risk_assesment.py` script, which uses the processed data and LSTM forecasts to perform the climate risk assessment.
+
+The `Climate risk support/` directory contains a standalone Flask web application that provides a user interface for interacting with the system, including viewing results and potentially running parts of the workflow. This application can be run independently after the necessary data has been processed.
 
 ## Data Sources
 
