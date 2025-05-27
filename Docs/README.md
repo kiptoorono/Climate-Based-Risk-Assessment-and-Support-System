@@ -61,28 +61,16 @@ The system primarily focuses on assessing climate risks within specific counties
 ## Data Sources
 
 ### TAMSAT Rainfall Data
-- **Source**: [TAMSAT Rainfall Dataset](https://research.reading.ac.uk/tamsat/rainfall/)
-- **Version**: v3.1 (released 1st July 2020)
-- **Coverage**: African continent, including Madagascar
-- **Resolution**: 0.0375° (approx. 4km)
-- **Temporal Coverage**: 1st January 1983 to present
-- **Format**: netCDF
-- **Variables**: 
-  - `rfe`: Raw rainfall estimates
-  - `rfe_filled`: Temporally complete rainfall record
+
+The TAMSAT Rainfall Dataset, version v3.1 released on 1st July 2020, provides rainfall estimates and rainfall anomaly estimates for the entire African continent, including Madagascar. This data has a spatial resolution of 0.0375° (approximately 4km) and covers the period from 1st January 1983 to the present. The data is available in netCDF format and includes two main variables: `rfe` for raw rainfall estimates and `rfe_filled` for a temporally complete rainfall record.
 
 ### TAMSAT Soil Moisture Data
-- **Source**: [TAMSAT Soil Moisture Dataset](https://research.reading.ac.uk/tamsat/soil-moisture/)
-- **Version**: v2.3.1 (released January 2025)
-- **Coverage**: African continent, including Madagascar
-- **Resolution**: 0.25° (approx. 25km)
-- **Temporal Coverage**: 1st January 1983 to present
-- **Format**: netCDF
-- **Variables**: 
-  - `sm_c4grass`: Soil moisture availability factor for plants (0-100)
+
+The TAMSAT Soil Moisture Dataset, version v2.3.1 released in January 2025, offers soil moisture estimates and anomaly estimates relative to the 2001-2020 climatology for the African continent, including Madagascar. This dataset has a spatial resolution of 0.25° (approximately 25km) and temporal coverage from 1st January 1983 to the present. Provided in netCDF format, the key variable is `sm_c4grass`, which represents the soil moisture availability factor for plants, ranging from 0 to 100.
 
 ### Data Access
-Both datasets are freely available under the Creative Commons Attribution 4.0 International license (CC BY 4.0).
+
+Both the TAMSAT Rainfall Dataset ([https://research.reading.ac.uk/tamsat/rainfall/](https://research.reading.ac.uk/tamsat/rainfall/)) and the TAMSAT Soil Moisture Dataset ([https://research.reading.ac.uk/tamsat/soil-moisture/](https://research.reading.ac.uk/tamsat/soil-moisture/)) are freely available for operational, research, and commercial use under the terms of the Creative Commons Attribution 4.0 International license (CC BY 4.0).
 
 ## Installation
 
