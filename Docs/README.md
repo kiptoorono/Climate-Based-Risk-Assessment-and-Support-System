@@ -41,32 +41,56 @@ This system combines historical climate data analysis with machine learning-base
 ## Project Structure
 
 ```mermaid
-graph TD
-    A[Climate-Based Risk Assessment and Support System] --> B[Analysis]
-    A --> C[Climate risk support]
-    A --> D[Data]
-    A --> E[Data Downloading Scripts]
-    A --> F[Data Processing]
-    A --> G[LSTM]
-    A --> H[Visualisation]
-    A --> I[risk_assesment.py]
-    A --> J[riskassesmentmodel.py]
-    A --> K[Merge Forcasts.py]
+graph LR
+    A[Climate-Based Risk Assessment and Support System] --> Directories
+    A --> Scripts
     A --> L[requirements.txt]
 
+    subgraph Directories
+        B[Analysis]
+        C[Climate risk support]
+        D[Data]
+        E[Data Downloading Scripts]
+        F[Data Processing]
+        G[LSTM]
+        H[Visualisation]
+    end
+
+    subgraph Scripts
+        I[risk_assesment.py]
+        J[riskassesmentmodel.py]
+        K[Merge Forcasts.py]
+    end
+
     style A fill:#f9f,stroke:#333,stroke-width:4px
-    style B fill:#bbf,stroke:#333,stroke-width:2px
-    style C fill:#bbf,stroke:#333,stroke-width:2px
-    style D fill:#bbf,stroke:#333,stroke-width:2px
-    style E fill:#bbf,stroke:#333,stroke-width:2px
-    style F fill:#bbf,stroke:#333,stroke-width:2px
-    style G fill:#bbf,stroke:#333,stroke-width:2px
-    style H fill:#bbf,stroke:#333,stroke-width:2px
-    style I fill:#bfb,stroke:#333,stroke-width:2px
-    style J fill:#bfb,stroke:#333,stroke-width:2px
-    style K fill:#bfb,stroke:#333,stroke-width:2px
-    style L fill:#bfb,stroke:#333,stroke-width:2px
+    style Directories fill:#f0f8ff,stroke:#333,stroke-width:2px
+    style Scripts fill:#f0fff0,stroke:#333,stroke-width:2px
+    style B fill:#bbf,stroke:#333,stroke-width:1px
+    style C fill:#bbf,stroke:#333,stroke-width:1px
+    style D fill:#bbf,stroke:#333,stroke-width:1px
+    style E fill:#bbf,stroke:#333,stroke-width:1px
+    style F fill:#bbf,stroke:#333,stroke-width:1px
+    style G fill:#bbf,stroke:#333,stroke-width:1px
+    style H fill:#bbf,stroke:#333,stroke-width:1px
+    style I fill:#bfb,stroke:#333,stroke-width:1px
+    style J fill:#bfb,stroke:#333,stroke-width:1px
+    style K fill:#bfb,stroke:#333,stroke-width:1px
+    style L fill:#bfb,stroke:#333,stroke-width:1px
 ```
+
+### Directory Descriptions
+- **Analysis/**: Contains analysis scripts and notebooks for data processing and visualization
+- **Climate risk support/**: Support system components and utilities
+- **Data/**: Storage for processed and raw climate data
+- **Data Downloading Scripts/**: Scripts for automated data collection from various sources
+- **Data Processing/**: Tools for data preprocessing and cleaning
+- **LSTM/**: LSTM-based forecasting models and related utilities
+- **Visualisation/**: Visualization tools and scripts for data presentation
+
+### Core Scripts
+- **risk_assesment.py**: Core risk assessment module
+- **riskassesmentmodel.py**: Risk assessment model implementation
+- **Merge Forcasts.py**: Forecast merging and processing utilities
 
 ## Installation
 
