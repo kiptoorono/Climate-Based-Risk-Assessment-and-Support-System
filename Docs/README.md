@@ -13,7 +13,7 @@ A comprehensive system for assessing and managing climate-related risks in agric
 
 This system combines historical climate data analysis with machine learning-based forecasting to assess various climate risks including drought, heat stress, and flooding. It provides detailed risk assessments at both county and agro-ecological zone levels, along with actionable recommendations for farmers.
 
-![Map of the project focus region](map Screenshot .png)
+![Map of the project focus region](map_Screenshot .png)
 
 The system primarily focuses on assessing climate risks within specific counties and agro-ecological zones in Kenya, as visually represented in the map above, providing detailed analysis and recommendations tailored to these regions.
 
@@ -106,80 +106,4 @@ pip install -r requirements.txt
 ## Usage
 
 1. **Data Preparation**
-   - Place your climate data in the `Data/` directory
-   - Ensure data includes rainfall, temperature, and soil moisture measurements
-
-2. **Risk Assessment**
-```python
-from risk_assesment import generate_climate_risk_assessment
-
-# Generate risk assessment
-results = generate_climate_risk_assessment(
-    data_path='path/to/merged_data.csv',
-    output_dir='risk_assessment_results',
-    zone_data_path='path/to/zone_data.csv'
-)
-```
-
-3. **View Results**
-   - Check the `risk_assessment_results/` directory for generated reports
-   - Review visualizations in the `Visualisation/` directory
-
-## Risk Assessment Methodology
-
-The system uses a comprehensive approach to risk assessment:
-
-1. **Data Analysis**
-   - Historical baseline calculation
-   - Statistical analysis of climate variables
-   - Trend identification
-
-2. **Risk Calculation**
-   - Drought Index: Based on rainfall deviation and soil moisture
-   - Heat Stress: Temperature anomalies and extreme events
-   - Flood Risk: Rainfall intensity and soil saturation
-
-3. **Risk Scoring**
-   - Severity levels: Low, Mild, Moderate, Severe
-   - Weighted scoring system
-   - Zone-specific thresholds
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a Pull Request
-
-## License
-
-MIT License
-
-Copyright (c) 2024 Climate-Based Risk Assessment and Support System
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
-## Contact
-
-ronobrian058@gmail.com
-
-## Acknowledgments
-
-- [List any acknowledgments or references]
+   - Place your climate data in the `Data/`
