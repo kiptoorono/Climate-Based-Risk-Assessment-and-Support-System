@@ -206,7 +206,3 @@ SOFTWARE.
 
 ronobrian058@gmail.com
 
-## Acknowledgments
-
-- [List any acknowledgments or references]
-
