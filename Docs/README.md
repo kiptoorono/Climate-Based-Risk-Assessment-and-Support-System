@@ -1,5 +1,12 @@
 # Climate-Based Risk Assessment and Support System
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
+[![GitHub stars](https://img.shields.io/github/stars/kiptoorono/Climate-Based-Risk-Assessment-and-Support-System?style=social)](https://github.com/kiptoorono/Climate-Based-Risk-Assessment-and-Support-System/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/kiptoorono/Climate-Based-Risk-Assessment-and-Support-System?style=social)](https://github.com/kiptoorono/Climate-Based-Risk-Assessment-and-Support-System/network/members)
+[![GitHub issues](https://img.shields.io/github/issues/kiptoorono/Climate-Based-Risk-Assessment-and-Support-System)](https://github.com/kiptoorono/Climate-Based-Risk-Assessment-and-Support-System/issues)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/kiptoorono/Climate-Based-Risk-Assessment-and-Support-System)](https://github.com/kiptoorono/Climate-Based-Risk-Assessment-and-Support-System/pulls)
+
 A comprehensive system for assessing and managing climate-related risks in agricultural regions, providing data-driven insights and recommendations for farmers and agricultural stakeholders.
 
 ## Overview
