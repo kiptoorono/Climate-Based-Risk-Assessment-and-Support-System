@@ -40,57 +40,45 @@ This system combines historical climate data analysis with machine learning-base
 
 ## Project Structure
 
-```mermaid
-graph LR
-    A[Climate-Based Risk Assessment and Support System] --> Directories
-    A --> Scripts
-    A --> L[requirements.txt]
-
-    subgraph Directories
-        B[Analysis]
-        C[Climate risk support]
-        D[Data]
-        E[Data Downloading Scripts]
-        F[Data Processing]
-        G[LSTM]
-        H[Visualisation]
-    end
-
-    subgraph Scripts
-        I[risk_assesment.py]
-        J[riskassesmentmodel.py]
-        K[Merge Forcasts.py]
-    end
-
-    style A fill:#f9f,stroke:#333,stroke-width:4px
-    style Directories fill:#f0f8ff,stroke:#333,stroke-width:2px
-    style Scripts fill:#f0fff0,stroke:#333,stroke-width:2px
-    style B fill:#bbf,stroke:#333,stroke-width:1px
-    style C fill:#bbf,stroke:#333,stroke-width:1px
-    style D fill:#bbf,stroke:#333,stroke-width:1px
-    style E fill:#bbf,stroke:#333,stroke-width:1px
-    style F fill:#bbf,stroke:#333,stroke-width:1px
-    style G fill:#bbf,stroke:#333,stroke-width:1px
-    style H fill:#bbf,stroke:#333,stroke-width:1px
-    style I fill:#bfb,stroke:#333,stroke-width:1px
-    style J fill:#bfb,stroke:#333,stroke-width:1px
-    style K fill:#bfb,stroke:#333,stroke-width:1px
-    style L fill:#bfb,stroke:#333,stroke-width:1px
+```
+├── Analysis/                    # Analysis scripts and notebooks
+├── Climate risk support/        # Support system components
+├── Data/                       # Processed and raw data
+├── Data Downloading Scripts/    # Scripts for data collection
+├── Data Processing/            # Data preprocessing and cleaning
+├── LSTM/                       # LSTM-based forecasting models
+├── Visualisation/              # Visualization tools and scripts
+├── risk_assesment.py          # Core risk assessment module
+├── riskassesmentmodel.py      # Risk assessment model implementation
+├── Merge Forcasts.py          # Forecast merging and processing
+└── requirements.txt           # Project dependencies
 ```
 
-### Directory Descriptions
-- **Analysis/**: Contains analysis scripts and notebooks for data processing and visualization
-- **Climate risk support/**: Support system components and utilities
-- **Data/**: Storage for processed and raw climate data
-- **Data Downloading Scripts/**: Scripts for automated data collection from various sources
-- **Data Processing/**: Tools for data preprocessing and cleaning
-- **LSTM/**: LSTM-based forecasting models and related utilities
-- **Visualisation/**: Visualization tools and scripts for data presentation
+## Data Sources
 
-### Core Scripts
-- **risk_assesment.py**: Core risk assessment module
-- **riskassesmentmodel.py**: Risk assessment model implementation
-- **Merge Forcasts.py**: Forecast merging and processing utilities
+### TAMSAT Rainfall Data
+- **Source**: [TAMSAT Rainfall Dataset](https://research.reading.ac.uk/tamsat/rainfall/)
+- **Version**: v3.1 (released 1st July 2020)
+- **Coverage**: African continent, including Madagascar
+- **Resolution**: 0.0375° (approx. 4km)
+- **Temporal Coverage**: 1st January 1983 to present
+- **Format**: netCDF
+- **Variables**: 
+  - `rfe`: Raw rainfall estimates
+  - `rfe_filled`: Temporally complete rainfall record
+
+### TAMSAT Soil Moisture Data
+- **Source**: [TAMSAT Soil Moisture Dataset](https://research.reading.ac.uk/tamsat/soil-moisture/)
+- **Version**: v2.3.1 (released January 2025)
+- **Coverage**: African continent, including Madagascar
+- **Resolution**: 0.25° (approx. 25km)
+- **Temporal Coverage**: 1st January 1983 to present
+- **Format**: netCDF
+- **Variables**: 
+  - `sm_c4grass`: Soil moisture availability factor for plants (0-100)
+
+### Data Access
+Both datasets are freely available under the Creative Commons Attribution 4.0 International license (CC BY 4.0).
 
 ## Installation
 
