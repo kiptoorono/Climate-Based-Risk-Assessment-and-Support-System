@@ -5,31 +5,40 @@ from datetime import datetime
 import json
 import logging
 
-app = Flask(__name__, static_folder='static')
+# Get the base directory of the application
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+app = Flask(__name__, 
+            static_folder=os.path.join(BASE_DIR, 'static'),
+            template_folder=os.path.join(BASE_DIR, 'templates'))
+
+# Configure logging
+logging.basicConfig(level=logging.DEBUG)
+logger = logging.getLogger(__name__)
 
 @app.route('/')
 def index():
-    return send_from_directory(app.static_folder, 'index.html')
+    return render_template('index.html')
 
-@app.route('/forecast.html')
+@app.route('/forecast')
 def forecast():
-    return send_from_directory(app.static_folder, 'forecast.html')
+    return render_template('forecast.html')
 
-@app.route('/climate_zones.html')
+@app.route('/climate_zones')
 def climate_zones():
-    return send_from_directory(app.static_folder, 'climate_zones.html')
+    return render_template('climate_zones.html')
 
-@app.route('/climate_zones_map.html')
+@app.route('/climate_zones_map')
 def climate_zones_map():
-    return send_from_directory(app.static_folder, 'climate_zones_map.html')
+    return render_template('climate_zones_map.html')
 
-@app.route('/risk_assessment.html')
+@app.route('/risk_assessment')
 def risk_assessment():
-    return send_from_directory(app.static_folder, 'risk_assessment.html')
+    return render_template('risk_assessment.html')
 
-@app.route('/about.html')
+@app.route('/about')
 def about():
-    return send_from_directory(app.static_folder, 'about.html')
+    return render_template('about.html')
 
 @app.route('/api/forecast/<location>')
 def get_forecast_data(location):
@@ -38,11 +47,10 @@ def get_forecast_data(location):
         location = location.lower()  # Keep lowercase for internal use
         location_cap = location.capitalize()  # For file name
         
-        # Define path for forecast file
-        base_path = r'E:\Agriculture project\LSTM\forecasts'
-        forecast_file = os.path.join(base_path, f'{location_cap}_forecast.csv')
+        # Define path for forecast file using relative path
+        forecast_file = os.path.join(BASE_DIR, 'data', 'forecasts', f'{location_cap}_forecast.csv')
         
-        print(f"Looking for forecast file at: {forecast_file}")
+        logger.debug(f"Looking for forecast file at: {forecast_file}")
         
         if not os.path.exists(forecast_file):
             return jsonify({
@@ -53,12 +61,8 @@ def get_forecast_data(location):
         try:
             # Skip the metrics and read only the data portion
             data_df = pd.read_csv(forecast_file, skiprows=4, encoding='latin-1')
-            print("Successfully read data rows")
-            print(f"Columns found: {data_df.columns.tolist()}")
-            
-            # Debug print for data
-            print("\nFirst few rows of data:")
-            print(data_df.head())
+            logger.debug("Successfully read data rows")
+            logger.debug(f"Columns found: {data_df.columns.tolist()}")
             
             # Replace empty strings and whitespace with NaN
             data_df = data_df.replace(r'^\s*$', pd.NA, regex=True)
@@ -71,17 +75,12 @@ def get_forecast_data(location):
             
             # Verify column names exist
             if rain_col not in data_df.columns or soil_col not in data_df.columns or temp_col not in data_df.columns:
-                print(f"Expected columns not found. Looking for: {rain_col}, {soil_col}, {temp_col}")
-                print(f"Available columns: {data_df.columns.tolist()}")
+                logger.error(f"Expected columns not found. Looking for: {rain_col}, {soil_col}, {temp_col}")
+                logger.error(f"Available columns: {data_df.columns.tolist()}")
                 return jsonify({
                     'success': False,
                     'error': f'Column names not found in forecast file'
                 })
-            
-            # Debug print before conversion
-            print(f"\nUnique values in rainfall column: {data_df[rain_col].unique()}")
-            print(f"Unique values in soil moisture column: {data_df[soil_col].unique()}")
-            print(f"Unique values in temperature column: {data_df[temp_col].unique()}")
             
             # Convert columns to float, replacing any remaining non-numeric values with NaN
             try:
@@ -89,7 +88,7 @@ def get_forecast_data(location):
                 data_df[soil_col] = pd.to_numeric(data_df[soil_col], errors='coerce')
                 data_df[temp_col] = pd.to_numeric(data_df[temp_col], errors='coerce')
             except Exception as e:
-                print(f"Error converting columns to numeric: {str(e)}")
+                logger.error(f"Error converting columns to numeric: {str(e)}")
                 return jsonify({
                     'success': False,
                     'error': f'Error converting data to numeric: {str(e)}'
@@ -117,9 +116,9 @@ def get_forecast_data(location):
                 }
             }
             
-            print(f"\nProcessed data for {location}:")
-            print(f"Number of dates: {len(data['dates'])}")
-            print(f"Number of values per variable: {len(data['rainfall'])}")
+            logger.debug(f"Processed data for {location}:")
+            logger.debug(f"Number of dates: {len(data['dates'])}")
+            logger.debug(f"Number of values per variable: {len(data['rainfall'])}")
             
             return jsonify({
                 'success': True,
@@ -127,14 +126,14 @@ def get_forecast_data(location):
             })
             
         except Exception as e:
-            print(f"Error processing {forecast_file}: {str(e)}")
+            logger.error(f"Error processing {forecast_file}: {str(e)}")
             return jsonify({
                 'success': False,
                 'error': f'Error processing forecast data: {str(e)}'
             })
             
     except Exception as e:
-        print(f"Error processing request for {location}: {str(e)}")
+        logger.error(f"Error processing request for {location}: {str(e)}")
         return jsonify({
             'success': False,
             'error': str(e)
@@ -143,14 +142,16 @@ def get_forecast_data(location):
 @app.route('/api/risk_assessment/<location>')
 def get_risk_assessment(location):
     try:
-        # Path to pre-computed risk assessment file
-        risk_file = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'risk_assessment_results', 'combined_risk_assessment.json')
+        # Path to pre-computed risk assessment file using relative path
+        risk_file = os.path.join(BASE_DIR, 'data', 'risk_assesment', 'combined_risk_assessment.json')
+        
+        logger.debug(f"Looking for risk assessment file at: {risk_file}")
         
         try:
             # Try to read the pre-computed risk assessments
             with open(risk_file, 'r', encoding='utf-8') as f:
                 data = json.load(f)
-                print(f"Successfully loaded risk assessment data")
+                logger.debug("Successfully loaded risk assessment data")
                 
                 if 'county_risks' not in data:
                     return jsonify({
@@ -158,8 +159,8 @@ def get_risk_assessment(location):
                     }), 500
                 
                 risk_data = data['county_risks']
-                print(f"Available locations: {list(risk_data.keys())}")  # Debug log
-                print(f"Requested location: {location}")  # Debug log
+                logger.debug(f"Available locations: {list(risk_data.keys())}")
+                logger.debug(f"Requested location: {location}")
                 
                 # Try to find a case-insensitive match
                 location_found = None
@@ -169,25 +170,25 @@ def get_risk_assessment(location):
                         break
             
                 if location_found:
-                    print(f"Found matching location: {location_found}")
+                    logger.debug(f"Found matching location: {location_found}")
                     return jsonify({
                         'location': location_found,
                         'risk_assessment': risk_data[location_found]
                     })
                 else:
-                    print(f"Location not found. Available locations: {list(risk_data.keys())}")
+                    logger.error(f"Location not found. Available locations: {list(risk_data.keys())}")
                     return jsonify({
                         'error': f'No risk assessment data available for {location}. Available locations: {", ".join(sorted(risk_data.keys()))}'
                     }), 404
                 
         except (FileNotFoundError, json.JSONDecodeError) as e:
-            print(f"Error reading risk assessment file: {str(e)}")
+            logger.error(f"Error reading risk assessment file: {str(e)}")
             return jsonify({
                 'error': f'Could not read risk assessment data: {str(e)}'
             }), 500
             
     except Exception as e:
-        print(f"Error loading risk assessment data: {str(e)}")
+        logger.error(f"Error loading risk assessment data: {str(e)}")
         return jsonify({'error': str(e)}), 500
 
 @app.route('/<path:path>')

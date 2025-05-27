@@ -18,8 +18,8 @@ selected_counties = [
 def preprocess_data(df, name):
     df.rename(columns={df.columns[0]: "Date"}, inplace=True)
     df["Date"] = pd.to_datetime(df["Date"])
-    df = df[df["Date"].dt.year >= 1984]  # Remove data before 1984
-    df = df[["Date"] + selected_counties]  # Select only relevant counties
+    df = df[df["Date"].dt.year >= 1984]  
+    df = df[["Date"] + selected_counties]  
     print(f"{name} Data Loaded | Shape: {df.shape} | Date Range: {df['Date'].min()} to {df['Date'].max()}")
     return df
 
@@ -36,7 +36,7 @@ common_dates = (
 )
 print(f"Common Dates Count: {len(common_dates)}")
 
-# Merge datasets and ensure Temperature columns get "_temp" suffix
+# Merge datasets and add suffixes to the columns
 merged_data = Rainfall_data.merge(Soil_moisture_data, on="Date", suffixes=("_rain", "_soil"))
 merged_data = merged_data.merge(Temperature_data, on="Date", how="inner", suffixes=("", "_temp"))
 
@@ -45,7 +45,7 @@ for county in selected_counties:
     if county in merged_data.columns:
         merged_data.rename(columns={county: f"{county}_temp"}, inplace=True)
 
-# Save to Excel
+
 output_path = r"E:\Agriculture project\Data\Processed\Merged_data.xlsx"
 merged_data.to_excel(output_path, index=False)
 print(f"Data Merged Successfully and saved to {output_path}")

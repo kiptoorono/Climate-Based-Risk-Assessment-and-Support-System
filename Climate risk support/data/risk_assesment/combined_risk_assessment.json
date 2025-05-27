@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generation_date": "2025-05-21",
+    "generation_date": "2025-04-15",
     "data_period": "1984-01 to 2029-09",
     "counties_analyzed": [
       "Nyeri",
@@ -816,44 +816,45 @@
       },
       "recommendations": [
         {
-          "title": "Water Conservation",
-          "timing": "Throughout dry season",
+          "title": "Pre-Season Land Preparation",
+          "timing": "1 month before long rains",
           "actions": [
-            "Implement water-saving irrigation techniques",
-            "Use mulch to reduce evaporation",
-            "Maintain water storage systems",
-            "Monitor water usage carefully",
-            "Use drip irrigation with timers",
-            "Implement rainwater harvesting",
-            "Use moisture retention polymers",
-            "Practice deficit irrigation"
+            "Clear fields of crop residue and weeds",
+            "Perform soil testing and apply recommended amendments",
+            "Prepare water harvesting structures",
+            "Repair and maintain farm infrastructure",
+            "Apply organic manure (5-10 tons/ha)",
+            "Deep tillage (30-45cm) for better water infiltration",
+            "Construct contour bunds for soil conservation",
+            "Install soil moisture monitoring devices"
           ],
           "climate_indicator": "Expected rainfall: 79.5mm \u00b1 90.3mm"
         },
         {
           "title": "Soil Management",
-          "timing": "During dry period",
+          "timing": "Throughout season",
           "actions": [
-            "Apply organic mulch (8-10cm)",
-            "Use cover crops for soil protection",
-            "Implement minimum tillage",
-            "Apply compost for soil health",
-            "Use biochar for moisture retention",
-            "Practice crop residue management"
+            "Maintain soil cover with organic mulch (5-10cm)",
+            "Practice minimum tillage to preserve soil structure",
+            "Apply compost tea for soil microbial activity",
+            "Monitor soil pH and adjust if needed",
+            "Use cover crops to prevent erosion",
+            "Implement crop rotation for soil health"
           ],
-          "climate_indicator": "Focus on moisture retention"
+          "climate_indicator": "Target soil moisture: 6.9%"
         },
         {
-          "title": "Infrastructure Maintenance",
-          "timing": "During dry period",
+          "title": "Water Conservation",
+          "timing": "Throughout season",
           "actions": [
-            "Repair and maintain irrigation systems",
-            "Clean water storage facilities",
-            "Maintain soil conservation structures",
-            "Service farm machinery",
-            "Check and repair water pumps",
-            "Maintain drainage systems"
-          ]
+            "Implement drip irrigation for water efficiency",
+            "Use rainwater harvesting systems",
+            "Construct check dams for water retention",
+            "Practice furrow irrigation with proper spacing",
+            "Install soil moisture sensors for precise irrigation",
+            "Use water-saving techniques like basin irrigation"
+          ],
+          "climate_indicator": "Focus on efficient water use"
         },
         "Use shade nets for sensitive crops",
         "Increase irrigation frequency",
@@ -1646,44 +1647,45 @@
       },
       "recommendations": [
         {
-          "title": "Water Conservation",
-          "timing": "Throughout dry season",
+          "title": "Pre-Season Land Preparation",
+          "timing": "1 month before long rains",
           "actions": [
-            "Implement water-saving irrigation techniques",
-            "Use mulch to reduce evaporation",
-            "Maintain water storage systems",
-            "Monitor water usage carefully",
-            "Use drip irrigation with timers",
-            "Implement rainwater harvesting",
-            "Use moisture retention polymers",
-            "Practice deficit irrigation"
+            "Clear fields of crop residue and weeds",
+            "Perform soil testing and apply recommended amendments",
+            "Prepare water harvesting structures",
+            "Repair and maintain farm infrastructure",
+            "Apply organic manure (5-10 tons/ha)",
+            "Deep tillage (30-45cm) for better water infiltration",
+            "Construct contour bunds for soil conservation",
+            "Install soil moisture monitoring devices"
           ],
           "climate_indicator": "Expected rainfall: 72.2mm \u00b1 104.1mm"
         },
         {
           "title": "Soil Management",
-          "timing": "During dry period",
+          "timing": "Throughout season",
           "actions": [
-            "Apply organic mulch (8-10cm)",
-            "Use cover crops for soil protection",
-            "Implement minimum tillage",
-            "Apply compost for soil health",
-            "Use biochar for moisture retention",
-            "Practice crop residue management"
+            "Maintain soil cover with organic mulch (5-10cm)",
+            "Practice minimum tillage to preserve soil structure",
+            "Apply compost tea for soil microbial activity",
+            "Monitor soil pH and adjust if needed",
+            "Use cover crops to prevent erosion",
+            "Implement crop rotation for soil health"
           ],
-          "climate_indicator": "Focus on moisture retention"
+          "climate_indicator": "Target soil moisture: 11.6%"
         },
         {
-          "title": "Infrastructure Maintenance",
-          "timing": "During dry period",
+          "title": "Water Conservation",
+          "timing": "Throughout season",
           "actions": [
-            "Repair and maintain irrigation systems",
-            "Clean water storage facilities",
-            "Maintain soil conservation structures",
-            "Service farm machinery",
-            "Check and repair water pumps",
-            "Maintain drainage systems"
-          ]
+            "Implement drip irrigation for water efficiency",
+            "Use rainwater harvesting systems",
+            "Construct check dams for water retention",
+            "Practice furrow irrigation with proper spacing",
+            "Install soil moisture sensors for precise irrigation",
+            "Use water-saving techniques like basin irrigation"
+          ],
+          "climate_indicator": "Focus on efficient water use"
         },
         "Use shade nets for sensitive crops",
         "Increase irrigation frequency",
@@ -2476,44 +2478,45 @@
       },
       "recommendations": [
         {
-          "title": "Water Conservation",
-          "timing": "Throughout dry season",
+          "title": "Pre-Season Land Preparation",
+          "timing": "1 month before long rains",
           "actions": [
-            "Implement water-saving irrigation techniques",
-            "Use mulch to reduce evaporation",
-            "Maintain water storage systems",
-            "Monitor water usage carefully",
-            "Use drip irrigation with timers",
-            "Implement rainwater harvesting",
-            "Use moisture retention polymers",
-            "Practice deficit irrigation"
+            "Clear fields of crop residue and weeds",
+            "Perform soil testing and apply recommended amendments",
+            "Prepare water harvesting structures",
+            "Repair and maintain farm infrastructure",
+            "Apply organic manure (5-10 tons/ha)",
+            "Deep tillage (30-45cm) for better water infiltration",
+            "Construct contour bunds for soil conservation",
+            "Install soil moisture monitoring devices"
           ],
           "climate_indicator": "Expected rainfall: 70.9mm \u00b1 105.4mm"
         },
         {
           "title": "Soil Management",
-          "timing": "During dry period",
+          "timing": "Throughout season",
           "actions": [
-            "Apply organic mulch (8-10cm)",
-            "Use cover crops for soil protection",
-            "Implement minimum tillage",
-            "Apply compost for soil health",
-            "Use biochar for moisture retention",
-            "Practice crop residue management"
+            "Maintain soil cover with organic mulch (5-10cm)",
+            "Practice minimum tillage to preserve soil structure",
+            "Apply compost tea for soil microbial activity",
+            "Monitor soil pH and adjust if needed",
+            "Use cover crops to prevent erosion",
+            "Implement crop rotation for soil health"
           ],
-          "climate_indicator": "Focus on moisture retention"
+          "climate_indicator": "Target soil moisture: 18.3%"
         },
         {
-          "title": "Infrastructure Maintenance",
-          "timing": "During dry period",
+          "title": "Water Conservation",
+          "timing": "Throughout season",
           "actions": [
-            "Repair and maintain irrigation systems",
-            "Clean water storage facilities",
-            "Maintain soil conservation structures",
-            "Service farm machinery",
-            "Check and repair water pumps",
-            "Maintain drainage systems"
-          ]
+            "Implement drip irrigation for water efficiency",
+            "Use rainwater harvesting systems",
+            "Construct check dams for water retention",
+            "Practice furrow irrigation with proper spacing",
+            "Install soil moisture sensors for precise irrigation",
+            "Use water-saving techniques like basin irrigation"
+          ],
+          "climate_indicator": "Focus on efficient water use"
         },
         "Use shade nets for sensitive crops",
         "Increase irrigation frequency",
@@ -3306,44 +3309,45 @@
       },
       "recommendations": [
         {
-          "title": "Water Conservation",
-          "timing": "Throughout dry season",
+          "title": "Pre-Season Land Preparation",
+          "timing": "1 month before long rains",
           "actions": [
-            "Implement water-saving irrigation techniques",
-            "Use mulch to reduce evaporation",
-            "Maintain water storage systems",
-            "Monitor water usage carefully",
-            "Use drip irrigation with timers",
-            "Implement rainwater harvesting",
-            "Use moisture retention polymers",
-            "Practice deficit irrigation"
+            "Clear fields of crop residue and weeds",
+            "Perform soil testing and apply recommended amendments",
+            "Prepare water harvesting structures",
+            "Repair and maintain farm infrastructure",
+            "Apply organic manure (5-10 tons/ha)",
+            "Deep tillage (30-45cm) for better water infiltration",
+            "Construct contour bunds for soil conservation",
+            "Install soil moisture monitoring devices"
           ],
           "climate_indicator": "Expected rainfall: 72.3mm \u00b1 99.6mm"
         },
         {
           "title": "Soil Management",
-          "timing": "During dry period",
+          "timing": "Throughout season",
           "actions": [
-            "Apply organic mulch (8-10cm)",
-            "Use cover crops for soil protection",
-            "Implement minimum tillage",
-            "Apply compost for soil health",
-            "Use biochar for moisture retention",
-            "Practice crop residue management"
+            "Maintain soil cover with organic mulch (5-10cm)",
+            "Practice minimum tillage to preserve soil structure",
+            "Apply compost tea for soil microbial activity",
+            "Monitor soil pH and adjust if needed",
+            "Use cover crops to prevent erosion",
+            "Implement crop rotation for soil health"
           ],
-          "climate_indicator": "Focus on moisture retention"
+          "climate_indicator": "Target soil moisture: 2.8%"
         },
         {
-          "title": "Infrastructure Maintenance",
-          "timing": "During dry period",
+          "title": "Water Conservation",
+          "timing": "Throughout season",
           "actions": [
-            "Repair and maintain irrigation systems",
-            "Clean water storage facilities",
-            "Maintain soil conservation structures",
-            "Service farm machinery",
-            "Check and repair water pumps",
-            "Maintain drainage systems"
-          ]
+            "Implement drip irrigation for water efficiency",
+            "Use rainwater harvesting systems",
+            "Construct check dams for water retention",
+            "Practice furrow irrigation with proper spacing",
+            "Install soil moisture sensors for precise irrigation",
+            "Use water-saving techniques like basin irrigation"
+          ],
+          "climate_indicator": "Focus on efficient water use"
         },
         "Use shade nets for sensitive crops",
         "Increase irrigation frequency",
@@ -4136,44 +4140,45 @@
       },
       "recommendations": [
         {
-          "title": "Water Conservation",
-          "timing": "Throughout dry season",
+          "title": "Pre-Season Land Preparation",
+          "timing": "1 month before long rains",
           "actions": [
-            "Implement water-saving irrigation techniques",
-            "Use mulch to reduce evaporation",
-            "Maintain water storage systems",
-            "Monitor water usage carefully",
-            "Use drip irrigation with timers",
-            "Implement rainwater harvesting",
-            "Use moisture retention polymers",
-            "Practice deficit irrigation"
+            "Clear fields of crop residue and weeds",
+            "Perform soil testing and apply recommended amendments",
+            "Prepare water harvesting structures",
+            "Repair and maintain farm infrastructure",
+            "Apply organic manure (5-10 tons/ha)",
+            "Deep tillage (30-45cm) for better water infiltration",
+            "Construct contour bunds for soil conservation",
+            "Install soil moisture monitoring devices"
           ],
           "climate_indicator": "Expected rainfall: 128.3mm \u00b1 65.9mm"
         },
         {
           "title": "Soil Management",
-          "timing": "During dry period",
+          "timing": "Throughout season",
           "actions": [
-            "Apply organic mulch (8-10cm)",
-            "Use cover crops for soil protection",
-            "Implement minimum tillage",
-            "Apply compost for soil health",
-            "Use biochar for moisture retention",
-            "Practice crop residue management"
+            "Maintain soil cover with organic mulch (5-10cm)",
+            "Practice minimum tillage to preserve soil structure",
+            "Apply compost tea for soil microbial activity",
+            "Monitor soil pH and adjust if needed",
+            "Use cover crops to prevent erosion",
+            "Implement crop rotation for soil health"
           ],
-          "climate_indicator": "Focus on moisture retention"
+          "climate_indicator": "Target soil moisture: 31.9%"
         },
         {
-          "title": "Infrastructure Maintenance",
-          "timing": "During dry period",
+          "title": "Water Conservation",
+          "timing": "Throughout season",
           "actions": [
-            "Repair and maintain irrigation systems",
-            "Clean water storage facilities",
-            "Maintain soil conservation structures",
-            "Service farm machinery",
-            "Check and repair water pumps",
-            "Maintain drainage systems"
-          ]
+            "Implement drip irrigation for water efficiency",
+            "Use rainwater harvesting systems",
+            "Construct check dams for water retention",
+            "Practice furrow irrigation with proper spacing",
+            "Install soil moisture sensors for precise irrigation",
+            "Use water-saving techniques like basin irrigation"
+          ],
+          "climate_indicator": "Focus on efficient water use"
         },
         "Implement water conservation measures",
         "Use drought-resistant crop varieties",
@@ -4970,44 +4975,45 @@
       },
       "recommendations": [
         {
-          "title": "Water Conservation",
-          "timing": "Throughout dry season",
+          "title": "Pre-Season Land Preparation",
+          "timing": "1 month before long rains",
           "actions": [
-            "Implement water-saving irrigation techniques",
-            "Use mulch to reduce evaporation",
-            "Maintain water storage systems",
-            "Monitor water usage carefully",
-            "Use drip irrigation with timers",
-            "Implement rainwater harvesting",
-            "Use moisture retention polymers",
-            "Practice deficit irrigation"
+            "Clear fields of crop residue and weeds",
+            "Perform soil testing and apply recommended amendments",
+            "Prepare water harvesting structures",
+            "Repair and maintain farm infrastructure",
+            "Apply organic manure (5-10 tons/ha)",
+            "Deep tillage (30-45cm) for better water infiltration",
+            "Construct contour bunds for soil conservation",
+            "Install soil moisture monitoring devices"
           ],
           "climate_indicator": "Expected rainfall: 131.1mm \u00b1 67.9mm"
         },
         {
           "title": "Soil Management",
-          "timing": "During dry period",
+          "timing": "Throughout season",
           "actions": [
-            "Apply organic mulch (8-10cm)",
-            "Use cover crops for soil protection",
-            "Implement minimum tillage",
-            "Apply compost for soil health",
-            "Use biochar for moisture retention",
-            "Practice crop residue management"
+            "Maintain soil cover with organic mulch (5-10cm)",
+            "Practice minimum tillage to preserve soil structure",
+            "Apply compost tea for soil microbial activity",
+            "Monitor soil pH and adjust if needed",
+            "Use cover crops to prevent erosion",
+            "Implement crop rotation for soil health"
           ],
-          "climate_indicator": "Focus on moisture retention"
+          "climate_indicator": "Target soil moisture: 25.1%"
         },
         {
-          "title": "Infrastructure Maintenance",
-          "timing": "During dry period",
+          "title": "Water Conservation",
+          "timing": "Throughout season",
           "actions": [
-            "Repair and maintain irrigation systems",
-            "Clean water storage facilities",
-            "Maintain soil conservation structures",
-            "Service farm machinery",
-            "Check and repair water pumps",
-            "Maintain drainage systems"
-          ]
+            "Implement drip irrigation for water efficiency",
+            "Use rainwater harvesting systems",
+            "Construct check dams for water retention",
+            "Practice furrow irrigation with proper spacing",
+            "Install soil moisture sensors for precise irrigation",
+            "Use water-saving techniques like basin irrigation"
+          ],
+          "climate_indicator": "Focus on efficient water use"
         },
         "Implement water conservation measures",
         "Use drought-resistant crop varieties",
@@ -5804,44 +5810,45 @@
       },
       "recommendations": [
         {
-          "title": "Water Conservation",
-          "timing": "Throughout dry season",
+          "title": "Pre-Season Land Preparation",
+          "timing": "1 month before long rains",
           "actions": [
-            "Implement water-saving irrigation techniques",
-            "Use mulch to reduce evaporation",
-            "Maintain water storage systems",
-            "Monitor water usage carefully",
-            "Use drip irrigation with timers",
-            "Implement rainwater harvesting",
-            "Use moisture retention polymers",
-            "Practice deficit irrigation"
+            "Clear fields of crop residue and weeds",
+            "Perform soil testing and apply recommended amendments",
+            "Prepare water harvesting structures",
+            "Repair and maintain farm infrastructure",
+            "Apply organic manure (5-10 tons/ha)",
+            "Deep tillage (30-45cm) for better water infiltration",
+            "Construct contour bunds for soil conservation",
+            "Install soil moisture monitoring devices"
           ],
           "climate_indicator": "Expected rainfall: 125.4mm \u00b1 65.7mm"
         },
         {
           "title": "Soil Management",
-          "timing": "During dry period",
+          "timing": "Throughout season",
           "actions": [
-            "Apply organic mulch (8-10cm)",
-            "Use cover crops for soil protection",
-            "Implement minimum tillage",
-            "Apply compost for soil health",
-            "Use biochar for moisture retention",
-            "Practice crop residue management"
+            "Maintain soil cover with organic mulch (5-10cm)",
+            "Practice minimum tillage to preserve soil structure",
+            "Apply compost tea for soil microbial activity",
+            "Monitor soil pH and adjust if needed",
+            "Use cover crops to prevent erosion",
+            "Implement crop rotation for soil health"
           ],
-          "climate_indicator": "Focus on moisture retention"
+          "climate_indicator": "Target soil moisture: 51.8%"
         },
         {
-          "title": "Infrastructure Maintenance",
-          "timing": "During dry period",
+          "title": "Water Conservation",
+          "timing": "Throughout season",
           "actions": [
-            "Repair and maintain irrigation systems",
-            "Clean water storage facilities",
-            "Maintain soil conservation structures",
-            "Service farm machinery",
-            "Check and repair water pumps",
-            "Maintain drainage systems"
-          ]
+            "Implement drip irrigation for water efficiency",
+            "Use rainwater harvesting systems",
+            "Construct check dams for water retention",
+            "Practice furrow irrigation with proper spacing",
+            "Install soil moisture sensors for precise irrigation",
+            "Use water-saving techniques like basin irrigation"
+          ],
+          "climate_indicator": "Focus on efficient water use"
         },
         "Implement water conservation measures",
         "Use drought-resistant crop varieties",
@@ -6638,44 +6645,45 @@
       },
       "recommendations": [
         {
-          "title": "Water Conservation",
-          "timing": "Throughout dry season",
+          "title": "Pre-Season Land Preparation",
+          "timing": "1 month before long rains",
           "actions": [
-            "Implement water-saving irrigation techniques",
-            "Use mulch to reduce evaporation",
-            "Maintain water storage systems",
-            "Monitor water usage carefully",
-            "Use drip irrigation with timers",
-            "Implement rainwater harvesting",
-            "Use moisture retention polymers",
-            "Practice deficit irrigation"
+            "Clear fields of crop residue and weeds",
+            "Perform soil testing and apply recommended amendments",
+            "Prepare water harvesting structures",
+            "Repair and maintain farm infrastructure",
+            "Apply organic manure (5-10 tons/ha)",
+            "Deep tillage (30-45cm) for better water infiltration",
+            "Construct contour bunds for soil conservation",
+            "Install soil moisture monitoring devices"
           ],
           "climate_indicator": "Expected rainfall: 89.7mm \u00b1 77.7mm"
         },
         {
           "title": "Soil Management",
-          "timing": "During dry period",
+          "timing": "Throughout season",
           "actions": [
-            "Apply organic mulch (8-10cm)",
-            "Use cover crops for soil protection",
-            "Implement minimum tillage",
-            "Apply compost for soil health",
-            "Use biochar for moisture retention",
-            "Practice crop residue management"
+            "Maintain soil cover with organic mulch (5-10cm)",
+            "Practice minimum tillage to preserve soil structure",
+            "Apply compost tea for soil microbial activity",
+            "Monitor soil pH and adjust if needed",
+            "Use cover crops to prevent erosion",
+            "Implement crop rotation for soil health"
           ],
-          "climate_indicator": "Focus on moisture retention"
+          "climate_indicator": "Target soil moisture: 20.6%"
         },
         {
-          "title": "Infrastructure Maintenance",
-          "timing": "During dry period",
+          "title": "Water Conservation",
+          "timing": "Throughout season",
           "actions": [
-            "Repair and maintain irrigation systems",
-            "Clean water storage facilities",
-            "Maintain soil conservation structures",
-            "Service farm machinery",
-            "Check and repair water pumps",
-            "Maintain drainage systems"
-          ]
+            "Implement drip irrigation for water efficiency",
+            "Use rainwater harvesting systems",
+            "Construct check dams for water retention",
+            "Practice furrow irrigation with proper spacing",
+            "Install soil moisture sensors for precise irrigation",
+            "Use water-saving techniques like basin irrigation"
+          ],
+          "climate_indicator": "Focus on efficient water use"
         },
         "Use shade nets for sensitive crops",
         "Increase irrigation frequency",
@@ -7468,44 +7476,45 @@
       },
       "recommendations": [
         {
-          "title": "Water Conservation",
-          "timing": "Throughout dry season",
+          "title": "Pre-Season Land Preparation",
+          "timing": "1 month before long rains",
           "actions": [
-            "Implement water-saving irrigation techniques",
-            "Use mulch to reduce evaporation",
-            "Maintain water storage systems",
-            "Monitor water usage carefully",
-            "Use drip irrigation with timers",
-            "Implement rainwater harvesting",
-            "Use moisture retention polymers",
-            "Practice deficit irrigation"
+            "Clear fields of crop residue and weeds",
+            "Perform soil testing and apply recommended amendments",
+            "Prepare water harvesting structures",
+            "Repair and maintain farm infrastructure",
+            "Apply organic manure (5-10 tons/ha)",
+            "Deep tillage (30-45cm) for better water infiltration",
+            "Construct contour bunds for soil conservation",
+            "Install soil moisture monitoring devices"
           ],
           "climate_indicator": "Expected rainfall: 153.8mm \u00b1 69.6mm"
         },
         {
           "title": "Soil Management",
-          "timing": "During dry period",
+          "timing": "Throughout season",
           "actions": [
-            "Apply organic mulch (8-10cm)",
-            "Use cover crops for soil protection",
-            "Implement minimum tillage",
-            "Apply compost for soil health",
-            "Use biochar for moisture retention",
-            "Practice crop residue management"
+            "Maintain soil cover with organic mulch (5-10cm)",
+            "Practice minimum tillage to preserve soil structure",
+            "Apply compost tea for soil microbial activity",
+            "Monitor soil pH and adjust if needed",
+            "Use cover crops to prevent erosion",
+            "Implement crop rotation for soil health"
           ],
-          "climate_indicator": "Focus on moisture retention"
+          "climate_indicator": "Target soil moisture: 50.0%"
         },
         {
-          "title": "Infrastructure Maintenance",
-          "timing": "During dry period",
+          "title": "Water Conservation",
+          "timing": "Throughout season",
           "actions": [
-            "Repair and maintain irrigation systems",
-            "Clean water storage facilities",
-            "Maintain soil conservation structures",
-            "Service farm machinery",
-            "Check and repair water pumps",
-            "Maintain drainage systems"
-          ]
+            "Implement drip irrigation for water efficiency",
+            "Use rainwater harvesting systems",
+            "Construct check dams for water retention",
+            "Practice furrow irrigation with proper spacing",
+            "Install soil moisture sensors for precise irrigation",
+            "Use water-saving techniques like basin irrigation"
+          ],
+          "climate_indicator": "Focus on efficient water use"
         },
         "Implement water conservation measures",
         "Use drought-resistant crop varieties",
@@ -8302,44 +8311,45 @@
       },
       "recommendations": [
         {
-          "title": "Water Conservation",
-          "timing": "Throughout dry season",
+          "title": "Pre-Season Land Preparation",
+          "timing": "1 month before long rains",
           "actions": [
-            "Implement water-saving irrigation techniques",
-            "Use mulch to reduce evaporation",
-            "Maintain water storage systems",
-            "Monitor water usage carefully",
-            "Use drip irrigation with timers",
-            "Implement rainwater harvesting",
-            "Use moisture retention polymers",
-            "Practice deficit irrigation"
+            "Clear fields of crop residue and weeds",
+            "Perform soil testing and apply recommended amendments",
+            "Prepare water harvesting structures",
+            "Repair and maintain farm infrastructure",
+            "Apply organic manure (5-10 tons/ha)",
+            "Deep tillage (30-45cm) for better water infiltration",
+            "Construct contour bunds for soil conservation",
+            "Install soil moisture monitoring devices"
           ],
           "climate_indicator": "Expected rainfall: 100.6mm \u00b1 65.4mm"
         },
         {
           "title": "Soil Management",
-          "timing": "During dry period",
+          "timing": "Throughout season",
           "actions": [
-            "Apply organic mulch (8-10cm)",
-            "Use cover crops for soil protection",
-            "Implement minimum tillage",
-            "Apply compost for soil health",
-            "Use biochar for moisture retention",
-            "Practice crop residue management"
+            "Maintain soil cover with organic mulch (5-10cm)",
+            "Practice minimum tillage to preserve soil structure",
+            "Apply compost tea for soil microbial activity",
+            "Monitor soil pH and adjust if needed",
+            "Use cover crops to prevent erosion",
+            "Implement crop rotation for soil health"
           ],
-          "climate_indicator": "Focus on moisture retention"
+          "climate_indicator": "Target soil moisture: 26.1%"
         },
         {
-          "title": "Infrastructure Maintenance",
-          "timing": "During dry period",
+          "title": "Water Conservation",
+          "timing": "Throughout season",
           "actions": [
-            "Repair and maintain irrigation systems",
-            "Clean water storage facilities",
-            "Maintain soil conservation structures",
-            "Service farm machinery",
-            "Check and repair water pumps",
-            "Maintain drainage systems"
-          ]
+            "Implement drip irrigation for water efficiency",
+            "Use rainwater harvesting systems",
+            "Construct check dams for water retention",
+            "Practice furrow irrigation with proper spacing",
+            "Install soil moisture sensors for precise irrigation",
+            "Use water-saving techniques like basin irrigation"
+          ],
+          "climate_indicator": "Focus on efficient water use"
         },
         "Implement water conservation measures",
         "Use drought-resistant crop varieties",
@@ -9136,44 +9146,45 @@
       },
       "recommendations": [
         {
-          "title": "Water Conservation",
-          "timing": "Throughout dry season",
+          "title": "Pre-Season Land Preparation",
+          "timing": "1 month before long rains",
           "actions": [
-            "Implement water-saving irrigation techniques",
-            "Use mulch to reduce evaporation",
-            "Maintain water storage systems",
-            "Monitor water usage carefully",
-            "Use drip irrigation with timers",
-            "Implement rainwater harvesting",
-            "Use moisture retention polymers",
-            "Practice deficit irrigation"
+            "Clear fields of crop residue and weeds",
+            "Perform soil testing and apply recommended amendments",
+            "Prepare water harvesting structures",
+            "Repair and maintain farm infrastructure",
+            "Apply organic manure (5-10 tons/ha)",
+            "Deep tillage (30-45cm) for better water infiltration",
+            "Construct contour bunds for soil conservation",
+            "Install soil moisture monitoring devices"
           ],
           "climate_indicator": "Expected rainfall: 121.8mm \u00b1 63.4mm"
         },
         {
           "title": "Soil Management",
-          "timing": "During dry period",
+          "timing": "Throughout season",
           "actions": [
-            "Apply organic mulch (8-10cm)",
-            "Use cover crops for soil protection",
-            "Implement minimum tillage",
-            "Apply compost for soil health",
-            "Use biochar for moisture retention",
-            "Practice crop residue management"
+            "Maintain soil cover with organic mulch (5-10cm)",
+            "Practice minimum tillage to preserve soil structure",
+            "Apply compost tea for soil microbial activity",
+            "Monitor soil pH and adjust if needed",
+            "Use cover crops to prevent erosion",
+            "Implement crop rotation for soil health"
           ],
-          "climate_indicator": "Focus on moisture retention"
+          "climate_indicator": "Target soil moisture: 35.4%"
         },
         {
-          "title": "Infrastructure Maintenance",
-          "timing": "During dry period",
+          "title": "Water Conservation",
+          "timing": "Throughout season",
           "actions": [
-            "Repair and maintain irrigation systems",
-            "Clean water storage facilities",
-            "Maintain soil conservation structures",
-            "Service farm machinery",
-            "Check and repair water pumps",
-            "Maintain drainage systems"
-          ]
+            "Implement drip irrigation for water efficiency",
+            "Use rainwater harvesting systems",
+            "Construct check dams for water retention",
+            "Practice furrow irrigation with proper spacing",
+            "Install soil moisture sensors for precise irrigation",
+            "Use water-saving techniques like basin irrigation"
+          ],
+          "climate_indicator": "Focus on efficient water use"
         },
         "Implement water conservation measures",
         "Use drought-resistant crop varieties",
@@ -9970,44 +9981,45 @@
       },
       "recommendations": [
         {
-          "title": "Water Conservation",
-          "timing": "Throughout dry season",
+          "title": "Pre-Season Land Preparation",
+          "timing": "1 month before long rains",
           "actions": [
-            "Implement water-saving irrigation techniques",
-            "Use mulch to reduce evaporation",
-            "Maintain water storage systems",
-            "Monitor water usage carefully",
-            "Use drip irrigation with timers",
-            "Implement rainwater harvesting",
-            "Use moisture retention polymers",
-            "Practice deficit irrigation"
+            "Clear fields of crop residue and weeds",
+            "Perform soil testing and apply recommended amendments",
+            "Prepare water harvesting structures",
+            "Repair and maintain farm infrastructure",
+            "Apply organic manure (5-10 tons/ha)",
+            "Deep tillage (30-45cm) for better water infiltration",
+            "Construct contour bunds for soil conservation",
+            "Install soil moisture monitoring devices"
           ],
           "climate_indicator": "Expected rainfall: 153.0mm \u00b1 72.3mm"
         },
         {
           "title": "Soil Management",
-          "timing": "During dry period",
+          "timing": "Throughout season",
           "actions": [
-            "Apply organic mulch (8-10cm)",
-            "Use cover crops for soil protection",
-            "Implement minimum tillage",
-            "Apply compost for soil health",
-            "Use biochar for moisture retention",
-            "Practice crop residue management"
+            "Maintain soil cover with organic mulch (5-10cm)",
+            "Practice minimum tillage to preserve soil structure",
+            "Apply compost tea for soil microbial activity",
+            "Monitor soil pH and adjust if needed",
+            "Use cover crops to prevent erosion",
+            "Implement crop rotation for soil health"
           ],
-          "climate_indicator": "Focus on moisture retention"
+          "climate_indicator": "Target soil moisture: 74.8%"
         },
         {
-          "title": "Infrastructure Maintenance",
-          "timing": "During dry period",
+          "title": "Water Conservation",
+          "timing": "Throughout season",
           "actions": [
-            "Repair and maintain irrigation systems",
-            "Clean water storage facilities",
-            "Maintain soil conservation structures",
-            "Service farm machinery",
-            "Check and repair water pumps",
-            "Maintain drainage systems"
-          ]
+            "Implement drip irrigation for water efficiency",
+            "Use rainwater harvesting systems",
+            "Construct check dams for water retention",
+            "Practice furrow irrigation with proper spacing",
+            "Install soil moisture sensors for precise irrigation",
+            "Use water-saving techniques like basin irrigation"
+          ],
+          "climate_indicator": "Focus on efficient water use"
         },
         "Implement water conservation measures",
         "Use drought-resistant crop varieties",
@@ -10804,44 +10816,45 @@
       },
       "recommendations": [
         {
-          "title": "Water Conservation",
-          "timing": "Throughout dry season",
+          "title": "Pre-Season Land Preparation",
+          "timing": "1 month before long rains",
           "actions": [
-            "Implement water-saving irrigation techniques",
-            "Use mulch to reduce evaporation",
-            "Maintain water storage systems",
-            "Monitor water usage carefully",
-            "Use drip irrigation with timers",
-            "Implement rainwater harvesting",
-            "Use moisture retention polymers",
-            "Practice deficit irrigation"
+            "Clear fields of crop residue and weeds",
+            "Perform soil testing and apply recommended amendments",
+            "Prepare water harvesting structures",
+            "Repair and maintain farm infrastructure",
+            "Apply organic manure (5-10 tons/ha)",
+            "Deep tillage (30-45cm) for better water infiltration",
+            "Construct contour bunds for soil conservation",
+            "Install soil moisture monitoring devices"
           ],
           "climate_indicator": "Expected rainfall: 87.1mm \u00b1 63.2mm"
         },
         {
           "title": "Soil Management",
-          "timing": "During dry period",
+          "timing": "Throughout season",
           "actions": [
-            "Apply organic mulch (8-10cm)",
-            "Use cover crops for soil protection",
-            "Implement minimum tillage",
-            "Apply compost for soil health",
-            "Use biochar for moisture retention",
-            "Practice crop residue management"
+            "Maintain soil cover with organic mulch (5-10cm)",
+            "Practice minimum tillage to preserve soil structure",
+            "Apply compost tea for soil microbial activity",
+            "Monitor soil pH and adjust if needed",
+            "Use cover crops to prevent erosion",
+            "Implement crop rotation for soil health"
           ],
-          "climate_indicator": "Focus on moisture retention"
+          "climate_indicator": "Target soil moisture: 24.5%"
         },
         {
-          "title": "Infrastructure Maintenance",
-          "timing": "During dry period",
+          "title": "Water Conservation",
+          "timing": "Throughout season",
           "actions": [
-            "Repair and maintain irrigation systems",
-            "Clean water storage facilities",
-            "Maintain soil conservation structures",
-            "Service farm machinery",
-            "Check and repair water pumps",
-            "Maintain drainage systems"
-          ]
+            "Implement drip irrigation for water efficiency",
+            "Use rainwater harvesting systems",
+            "Construct check dams for water retention",
+            "Practice furrow irrigation with proper spacing",
+            "Install soil moisture sensors for precise irrigation",
+            "Use water-saving techniques like basin irrigation"
+          ],
+          "climate_indicator": "Focus on efficient water use"
         },
         "Use shade nets for sensitive crops",
         "Increase irrigation frequency",
@@ -11634,44 +11647,45 @@
       },
       "recommendations": [
         {
-          "title": "Water Conservation",
-          "timing": "Throughout dry season",
+          "title": "Pre-Season Land Preparation",
+          "timing": "1 month before long rains",
           "actions": [
-            "Implement water-saving irrigation techniques",
-            "Use mulch to reduce evaporation",
-            "Maintain water storage systems",
-            "Monitor water usage carefully",
-            "Use drip irrigation with timers",
-            "Implement rainwater harvesting",
-            "Use moisture retention polymers",
-            "Practice deficit irrigation"
+            "Clear fields of crop residue and weeds",
+            "Perform soil testing and apply recommended amendments",
+            "Prepare water harvesting structures",
+            "Repair and maintain farm infrastructure",
+            "Apply organic manure (5-10 tons/ha)",
+            "Deep tillage (30-45cm) for better water infiltration",
+            "Construct contour bunds for soil conservation",
+            "Install soil moisture monitoring devices"
           ],
           "climate_indicator": "Expected rainfall: 64.8mm \u00b1 62.0mm"
         },
         {
           "title": "Soil Management",
-          "timing": "During dry period",
+          "timing": "Throughout season",
           "actions": [
-            "Apply organic mulch (8-10cm)",
-            "Use cover crops for soil protection",
-            "Implement minimum tillage",
-            "Apply compost for soil health",
-            "Use biochar for moisture retention",
-            "Practice crop residue management"
+            "Maintain soil cover with organic mulch (5-10cm)",
+            "Practice minimum tillage to preserve soil structure",
+            "Apply compost tea for soil microbial activity",
+            "Monitor soil pH and adjust if needed",
+            "Use cover crops to prevent erosion",
+            "Implement crop rotation for soil health"
           ],
-          "climate_indicator": "Focus on moisture retention"
+          "climate_indicator": "Target soil moisture: 15.2%"
         },
         {
-          "title": "Infrastructure Maintenance",
-          "timing": "During dry period",
+          "title": "Water Conservation",
+          "timing": "Throughout season",
           "actions": [
-            "Repair and maintain irrigation systems",
-            "Clean water storage facilities",
-            "Maintain soil conservation structures",
-            "Service farm machinery",
-            "Check and repair water pumps",
-            "Maintain drainage systems"
-          ]
+            "Implement drip irrigation for water efficiency",
+            "Use rainwater harvesting systems",
+            "Construct check dams for water retention",
+            "Practice furrow irrigation with proper spacing",
+            "Install soil moisture sensors for precise irrigation",
+            "Use water-saving techniques like basin irrigation"
+          ],
+          "climate_indicator": "Focus on efficient water use"
         },
         "Use shade nets for sensitive crops",
         "Increase irrigation frequency",
@@ -12464,44 +12478,45 @@
       },
       "recommendations": [
         {
-          "title": "Water Conservation",
-          "timing": "Throughout dry season",
+          "title": "Pre-Season Land Preparation",
+          "timing": "1 month before long rains",
           "actions": [
-            "Implement water-saving irrigation techniques",
-            "Use mulch to reduce evaporation",
-            "Maintain water storage systems",
-            "Monitor water usage carefully",
-            "Use drip irrigation with timers",
-            "Implement rainwater harvesting",
-            "Use moisture retention polymers",
-            "Practice deficit irrigation"
+            "Clear fields of crop residue and weeds",
+            "Perform soil testing and apply recommended amendments",
+            "Prepare water harvesting structures",
+            "Repair and maintain farm infrastructure",
+            "Apply organic manure (5-10 tons/ha)",
+            "Deep tillage (30-45cm) for better water infiltration",
+            "Construct contour bunds for soil conservation",
+            "Install soil moisture monitoring devices"
           ],
           "climate_indicator": "Expected rainfall: 51.7mm \u00b1 74.2mm"
         },
         {
           "title": "Soil Management",
-          "timing": "During dry period",
+          "timing": "Throughout season",
           "actions": [
-            "Apply organic mulch (8-10cm)",
-            "Use cover crops for soil protection",
-            "Implement minimum tillage",
-            "Apply compost for soil health",
-            "Use biochar for moisture retention",
-            "Practice crop residue management"
+            "Maintain soil cover with organic mulch (5-10cm)",
+            "Practice minimum tillage to preserve soil structure",
+            "Apply compost tea for soil microbial activity",
+            "Monitor soil pH and adjust if needed",
+            "Use cover crops to prevent erosion",
+            "Implement crop rotation for soil health"
           ],
-          "climate_indicator": "Focus on moisture retention"
+          "climate_indicator": "Target soil moisture: 24.0%"
         },
         {
-          "title": "Infrastructure Maintenance",
-          "timing": "During dry period",
+          "title": "Water Conservation",
+          "timing": "Throughout season",
           "actions": [
-            "Repair and maintain irrigation systems",
-            "Clean water storage facilities",
-            "Maintain soil conservation structures",
-            "Service farm machinery",
-            "Check and repair water pumps",
-            "Maintain drainage systems"
-          ]
+            "Implement drip irrigation for water efficiency",
+            "Use rainwater harvesting systems",
+            "Construct check dams for water retention",
+            "Practice furrow irrigation with proper spacing",
+            "Install soil moisture sensors for precise irrigation",
+            "Use water-saving techniques like basin irrigation"
+          ],
+          "climate_indicator": "Focus on efficient water use"
         },
         "Use shade nets for sensitive crops",
         "Increase irrigation frequency",
@@ -13294,44 +13309,45 @@
       },
       "recommendations": [
         {
-          "title": "Water Conservation",
-          "timing": "Throughout dry season",
+          "title": "Pre-Season Land Preparation",
+          "timing": "1 month before long rains",
           "actions": [
-            "Implement water-saving irrigation techniques",
-            "Use mulch to reduce evaporation",
-            "Maintain water storage systems",
-            "Monitor water usage carefully",
-            "Use drip irrigation with timers",
-            "Implement rainwater harvesting",
-            "Use moisture retention polymers",
-            "Practice deficit irrigation"
+            "Clear fields of crop residue and weeds",
+            "Perform soil testing and apply recommended amendments",
+            "Prepare water harvesting structures",
+            "Repair and maintain farm infrastructure",
+            "Apply organic manure (5-10 tons/ha)",
+            "Deep tillage (30-45cm) for better water infiltration",
+            "Construct contour bunds for soil conservation",
+            "Install soil moisture monitoring devices"
           ],
           "climate_indicator": "Expected rainfall: 57.8mm \u00b1 84.5mm"
         },
         {
           "title": "Soil Management",
-          "timing": "During dry period",
+          "timing": "Throughout season",
           "actions": [
-            "Apply organic mulch (8-10cm)",
-            "Use cover crops for soil protection",
-            "Implement minimum tillage",
-            "Apply compost for soil health",
-            "Use biochar for moisture retention",
-            "Practice crop residue management"
+            "Maintain soil cover with organic mulch (5-10cm)",
+            "Practice minimum tillage to preserve soil structure",
+            "Apply compost tea for soil microbial activity",
+            "Monitor soil pH and adjust if needed",
+            "Use cover crops to prevent erosion",
+            "Implement crop rotation for soil health"
           ],
-          "climate_indicator": "Focus on moisture retention"
+          "climate_indicator": "Target soil moisture: 16.9%"
         },
         {
-          "title": "Infrastructure Maintenance",
-          "timing": "During dry period",
+          "title": "Water Conservation",
+          "timing": "Throughout season",
           "actions": [
-            "Repair and maintain irrigation systems",
-            "Clean water storage facilities",
-            "Maintain soil conservation structures",
-            "Service farm machinery",
-            "Check and repair water pumps",
-            "Maintain drainage systems"
-          ]
+            "Implement drip irrigation for water efficiency",
+            "Use rainwater harvesting systems",
+            "Construct check dams for water retention",
+            "Practice furrow irrigation with proper spacing",
+            "Install soil moisture sensors for precise irrigation",
+            "Use water-saving techniques like basin irrigation"
+          ],
+          "climate_indicator": "Focus on efficient water use"
         },
         "Use shade nets for sensitive crops",
         "Increase irrigation frequency",
@@ -14124,44 +14140,45 @@
       },
       "recommendations": [
         {
-          "title": "Water Conservation",
-          "timing": "Throughout dry season",
+          "title": "Pre-Season Land Preparation",
+          "timing": "1 month before long rains",
           "actions": [
-            "Implement water-saving irrigation techniques",
-            "Use mulch to reduce evaporation",
-            "Maintain water storage systems",
-            "Monitor water usage carefully",
-            "Use drip irrigation with timers",
-            "Implement rainwater harvesting",
-            "Use moisture retention polymers",
-            "Practice deficit irrigation"
+            "Clear fields of crop residue and weeds",
+            "Perform soil testing and apply recommended amendments",
+            "Prepare water harvesting structures",
+            "Repair and maintain farm infrastructure",
+            "Apply organic manure (5-10 tons/ha)",
+            "Deep tillage (30-45cm) for better water infiltration",
+            "Construct contour bunds for soil conservation",
+            "Install soil moisture monitoring devices"
           ],
           "climate_indicator": "Expected rainfall: 52.1mm \u00b1 73.8mm"
         },
         {
           "title": "Soil Management",
-          "timing": "During dry period",
+          "timing": "Throughout season",
           "actions": [
-            "Apply organic mulch (8-10cm)",
-            "Use cover crops for soil protection",
-            "Implement minimum tillage",
-            "Apply compost for soil health",
-            "Use biochar for moisture retention",
-            "Practice crop residue management"
+            "Maintain soil cover with organic mulch (5-10cm)",
+            "Practice minimum tillage to preserve soil structure",
+            "Apply compost tea for soil microbial activity",
+            "Monitor soil pH and adjust if needed",
+            "Use cover crops to prevent erosion",
+            "Implement crop rotation for soil health"
           ],
-          "climate_indicator": "Focus on moisture retention"
+          "climate_indicator": "Target soil moisture: 19.3%"
         },
         {
-          "title": "Infrastructure Maintenance",
-          "timing": "During dry period",
+          "title": "Water Conservation",
+          "timing": "Throughout season",
           "actions": [
-            "Repair and maintain irrigation systems",
-            "Clean water storage facilities",
-            "Maintain soil conservation structures",
-            "Service farm machinery",
-            "Check and repair water pumps",
-            "Maintain drainage systems"
-          ]
+            "Implement drip irrigation for water efficiency",
+            "Use rainwater harvesting systems",
+            "Construct check dams for water retention",
+            "Practice furrow irrigation with proper spacing",
+            "Install soil moisture sensors for precise irrigation",
+            "Use water-saving techniques like basin irrigation"
+          ],
+          "climate_indicator": "Focus on efficient water use"
         },
         "Use shade nets for sensitive crops",
         "Increase irrigation frequency",
@@ -14954,44 +14971,45 @@
       },
       "recommendations": [
         {
-          "title": "Water Conservation",
-          "timing": "Throughout dry season",
+          "title": "Pre-Season Land Preparation",
+          "timing": "1 month before long rains",
           "actions": [
-            "Implement water-saving irrigation techniques",
-            "Use mulch to reduce evaporation",
-            "Maintain water storage systems",
-            "Monitor water usage carefully",
-            "Use drip irrigation with timers",
-            "Implement rainwater harvesting",
-            "Use moisture retention polymers",
-            "Practice deficit irrigation"
+            "Clear fields of crop residue and weeds",
+            "Perform soil testing and apply recommended amendments",
+            "Prepare water harvesting structures",
+            "Repair and maintain farm infrastructure",
+            "Apply organic manure (5-10 tons/ha)",
+            "Deep tillage (30-45cm) for better water infiltration",
+            "Construct contour bunds for soil conservation",
+            "Install soil moisture monitoring devices"
           ],
           "climate_indicator": "Expected rainfall: 72.9mm \u00b1 110.4mm"
         },
         {
           "title": "Soil Management",
-          "timing": "During dry period",
+          "timing": "Throughout season",
           "actions": [
-            "Apply organic mulch (8-10cm)",
-            "Use cover crops for soil protection",
-            "Implement minimum tillage",
-            "Apply compost for soil health",
-            "Use biochar for moisture retention",
-            "Practice crop residue management"
+            "Maintain soil cover with organic mulch (5-10cm)",
+            "Practice minimum tillage to preserve soil structure",
+            "Apply compost tea for soil microbial activity",
+            "Monitor soil pH and adjust if needed",
+            "Use cover crops to prevent erosion",
+            "Implement crop rotation for soil health"
           ],
-          "climate_indicator": "Focus on moisture retention"
+          "climate_indicator": "Target soil moisture: 16.3%"
         },
         {
-          "title": "Infrastructure Maintenance",
-          "timing": "During dry period",
+          "title": "Water Conservation",
+          "timing": "Throughout season",
           "actions": [
-            "Repair and maintain irrigation systems",
-            "Clean water storage facilities",
-            "Maintain soil conservation structures",
-            "Service farm machinery",
-            "Check and repair water pumps",
-            "Maintain drainage systems"
-          ]
+            "Implement drip irrigation for water efficiency",
+            "Use rainwater harvesting systems",
+            "Construct check dams for water retention",
+            "Practice furrow irrigation with proper spacing",
+            "Install soil moisture sensors for precise irrigation",
+            "Use water-saving techniques like basin irrigation"
+          ],
+          "climate_indicator": "Focus on efficient water use"
         },
         "Use shade nets for sensitive crops",
         "Increase irrigation frequency",
@@ -15784,44 +15802,45 @@
       },
       "recommendations": [
         {
-          "title": "Water Conservation",
-          "timing": "Throughout dry season",
+          "title": "Pre-Season Land Preparation",
+          "timing": "1 month before long rains",
           "actions": [
-            "Implement water-saving irrigation techniques",
-            "Use mulch to reduce evaporation",
-            "Maintain water storage systems",
-            "Monitor water usage carefully",
-            "Use drip irrigation with timers",
-            "Implement rainwater harvesting",
-            "Use moisture retention polymers",
-            "Practice deficit irrigation"
+            "Clear fields of crop residue and weeds",
+            "Perform soil testing and apply recommended amendments",
+            "Prepare water harvesting structures",
+            "Repair and maintain farm infrastructure",
+            "Apply organic manure (5-10 tons/ha)",
+            "Deep tillage (30-45cm) for better water infiltration",
+            "Construct contour bunds for soil conservation",
+            "Install soil moisture monitoring devices"
           ],
           "climate_indicator": "Expected rainfall: 66.8mm \u00b1 52.8mm"
         },
         {
           "title": "Soil Management",
-          "timing": "During dry period",
+          "timing": "Throughout season",
           "actions": [
-            "Apply organic mulch (8-10cm)",
-            "Use cover crops for soil protection",
-            "Implement minimum tillage",
-            "Apply compost for soil health",
-            "Use biochar for moisture retention",
-            "Practice crop residue management"
+            "Maintain soil cover with organic mulch (5-10cm)",
+            "Practice minimum tillage to preserve soil structure",
+            "Apply compost tea for soil microbial activity",
+            "Monitor soil pH and adjust if needed",
+            "Use cover crops to prevent erosion",
+            "Implement crop rotation for soil health"
           ],
-          "climate_indicator": "Focus on moisture retention"
+          "climate_indicator": "Target soil moisture: 36.8%"
         },
         {
-          "title": "Infrastructure Maintenance",
-          "timing": "During dry period",
+          "title": "Water Conservation",
+          "timing": "Throughout season",
           "actions": [
-            "Repair and maintain irrigation systems",
-            "Clean water storage facilities",
-            "Maintain soil conservation structures",
-            "Service farm machinery",
-            "Check and repair water pumps",
-            "Maintain drainage systems"
-          ]
+            "Implement drip irrigation for water efficiency",
+            "Use rainwater harvesting systems",
+            "Construct check dams for water retention",
+            "Practice furrow irrigation with proper spacing",
+            "Install soil moisture sensors for precise irrigation",
+            "Use water-saving techniques like basin irrigation"
+          ],
+          "climate_indicator": "Focus on efficient water use"
         },
         "Implement water conservation measures",
         "Use drought-resistant crop varieties",
@@ -16618,44 +16637,45 @@
       },
       "recommendations": [
         {
-          "title": "Water Conservation",
-          "timing": "Throughout dry season",
+          "title": "Pre-Season Land Preparation",
+          "timing": "1 month before long rains",
           "actions": [
-            "Implement water-saving irrigation techniques",
-            "Use mulch to reduce evaporation",
-            "Maintain water storage systems",
-            "Monitor water usage carefully",
-            "Use drip irrigation with timers",
-            "Implement rainwater harvesting",
-            "Use moisture retention polymers",
-            "Practice deficit irrigation"
+            "Clear fields of crop residue and weeds",
+            "Perform soil testing and apply recommended amendments",
+            "Prepare water harvesting structures",
+            "Repair and maintain farm infrastructure",
+            "Apply organic manure (5-10 tons/ha)",
+            "Deep tillage (30-45cm) for better water infiltration",
+            "Construct contour bunds for soil conservation",
+            "Install soil moisture monitoring devices"
           ],
           "climate_indicator": "Expected rainfall: 83.4mm \u00b1 59.3mm"
         },
         {
           "title": "Soil Management",
-          "timing": "During dry period",
+          "timing": "Throughout season",
           "actions": [
-            "Apply organic mulch (8-10cm)",
-            "Use cover crops for soil protection",
-            "Implement minimum tillage",
-            "Apply compost for soil health",
-            "Use biochar for moisture retention",
-            "Practice crop residue management"
+            "Maintain soil cover with organic mulch (5-10cm)",
+            "Practice minimum tillage to preserve soil structure",
+            "Apply compost tea for soil microbial activity",
+            "Monitor soil pH and adjust if needed",
+            "Use cover crops to prevent erosion",
+            "Implement crop rotation for soil health"
           ],
-          "climate_indicator": "Focus on moisture retention"
+          "climate_indicator": "Target soil moisture: 22.2%"
         },
         {
-          "title": "Infrastructure Maintenance",
-          "timing": "During dry period",
+          "title": "Water Conservation",
+          "timing": "Throughout season",
           "actions": [
-            "Repair and maintain irrigation systems",
-            "Clean water storage facilities",
-            "Maintain soil conservation structures",
-            "Service farm machinery",
-            "Check and repair water pumps",
-            "Maintain drainage systems"
-          ]
+            "Implement drip irrigation for water efficiency",
+            "Use rainwater harvesting systems",
+            "Construct check dams for water retention",
+            "Practice furrow irrigation with proper spacing",
+            "Install soil moisture sensors for precise irrigation",
+            "Use water-saving techniques like basin irrigation"
+          ],
+          "climate_indicator": "Focus on efficient water use"
         },
         "Use shade nets for sensitive crops",
         "Increase irrigation frequency",
@@ -17448,44 +17468,45 @@
       },
       "recommendations": [
         {
-          "title": "Water Conservation",
-          "timing": "Throughout dry season",
+          "title": "Pre-Season Land Preparation",
+          "timing": "1 month before long rains",
           "actions": [
-            "Implement water-saving irrigation techniques",
-            "Use mulch to reduce evaporation",
-            "Maintain water storage systems",
-            "Monitor water usage carefully",
-            "Use drip irrigation with timers",
-            "Implement rainwater harvesting",
-            "Use moisture retention polymers",
-            "Practice deficit irrigation"
+            "Clear fields of crop residue and weeds",
+            "Perform soil testing and apply recommended amendments",
+            "Prepare water harvesting structures",
+            "Repair and maintain farm infrastructure",
+            "Apply organic manure (5-10 tons/ha)",
+            "Deep tillage (30-45cm) for better water infiltration",
+            "Construct contour bunds for soil conservation",
+            "Install soil moisture monitoring devices"
           ],
           "climate_indicator": "Expected rainfall: 76.8mm \u00b1 61.2mm"
         },
         {
           "title": "Soil Management",
-          "timing": "During dry period",
+          "timing": "Throughout season",
           "actions": [
-            "Apply organic mulch (8-10cm)",
-            "Use cover crops for soil protection",
-            "Implement minimum tillage",
-            "Apply compost for soil health",
-            "Use biochar for moisture retention",
-            "Practice crop residue management"
+            "Maintain soil cover with organic mulch (5-10cm)",
+            "Practice minimum tillage to preserve soil structure",
+            "Apply compost tea for soil microbial activity",
+            "Monitor soil pH and adjust if needed",
+            "Use cover crops to prevent erosion",
+            "Implement crop rotation for soil health"
           ],
-          "climate_indicator": "Focus on moisture retention"
+          "climate_indicator": "Target soil moisture: 18.8%"
         },
         {
-          "title": "Infrastructure Maintenance",
-          "timing": "During dry period",
+          "title": "Water Conservation",
+          "timing": "Throughout season",
           "actions": [
-            "Repair and maintain irrigation systems",
-            "Clean water storage facilities",
-            "Maintain soil conservation structures",
-            "Service farm machinery",
-            "Check and repair water pumps",
-            "Maintain drainage systems"
-          ]
+            "Implement drip irrigation for water efficiency",
+            "Use rainwater harvesting systems",
+            "Construct check dams for water retention",
+            "Practice furrow irrigation with proper spacing",
+            "Install soil moisture sensors for precise irrigation",
+            "Use water-saving techniques like basin irrigation"
+          ],
+          "climate_indicator": "Focus on efficient water use"
         },
         "Implement water conservation measures",
         "Use drought-resistant crop varieties",
