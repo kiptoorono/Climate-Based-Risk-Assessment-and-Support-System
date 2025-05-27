@@ -1,11 +1,11 @@
 # Climate-Based Risk Assessment and Support System
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
-[![GitHub stars](https://img.shields.io/github/stars/kiptoorono/Climate-Based-Risk-Assessment-and-Support-System?style=social)](https://github.com/kiptoorono/Climate-Based-Risk-Assessment-and-Support-System/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/kiptoorono/Climate-Based-Risk-Assessment-and-Support-System?style=social)](https://github.com/kiptoorono/Climate-Based-Risk-Assessment-and-Support-System/network/members)
-[![GitHub issues](https://img.shields.io/github/issues/kiptoorono/Climate-Based-Risk-Assessment-and-Support-System)](https://github.com/kiptoorono/Climate-Based-Risk-Assessment-and-Support-System/issues)
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/kiptoorono/Climate-Based-Risk-Assessment-and-Support-System)](https://github.com/kiptoorono/Climate-Based-Risk-Assessment-and-Support-System/pulls)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg?style=for-the-badge)](https://www.python.org/)
+[![GitHub stars](https://img.shields.io/github/stars/kiptoorono/Climate-Based-Risk-Assessment-and-Support-System?style=for-the-badge)](https://github.com/kiptoorono/Climate-Based-Risk-Assessment-and-Support-System/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/kiptoorono/Climate-Based-Risk-Assessment-and-Support-System?style=for-the-badge)](https://github.com/kiptoorono/Climate-Based-Risk-Assessment-and-Support-System/network/members)
+[![GitHub issues](https://img.shields.io/github/issues/kiptoorono/Climate-Based-Risk-Assessment-and-Support-System.svg?style=for-the-badge)](https://github.com/kiptoorono/Climate-Based-Risk-Assessment-and-Support-System/issues)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/kiptoorono/Climate-Based-Risk-Assessment-and-Support-System.svg?style=for-the-badge)](https://github.com/kiptoorono/Climate-Based-Risk-Assessment-and-Support-System/pulls)
 
 A comprehensive system for assessing and managing climate-related risks in agricultural regions, providing data-driven insights and recommendations for farmers and agricultural stakeholders.
 
@@ -90,18 +90,28 @@ The application is currently deployed and available live at the following URL: [
 ## Installation
 
 1. Clone the repository:
+
 ```bash
 git clone [repository-url]
 cd Climate-Based-Risk-Assessment-and-Support-System
 ```
 
 2. Create and activate a virtual environment:
-```bash
-python -m venv new_env
-source new_env/bin/activate  # On Windows: new_env\Scripts\activate
-```
+
+   **For Linux/macOS:**
+   ```bash
+   python3 -m venv new_env
+   source new_env/bin/activate
+   ```
+
+   **For Windows:**
+   ```bash
+   python -m venv new_env
+   new_env\Scripts\activate
+   ```
 
 3. Install dependencies:
+
 ```bash
 pip install -r requirements.txt
 ```
@@ -116,5 +126,86 @@ pip install -r requirements.txt
 
 ## Usage
 
-1. **Data Preparation**
-   - Place your climate data in the `Data/`
+1.  **Data Preparation**
+    - Place your climate data in the `Data/` directory
+    - Ensure data includes rainfall, temperature, and soil moisture measurements
+
+2.  **Risk Assessment**
+
+    ```python
+    from risk_assesment import generate_climate_risk_assessment
+
+    # Generate risk assessment
+    results = generate_climate_risk_assessment(
+        data_path='path/to/merged_data.csv',
+        output_dir='risk_assessment_results',
+        zone_data_path='path/to/zone_data.csv'
+    )
+    ```
+
+3.  **View Results**
+    - Check the `risk_assessment_results/` directory for generated reports
+    - Review visualizations in the `Visualisation/` directory
+
+## Risk Assessment Methodology
+
+The system employs a multi-layered approach combining statistical and machine learning methods for robust climate risk assessment:
+
+### Data Analysis & Preprocessing
+
+- Historical climate data aggregation and baseline calculation
+- Extraction of relevant climate features (rainfall, temperature, soil moisture)
+- Temporal and spatial trend identification and anomaly detection
+
+### Risk Calculation & Feature Engineering
+
+- Calculation of indices such as Drought Index (rainfall z-score and soil moisture ratio)
+- Heat stress quantification using temperature anomalies and threshold exceedance
+- Flood risk assessment based on rainfall intensity and soil saturation levels
+
+### Risk Classification & Scoring
+
+- Classification into severity levels: Low, Mild, Moderate, Severe
+- Use of Random Forest classifiers trained on engineered features for drought, heat, flood, and rainfall risks
+- Weighted scoring system integrating multiple risk factors with zone-specific thresholds for localized risk evaluation
+
+## Contributing
+
+1.  Fork the repository
+2.  Create a feature branch
+3.  Commit your changes
+4.  Push to the branch
+5.  Create a Pull Request
+
+## License
+
+MIT License
+
+Copyright (c) 2024 Climate-Based Risk Assessment and Support System
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+## Contact
+
+ronobrian058@gmail.com
+
+## Acknowledgments
+
+- [List any acknowledgments or references]
+
